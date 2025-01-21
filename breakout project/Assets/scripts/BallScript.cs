@@ -7,6 +7,10 @@ public class BallScript : MonoBehaviour
     public Rigidbody rb;
     public float Force_X = 1000f;
     public float Force_Z = 1000f;
+     public GameObject ballPrefab;
+     public Transform Spawner;
+
+    public float lives = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,10 +19,17 @@ public class BallScript : MonoBehaviour
         rb.AddForce (new Vector3 (Force_X, 0, Force_Z));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Deadzone")) { 
+            ballPrefab.transform.position = Spawner.transform.position;
+            lives--;
+            if (lives <= 0) { 
+
+            Destroy(ballPrefab);
+            }
+        }
     }
-    
+
 }
