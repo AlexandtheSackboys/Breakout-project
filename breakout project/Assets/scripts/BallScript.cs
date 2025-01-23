@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 
@@ -10,6 +11,7 @@ public class BallScript : MonoBehaviour
      public GameObject ballPrefab;
      public Transform Spawner;
 
+    
     public float lives = 3f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,7 +43,15 @@ public class BallScript : MonoBehaviour
         }
 
         if (Collide.gameObject.CompareTag("Block")) {
+
             rb.AddForce(new Vector3(Force_X, 0, -Force_Z));
+
+        }
+        if (Collide.gameObject.CompareTag("Block2"))
+        {
+
+            rb.AddForce(new Vector3(Force_X, 0, Force_Z));
+
         }
 
 
