@@ -4,11 +4,11 @@ public class blockWall : MonoBehaviour
 {
     public float hitpoints = 1f;
     public GameObject Projectile;
-    private GameManager gameManager; // reference game manager
+    private ScoreSystem scoreSystem; // reference game manager
 
     private void Start()
     {
-        gameManager = FindAnyObjectByType<GameManager>(); // Find the GameManager in the scene
+        scoreSystem = FindAnyObjectByType<ScoreSystem>(); // Find the GameManager in the scene
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,9 +25,9 @@ public class blockWall : MonoBehaviour
 
     private void BlockGone()
     {
-        if (gameManager != null)
+        if (scoreSystem != null)
         {
-            gameManager.BlockDestroy(); // Notify GameManager that an enemy is killed
+            scoreSystem.BlockDestroy(); // Notify GameManager that an enemy is killed
         }
         Destroy(gameObject); // game object is no longer in scene
     }

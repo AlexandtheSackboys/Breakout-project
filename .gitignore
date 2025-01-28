@@ -1,2 +1,4 @@
 
 *.vsidx
+*.log
+/breakout project/Library

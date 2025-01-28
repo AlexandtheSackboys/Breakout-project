@@ -1,33 +1,47 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI ScoreCountText; //reference to UI in scene
-    private int ScoreCount = 0;
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        UpdateScoreText();
+        DontDestroyOnLoad(this);
     }
 
-    public void BlockDestroy()
+    public void Play() //  causes main game to play
     {
-        ScoreCount++; // adds a value with to the Score when destroyed
-        UpdateScoreText();
+        SceneManager.LoadScene(1);
     }
 
-    void UpdateScoreText()
+
+    public void Quit() // exits game 
     {
-        if (ScoreCountText != null)
-        {
-            ScoreCountText.text = "Score: " + ScoreCount.ToString(); // update the Score text when block has Disappeard 
-        }
+        Application.Quit(0);
+    }
+    public void Win() // transisions to winning scene
+    {
+        SceneManager.LoadScene(2);
+
+
+
+    }
+
+    public void ResetGame()
+    { // reset to the games title screen
+        SceneManager.LoadScene(0);
+        Debug.Log("reset presses i guess");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
+
