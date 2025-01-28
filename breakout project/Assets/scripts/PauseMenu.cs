@@ -12,16 +12,10 @@ public class PauseMenu : MonoBehaviour
     {
         if (isPaused)
         {
-            pauseMenuUI.SetActive(true); // Hide the pause menu UI panel
-            controlsText.gameObject.SetActive(false); // Hide the controls TextMeshProUGUI element
-            Time.timeScale = 1f; // Set the time scale to normal to resume the game
-            isPaused = false; // Update the pause state flag
+            Resume();
             return;
         }
-        pauseMenuUI.SetActive(false); // Show the pause menu UI panel
-        controlsText.gameObject.SetActive(true); // Show the controls TextMeshProUGUI element
-        Time.timeScale = 0f; // Set the time scale to 0 to pause the game
-        isPaused = true; // Update the pause state flag
+        Pause();
     }
 
     void CheckInputs()
@@ -33,6 +27,20 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void Resume() 
+    {
+        pauseMenuUI.SetActive(true); // Hide the pause menu UI panel
+        controlsText.gameObject.SetActive(false); // Hide the controls TextMeshProUGUI element
+        Time.timeScale = 1f; // Set the time scale to normal to resume the game
+        isPaused = false; // Update the pause state flag
+    }
+    public void Pause()
+    {
+        pauseMenuUI.SetActive(false); // Show the pause menu UI panel
+        controlsText.gameObject.SetActive(true); // Show the controls TextMeshProUGUI element
+        Time.timeScale = 0f; // Set the time scale to 0 to pause the game
+        isPaused = true; // Update the pause state flag
+    }
     void Update()
     {
         CheckInputs();
