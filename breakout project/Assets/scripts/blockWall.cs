@@ -2,9 +2,10 @@ using UnityEngine;
 using System.Collections;
 public class blockWall : MonoBehaviour
 {
-    public float hitpoints = 1f;
+    public float hitpoints;
     public GameObject Projectile;
     private ScoreSystem scoreSystem; // reference game manager
+
 
     private void Start()
     {
@@ -14,6 +15,7 @@ public class blockWall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+
             hitpoints--;
 
             if (hitpoints == 0) {
@@ -28,6 +30,7 @@ public class blockWall : MonoBehaviour
         if (scoreSystem != null)
         {
             scoreSystem.BlockDestroy(); // Notify GameManager that an enemy is killed
+
         }
         Destroy(gameObject); // game object is no longer in scene
     }

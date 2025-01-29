@@ -14,6 +14,7 @@ public class BallScript : MonoBehaviour
     public GameObject life_Orbs;
     public float lives = 3f;
     public Transform OrbSpawner;
+    [SerializeField] private AudioSource Break;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,17 +45,12 @@ public class BallScript : MonoBehaviour
             }
         }
 
-        /*if (Collide.gameObject.CompareTag("Block")) {
+        if (Collide.gameObject.CompareTag("Block")) {
 
-            rb.AddForce(new Vector3(Force_X, 0, -Force_Z));
+           Break.Play();
 
         }
-        if (Collide.gameObject.CompareTag("Block2"))
-        {
 
-            rb.AddForce(new Vector3(Force_X, 0, Force_Z));
-
-        }*/
 
 
     }
@@ -70,7 +66,7 @@ public class BallScript : MonoBehaviour
         for (int i = 0; i < lives; i++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(life_Orbs, OrbSpawner.position + new Vector3(i*2, 0, 0), Quaternion.identity, OrbSpawner);
+            Instantiate(life_Orbs, OrbSpawner.position - new Vector3(i*2, 0, 0), Quaternion.identity, OrbSpawner);
         }
     }
 }
