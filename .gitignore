@@ -2,3 +2,4 @@
 *.vsidx
 *.log
 /breakout project/Library
+/breakout project/Temp
