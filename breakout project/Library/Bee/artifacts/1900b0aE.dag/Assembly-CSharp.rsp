@@ -405,7 +405,9 @@
 "Assets/scripts/Paddle_Controller.cs"
 "Assets/scripts/PauseMenu.cs"
 "Assets/scripts/Perspective_Change.cs"
+"Assets/scripts/PlayerPause.cs"
 "Assets/scripts/ScoreSystem.cs"
+"Assets/Utilities/PlayerInput.cs"
 -langversion:9.0
 /deterministic
 /optimize+
