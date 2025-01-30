@@ -401,6 +401,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/scripts/BallScript.cs"
 "Assets/scripts/blockWall.cs"
+"Assets/scripts/DestroyParticles.cs"
 "Assets/scripts/GameManager.cs"
 "Assets/scripts/Paddle_Controller.cs"
 "Assets/scripts/PauseMenu.cs"

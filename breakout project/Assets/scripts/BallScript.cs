@@ -6,15 +6,17 @@ public class BallScript : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public  float Force_X = 1000f;
-    public float Force_Z = 1000f;
+    public  float Force_X;
+    public float Force_Z;
     public GameObject ballPrefab;
     public Transform Spawner;
 
     public GameObject life_Orbs;
     public float lives = 3f;
     public Transform OrbSpawner;
+
     [SerializeField] private AudioSource Break;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +50,7 @@ public class BallScript : MonoBehaviour
         if (Collide.gameObject.CompareTag("Block")) {
 
            Break.Play();
+
 
         }
 

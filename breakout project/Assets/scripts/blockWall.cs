@@ -3,8 +3,8 @@ using System.Collections;
 public class blockWall : MonoBehaviour
 {
     public float hitpoints;
-    public GameObject Projectile;
     private ScoreSystem scoreSystem; // reference game manager
+    public GameObject Debris;
 
 
     private void Start()
@@ -19,7 +19,10 @@ public class blockWall : MonoBehaviour
             hitpoints--;
 
             if (hitpoints == 0) {
+                Debris.transform.position = gameObject.transform.position;
                 BlockGone();
+
+
             }
         }
 
@@ -33,5 +36,8 @@ public class blockWall : MonoBehaviour
 
         }
         Destroy(gameObject); // game object is no longer in scene
+        Instantiate(Debris);
+
+
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerPause : MonoBehaviour
 {
-    private PauseMenu pawnMenu;
+    private PauseMenu pawnMenu; // reference to the pause menu script
 
     private void Start()
     {
