@@ -4343,6 +4343,7 @@ GameObject:
   - component: {fileID: 2063264683}
   - component: {fileID: 2063264684}
   - component: {fileID: 2063264685}
+  - component: {fileID: 2063264686}
   m_Layer: 0
   m_Name: Player_Paddle
   m_TagString: Player
@@ -4460,7 +4461,7 @@ Transform:
   m_GameObject: {fileID: 2063264677}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0895, y: 6.8664007, z: -3.6}
+  m_LocalPosition: {x: 1.7945676, y: 6.8664007, z: -3.1283}
   m_LocalScale: {x: 14.141899, y: 0.68179, z: 0.68179}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4480,7 +4481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f902045c71600d4b8c7e6801c54549b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5000
+  speed: 13218
 --- !u!114 &2063264684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4523,6 +4524,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18c31f18bfcc8684da540e8aadf28745, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2063264686
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063264677}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6678bac9cb717dc4cb44b122c239ef57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8080309600708926597
 PrefabInstance:
   m_ObjectHideFlags: 0

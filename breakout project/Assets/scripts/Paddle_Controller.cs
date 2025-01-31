@@ -7,6 +7,7 @@ public class Paddle_Controller : MonoBehaviour
     [Range(5000,20000)] public float speed;
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
+    private Animator tilt;
 
     public void OnMove(InputValue value)
     {
@@ -20,14 +21,42 @@ public class Paddle_Controller : MonoBehaviour
     {
 
         rigidbody = GetComponent<Rigidbody>();
+        tilt = GetComponent<Animator>();
+
     }
 
-    // Update is called once per frame
+    // Update is called once per frame   
     void Update()
     {
-        // references a list of inputs within the project settings  in the unity editor
-        //float MovementInput = Input.GetAxis("Horizontal");
-        //transform.Translate(Vector3.right * Time.deltaTime * Speed * MovementInput);
-        rigidbody.linearVelocity = new Vector3(moveInput.x*speed*Time.deltaTime,0,0);
+
+        
+        if (tilt != null)
+        {
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                    tilt.SetTrigger("TiltR_Open");
+
+            }
+            else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) {
+                    tilt.SetTrigger("TiltR_Close"); 
+            
+            }
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                    tilt.SetTrigger("TiltL_Open");
+
+            }
+            else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
+            {
+                    tilt.SetTrigger("TiltL_Close");
+
+            }
+
+            rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
+        }
     }
+
+
+
 }
