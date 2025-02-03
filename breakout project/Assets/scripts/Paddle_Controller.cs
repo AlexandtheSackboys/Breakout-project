@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Paddle_Controller : MonoBehaviour
 {
-    [Range(5000,20000)] public float speed;
+    [Range(5000,30000)] public float speed;
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;

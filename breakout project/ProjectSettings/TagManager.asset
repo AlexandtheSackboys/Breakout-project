@@ -8,6 +8,8 @@ TagManager:
   - Deadzone
   - Ball
   - Block
+  - LeftEnd
+  - RightEnd
   layers:
   - Default
   - TransparentFX

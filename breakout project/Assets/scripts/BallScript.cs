@@ -6,10 +6,16 @@ public class BallScript : MonoBehaviour
 {
 
     public Rigidbody rb;
-    public  float Force_X;
-    public float Force_Z;
+
+    public  float force_X;
+    public float force_Z;
+
+
+
     public GameObject ballPrefab;
     public Transform Spawner;
+
+    public float endPower; // adds power to each end of the paddle
 
     public GameObject life_Orbs;
     public float lives = 3f;
@@ -24,8 +30,16 @@ public class BallScript : MonoBehaviour
     void Start()
     {
         LifeOrbs();
+
+
         // applies forces to the x and z directions
-        rb.AddForce (new Vector3 (Force_X, 0, Force_Z));
+
+
+        rb.AddForce(force_X, 0, force_Z);
+
+
+
+
     }
 
 
@@ -36,25 +50,50 @@ public class BallScript : MonoBehaviour
         if (Collide.gameObject.CompareTag("Deadzone"))
         {
 
+            force_X = Random.Range(0, 1);
+            force_Z = Random.Range(0, 1);
 
             ballPrefab.transform.position = Spawner.transform.position;
             lives--;
+
+            Debug.Log(lives);
+
             LifeOrbs();
 
 
-            if (lives <= 0)
-            {
 
-                Destroy(ballPrefab);
-            }
-        }
+                rb.AddForce(-force_X, 0, force_Z);
 
-        if (Collide.gameObject.CompareTag("Block")) {
 
-           Break.Play();
+
+
 
         }
 
+        if (Collide.gameObject.CompareTag("Block")) 
+        {
+
+            Break.Play();
+
+
+        }
+
+        else if (Collide.gameObject.CompareTag("LeftEnd"))
+        {
+
+            rb.AddForce(-force_X + endPower, 0, force_Z+ endPower);
+        }
+
+        else if (Collide.gameObject.CompareTag("RightEnd"))
+        {
+            rb.AddForce(force_X + endPower, 0, force_Z + endPower);
+
+        }
+        if (lives <= 0)
+        {
+
+            Destroy(ballPrefab);
+        }
 
 
     }
