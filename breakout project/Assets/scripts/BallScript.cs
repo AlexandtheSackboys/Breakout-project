@@ -13,13 +13,13 @@ public class BallScript : MonoBehaviour
 
 
     public GameObject ballPrefab;
-    public Transform Spawner;
+    public Transform spawner;
 
-    public float endPower; // adds power to each end of the paddle
+    public float bounceBack; // adds power to each end of the paddle
 
     public GameObject life_Orbs;
-    public float lives = 3f;
-    public Transform OrbSpawner;
+    public float lives;
+    public Transform orbSpawner;
 
 
 
@@ -44,16 +44,14 @@ public class BallScript : MonoBehaviour
 
 
 
-    private void OnCollisionEnter(Collision Collide)
+    private void OnCollisionEnter(Collision collide)
     {
 
-        if (Collide.gameObject.CompareTag("Deadzone"))
+        if (collide.gameObject.CompareTag("Deadzone"))
         {
 
-            force_X = Random.Range(0, 1);
-            force_Z = Random.Range(0, 1);
 
-            ballPrefab.transform.position = Spawner.transform.position;
+            ballPrefab.transform.position = spawner.transform.position;
             lives--;
 
             Debug.Log(lives);
@@ -62,38 +60,34 @@ public class BallScript : MonoBehaviour
 
 
 
-                rb.AddForce(-force_X, 0, force_Z);
+            rb.AddForce(-force_X/4, 0, force_Z/4);
 
 
 
+            if (lives <= 0)
+            {
 
+                Destroy(ballPrefab);
+            }
 
         }
 
-        if (Collide.gameObject.CompareTag("Block")) 
+        else if (collide.gameObject.CompareTag("Block"))
         {
 
+            rb.AddForce(bounceBack / 4, 0, bounceBack/ 4);
             Break.Play();
 
 
         }
 
-        else if (Collide.gameObject.CompareTag("LeftEnd"))
-        {
 
-            rb.AddForce(-force_X + endPower, 0, force_Z+ endPower);
+
+        else if (collide.gameObject.CompareTag("Barrier"))  
+        { 
+            rb.AddForce(-bounceBack, 0, -bounceBack); 
         }
 
-        else if (Collide.gameObject.CompareTag("RightEnd"))
-        {
-            rb.AddForce(force_X + endPower, 0, force_Z + endPower);
-
-        }
-        if (lives <= 0)
-        {
-
-            Destroy(ballPrefab);
-        }
 
 
     }
@@ -101,7 +95,7 @@ public class BallScript : MonoBehaviour
     void LifeOrbs() {
 
         // Destroy any existing life orbs to avoid duplicates
-        foreach (Transform child in OrbSpawner)
+        foreach (Transform child in orbSpawner)
         {
             Destroy(child.gameObject);
         }
@@ -109,7 +103,7 @@ public class BallScript : MonoBehaviour
         for (int i = 0; i < lives; i++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(life_Orbs, OrbSpawner.position - new Vector3(i*2, 0, 0), Quaternion.identity, OrbSpawner);
+            Instantiate(life_Orbs, orbSpawner.position - new Vector3(i*2, 0, 0), Quaternion.identity, orbSpawner);
         }
     }
 }

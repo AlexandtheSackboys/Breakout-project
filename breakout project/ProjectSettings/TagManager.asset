@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Wall
   - Deadzone
   - Ball
   - Block
-  - LeftEnd
-  - RightEnd
+  - Barrier
   layers:
   - Default
   - TransparentFX
