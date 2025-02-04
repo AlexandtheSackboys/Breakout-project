@@ -8,7 +8,7 @@ public class Paddle_Controller : MonoBehaviour
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;
-
+    [SerializeField] private AudioSource hit;
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -61,6 +61,13 @@ public class Paddle_Controller : MonoBehaviour
         rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            hit.Play();
 
+        }
+    }
 
 }

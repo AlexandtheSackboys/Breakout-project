@@ -7,15 +7,15 @@ public class BallScript : MonoBehaviour
 
     public Rigidbody rb;
 
-    public  float force_X;
-    public float force_Z;
+    [Range(-1250,1250)]public  float force_X;
+    [Range(-1250, 1250)] public float force_Z;
+    [Range(0, 10)] public float bounceBack; // adds power to each end of the paddle
 
 
 
-    public GameObject ballPrefab;
     public Transform spawner;
 
-    public float bounceBack; // adds power to each end of the paddle
+
 
     public GameObject life_Orbs;
     public float lives;
@@ -23,7 +23,6 @@ public class BallScript : MonoBehaviour
 
 
 
-    [SerializeField] private AudioSource Break;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,7 +50,7 @@ public class BallScript : MonoBehaviour
         {
 
 
-            ballPrefab.transform.position = spawner.transform.position;
+            gameObject.transform.position = spawner.transform.position;
             lives--;
 
             Debug.Log(lives);
@@ -60,14 +59,14 @@ public class BallScript : MonoBehaviour
 
 
 
-            rb.AddForce(-force_X/4, 0, force_Z/4);
+            rb.AddForce(-force_X/8, 0, force_Z/8);
 
 
 
             if (lives <= 0)
             {
 
-                Destroy(ballPrefab);
+                Destroy(gameObject);
             }
 
         }
@@ -76,7 +75,7 @@ public class BallScript : MonoBehaviour
         {
 
             rb.AddForce(bounceBack / 4, 0, bounceBack/ 4);
-            Break.Play();
+
 
 
         }
@@ -88,6 +87,11 @@ public class BallScript : MonoBehaviour
             rb.AddForce(-bounceBack, 0, -bounceBack); 
         }
 
+        else if (collide.gameObject.CompareTag("Contingency"))
+        {
+
+            gameObject.transform.position = spawner.transform.position;
+        }
 
 
     }

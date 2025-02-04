@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Block
   - Barrier
+  - Contingency
   layers:
   - Default
   - TransparentFX
