@@ -399,7 +399,6 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Assets/Powerup.cs"
 "Assets/scripts/BallScript.cs"
 "Assets/scripts/blockWall.cs"
 "Assets/scripts/DestroyParticles.cs"
@@ -409,6 +408,7 @@
 "Assets/scripts/PauseMenu.cs"
 "Assets/scripts/Perspective_Change.cs"
 "Assets/scripts/PlayerPause.cs"
+"Assets/scripts/Powerup.cs"
 "Assets/scripts/ScoreSystem.cs"
 "Assets/Utilities/PlayerInput.cs"
 -langversion:9.0

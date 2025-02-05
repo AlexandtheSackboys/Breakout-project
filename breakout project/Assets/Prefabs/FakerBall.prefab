@@ -150,9 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4142728517695188205}
-  magnitude_X: 25
-  magnitude_Z: 10
+  magnitude_X: 750
+  magnitude_Z: 850
   temp_hits: 3
   player: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
-  destination: {fileID: 3381390289433780871, guid: c205636e6da77b3469c197191577a1ab, type: 3}
-  spawner: {fileID: 0}

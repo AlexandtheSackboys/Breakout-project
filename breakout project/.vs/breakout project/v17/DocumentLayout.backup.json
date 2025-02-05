@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\fakerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fakerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FakerScript.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\FakerScript.cs",
-              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs",
-              "RelativeToolTip": "Assets\\scripts\\FakerScript.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs*",
+              "RelativeToolTip": "Assets\\scripts\\FakerScript.cs*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwBgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T12:52:23.589Z",
               "EditorCaption": ""
@@ -81,13 +81,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Paddle_Controller.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Paddle_Controller.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Paddle_Controller.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Paddle_Controller.cs",
               "RelativeToolTip": "Assets\\scripts\\Paddle_Controller.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAqwFEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T13:36:41.48Z",
               "EditorCaption": ""

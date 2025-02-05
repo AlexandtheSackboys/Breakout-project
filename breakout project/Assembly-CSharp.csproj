@@ -62,8 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\blockWall.cs" />
-    <Compile Include="Assets\Powerup.cs" />
     <Compile Include="Assets\scripts\ScoreSystem.cs" />
+    <Compile Include="Assets\scripts\Powerup.cs" />
     <Compile Include="Assets\scripts\Perspective_Change.cs" />
     <Compile Include="Assets\scripts\BallScript.cs" />
     <Compile Include="Assets\scripts\PlayerPause.cs" />

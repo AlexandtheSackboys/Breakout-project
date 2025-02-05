@@ -5,8 +5,8 @@ public class FakerScript : MonoBehaviour
 
     public Rigidbody rb;
 
-    [Range(-25, 25)] public float magnitude_X;
-    [Range(10, 25)] public float magnitude_Z;
+    [Range(-1250, 1250)] public float magnitude_X;
+    [Range(-1250, 1250)] public float magnitude_Z;
     [Range(1, 5)] public int temp_hits;
     public Paddle_Controller player;
    // public Transform destination;
@@ -21,7 +21,7 @@ public class FakerScript : MonoBehaviour
     {
         // applies forces to the x and z directions
        
-        rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
+        rb.AddForce(magnitude_X, 0, magnitude_Z);
 
 
 
@@ -64,10 +64,10 @@ public class FakerScript : MonoBehaviour
         
 
         Rigidbody fakerRb = Instantiate(rb, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-        fakerRb.AddForce(Random.onUnitSphere * 25.0f, ForceMode.Impulse);
+        fakerRb.AddForce(magnitude_X,0,magnitude_Z);
         
         Rigidbody fakerRb2 = Instantiate(rb, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-        fakerRb2.AddForce(Random.onUnitSphere * -25.0f, ForceMode.Impulse);
+        fakerRb2.AddForce(-magnitude_X, 0, magnitude_Z);
 
 
         player.splitActivate = false;
