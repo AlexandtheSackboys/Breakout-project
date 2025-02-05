@@ -9,6 +9,7 @@ TagManager:
   - Block
   - Barrier
   - Contingency
+  - Item
   layers:
   - Default
   - TransparentFX

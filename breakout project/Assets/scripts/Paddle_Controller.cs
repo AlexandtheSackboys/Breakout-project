@@ -1,13 +1,20 @@
+using Unity.VisualScripting;
 using UnityEditor.Timeline;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Paddle_Controller : MonoBehaviour
 {
-    [Range(5000,30000)] public float speed;
+    [SerializeField][Range(5000,30000)] private float speed;
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;
+    
+    [HideInInspector] public bool splitActivate = false;
+
+
+    public FakerScript temporary;
+
     [SerializeField] private AudioSource hit;
     public void OnMove(InputValue value)
     {
@@ -67,7 +74,32 @@ public class Paddle_Controller : MonoBehaviour
         {
             hit.Play();
 
+
+        }
+
+        else if (collision.gameObject.CompareTag("Item"))
+        {
+            temporary.Split();
+          
         }
     }
+    public void ActivatePowerUp()
+    {
+        Debug.Log("Split ball status" + splitActivate);
+
+        if (splitActivate == false)
+        {
+            int powerUp = Random.Range(1, 3);
+            Debug.Log(powerUp);
+            if (powerUp == 1)
+            {
+                splitActivate = true;
+                //powerup.text = "Rapid Fire";
+            }
+
+        }
+    }
+
+
 
 }

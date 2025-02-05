@@ -150,10 +150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 672696301743391456}
-  Force_X: -850
-  Force_Z: 750
-  ballPrefab: {fileID: 8248931233455399578}
-  Spawner: {fileID: 0}
+  magnitude_X: 0
+  magnitude_Z: 10
+  spawner: {fileID: 0}
   life_Orbs: {fileID: 0}
   lives: 5
-  OrbSpawner: {fileID: 0}
+  orbSpawner: {fileID: 0}
