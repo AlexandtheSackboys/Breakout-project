@@ -15,11 +15,13 @@ public class Paddle_Controller : MonoBehaviour
     private Animator tilt;
 
 
+    public GameObject perspective_1st;
+    public Perspective_Change cameraChange;
     public GameObject ballPrefab;
     public Rigidbody ballRb;
     public GameObject recallPoint;
 
-
+    
     [HideInInspector] public bool splitActivate = false;
 
 
@@ -40,6 +42,7 @@ public class Paddle_Controller : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         tilt = GetComponent<Animator>();
 
+       
     }
 
     // Update is called once per frame   
@@ -112,7 +115,7 @@ public class Paddle_Controller : MonoBehaviour
         }
     }
 
-    IEnumerator Aim_time()
+    public IEnumerator Aim_time()
     {
         // recallpoint will be the ballSpawner child GameObject
         ballPrefab.transform.position = recallPoint.transform.position;
@@ -122,7 +125,12 @@ public class Paddle_Controller : MonoBehaviour
         ballRb.constraints = RigidbodyConstraints.FreezePositionX 
             | RigidbodyConstraints.FreezePositionY 
             | RigidbodyConstraints.FreezePositionZ; //causes the rigidbodys position in all 3 directions to freeze
+        
+        cameraChange.Camera.transform.position = perspective_1st.transform.position;
 
+        cameraChange.Camera.transform.rotation = perspective_1st.transform.rotation;
+
+        cameraChange.Camera.transform.SetParent(perspective_1st.transform, true); // makes the gameobject a child of the refrenced game object
         yield return new WaitForSecondsRealtime(timeTilRelease);
 
         Debug.Log("Recall");
@@ -130,6 +138,12 @@ public class Paddle_Controller : MonoBehaviour
         ballPrefab.transform.SetParent(null); // sperate child and parent game object
 
         ballRb.constraints = RigidbodyConstraints.FreezePositionY; //causes the rigidbodys position in the y directions to freeze
+
+        cameraChange.Camera.transform.SetParent(null); // sperate child and parent game object
+
+        cameraChange.Camera.transform.position =cameraChange.Perspective_3rd.transform.position;
+
+        cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
         StopCoroutine(Aim_time());
