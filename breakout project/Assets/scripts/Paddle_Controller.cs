@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEditor.Timeline;
 using UnityEngine;
@@ -6,10 +7,19 @@ using UnityEngine.InputSystem;
 public class Paddle_Controller : MonoBehaviour
 {
     [SerializeField][Range(5000,30000)] private float speed;
+    [Range(20,30)] public float ball_releaseSpeed;
+    [Range(3, 10)] public float timeTilRelease;
+    
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;
-    
+
+
+    public GameObject ballPrefab;
+    public Rigidbody ballRb;
+    public GameObject recallPoint;
+
+
     [HideInInspector] public bool splitActivate = false;
 
 
@@ -19,7 +29,7 @@ public class Paddle_Controller : MonoBehaviour
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
-        Debug.Log("Call");
+
     }
 
 
@@ -79,7 +89,9 @@ public class Paddle_Controller : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Item"))
         {
-            temporary.Split();
+            StartCoroutine(Aim_time());
+
+            //temporary.Spread();
           
         }
     }
@@ -100,6 +112,31 @@ public class Paddle_Controller : MonoBehaviour
         }
     }
 
+    IEnumerator Aim_time()
+    {
+        // recallpoint will be the ballSpawner child GameObject
+        ballPrefab.transform.position = recallPoint.transform.position;
+
+        ballPrefab.transform.SetParent(recallPoint.transform,true); // makes the gameobject a child of the refrenced game object
+        
+        ballRb.constraints = RigidbodyConstraints.FreezePositionX 
+            | RigidbodyConstraints.FreezePositionY 
+            | RigidbodyConstraints.FreezePositionZ; //causes the rigidbodys position in all 3 directions to freeze
+
+        yield return new WaitForSecondsRealtime(timeTilRelease);
+
+        Debug.Log("Recall");
+
+        ballPrefab.transform.SetParent(null); // sperate child and parent game object
+
+        ballRb.constraints = RigidbodyConstraints.FreezePositionY; //causes the rigidbodys position in the y directions to freeze
+
+        ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
+        StopCoroutine(Aim_time());
+
+
+    }
+       
 
 
 }

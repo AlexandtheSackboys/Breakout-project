@@ -59,7 +59,7 @@ public class FakerScript : MonoBehaviour
             }
         }
     }
-    public void Split()
+    public void Spread()
     {
         
 

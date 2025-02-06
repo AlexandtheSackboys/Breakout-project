@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,14 +41,18 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FakerScript.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\FakerScript.cs",
-              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs*",
-              "RelativeToolTip": "Assets\\scripts\\FakerScript.cs*",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwBgAAAAKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\FakerScript.cs",
+              "RelativeToolTip": "Assets\\scripts\\FakerScript.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T12:52:23.589Z",
               "EditorCaption": ""
@@ -87,7 +91,7 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\Paddle_Controller.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Paddle_Controller.cs",
               "RelativeToolTip": "Assets\\scripts\\Paddle_Controller.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T13:36:41.48Z",
               "EditorCaption": ""

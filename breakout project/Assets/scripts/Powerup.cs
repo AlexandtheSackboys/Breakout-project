@@ -10,7 +10,7 @@ public class Powerup : MonoBehaviour
         {
             collision.gameObject.GetComponent<Paddle_Controller>().ActivatePowerUp();
             Destroy(gameObject);
-            //clone_Spawn.Split();
+
         }
     }
 
@@ -21,6 +21,6 @@ public class Powerup : MonoBehaviour
 
     public void CannotBeAccessed()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

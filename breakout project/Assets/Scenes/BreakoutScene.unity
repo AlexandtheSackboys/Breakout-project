@@ -6393,7 +6393,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
   m_PrefabInstance: {fileID: 1535034384}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1931779173}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c839c3ec02b3ef04382bd74e42eb887c, type: 3}
@@ -9031,6 +9031,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 672696301743391456, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: force_X
       value: -750
@@ -9047,6 +9051,10 @@ PrefabInstance:
       propertyPath: life_Orbs
       value: 
       objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: temp_hits
       value: 1
@@ -9076,6 +9084,18 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0375764
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0375764
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0375764
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7358
       objectReference: {fileID: 0}
@@ -9093,15 +9113,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9928,6 +9948,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905659874}
   m_CullTransparentMesh: 1
+--- !u!1 &1931779173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8248931233455399578, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+  m_PrefabInstance: {fileID: 1535034384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1972831687
 GameObject:
   m_ObjectHideFlags: 0
@@ -10692,6 +10717,10 @@ PrefabInstance:
       value: 15000
       objectReference: {fileID: 0}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: ballRb
+      value: 
+      objectReference: {fileID: 955869389}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: ballClone
       value: 
       objectReference: {fileID: 877313867}
@@ -10700,6 +10729,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1019975939899639432, guid: 0b0a6e69fba9ad946bff2d4ce3d135b9, type: 3}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: ballPrefab
+      value: 
+      objectReference: {fileID: 1931779173}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: ball_Power
+      value: 
+      objectReference: {fileID: 955869388}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: clonePower
       value: 
       objectReference: {fileID: 955869388}
@@ -10707,6 +10744,22 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 955869389}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: recallPoint
+      value: 
+      objectReference: {fileID: 877313867}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: releaseSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: timeTilRelease
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: ball_releaseSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10822,5 +10875,5 @@ SceneRoots:
   - {fileID: 8745154}
   - {fileID: 773291832}
   - {fileID: 178091735}
-  - {fileID: 1535034384}
   - {fileID: 903784623}
+  - {fileID: 1535034384}
