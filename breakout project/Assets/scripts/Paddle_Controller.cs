@@ -146,9 +146,9 @@ public class Paddle_Controller : MonoBehaviour
             | RigidbodyConstraints.FreezePositionY 
             | RigidbodyConstraints.FreezePositionZ; //causes the rigidbodys position in all 3 directions to freeze
         
-        cameraChange.Camera.transform.position = perspective_1st.transform.position;
-
+        cameraChange.Camera.transform.position = perspective_1st.transform.position; 
         cameraChange.Camera.transform.rotation = perspective_1st.transform.rotation;
+        // changes perspective of camera when power up is activated in the two lines above
 
         cameraChange.Camera.transform.SetParent(perspective_1st.transform, true); // makes the gameobject a child of the refrenced game object
         yield return new WaitForSecondsRealtime(timeTilRelease);
@@ -163,8 +163,8 @@ public class Paddle_Controller : MonoBehaviour
         cameraChange.Camera.transform.SetParent(null); // sperate child and parent game object
 
         cameraChange.Camera.transform.position = cameraChange.Perspective_3rd.transform.position;
-
         cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
+        // changes camera perspective back to 3rd person in the two lines above
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
         aimActivate = false;
@@ -179,10 +179,12 @@ public class Paddle_Controller : MonoBehaviour
         Debug.Log("Scaling");
         left_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
         right_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
-        
+        // entends the paddle ends by the x axis
+
         speed = speed / slowDown;
         rigidbody.linearVelocity = new Vector3(moveInput.x * speed *  Time.deltaTime, 0, 0);
-
+        // changes the movement speed of the player
+        
         yield return new WaitForSecondsRealtime(10);
 
 
@@ -191,7 +193,7 @@ public class Paddle_Controller : MonoBehaviour
         // pevious two lines return paddle ends to original scale values
         
         speed = speed * slowDown;
-        rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
+        rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);// returns player speed back to normal
         extendActivate = false;
         StopCoroutine(scaleUp());
 
