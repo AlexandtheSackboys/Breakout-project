@@ -7,9 +7,11 @@ using UnityEngine.InputSystem;
 public class Paddle_Controller : MonoBehaviour
 {
     [SerializeField][Range(5000,30000)] private float speed;
-    [Range(20,30)] public float ball_releaseSpeed;
-    [Range(3, 10)] public float timeTilRelease;
-    
+    [SerializeField][Range(20,30)] private float ball_releaseSpeed;
+    [SerializeField][Range(3, 10)] private float timeTilRelease;
+    [SerializeField][Range(0.5f,2.5f)] private float paddle_Extension;
+    [SerializeField][Range(2,8)] private float slowDown;
+
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;
@@ -21,7 +23,10 @@ public class Paddle_Controller : MonoBehaviour
     public Rigidbody ballRb;
     public GameObject recallPoint;
 
-    
+    public GameObject left_PaddleEnd;
+    public GameObject right_PaddleEnd;
+
+
     [HideInInspector] public bool splitActivate = false;
 
 
@@ -79,6 +84,8 @@ public class Paddle_Controller : MonoBehaviour
 
         }
         rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
+
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -92,10 +99,12 @@ public class Paddle_Controller : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Item"))
         {
-            StartCoroutine(Aim_time());
+
+            StartCoroutine(scaleUp());
+            //StartCoroutine(Aim_time());
 
             //temporary.Spread();
-          
+
         }
     }
     public void ActivatePowerUp()
@@ -141,16 +150,35 @@ public class Paddle_Controller : MonoBehaviour
 
         cameraChange.Camera.transform.SetParent(null); // sperate child and parent game object
 
-        cameraChange.Camera.transform.position =cameraChange.Perspective_3rd.transform.position;
+        cameraChange.Camera.transform.position = cameraChange.Perspective_3rd.transform.position;
 
         cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
         StopCoroutine(Aim_time());
+        
 
 
     }
-       
 
+    public IEnumerator scaleUp()
+    {
+        Debug.Log("Scaling");
+        left_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
+        right_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
+        
+        speed = speed / slowDown;
+        rigidbody.linearVelocity = new Vector3(moveInput.x * speed *  Time.deltaTime, 0, 0);
+        
+        yield return new WaitForSecondsRealtime(10);
+
+        left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+        right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+        speed = speed * slowDown;
+        rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
+
+
+
+    }
 
 }
