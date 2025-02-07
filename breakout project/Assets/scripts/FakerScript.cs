@@ -68,9 +68,9 @@ public class FakerScript : MonoBehaviour
         
         Rigidbody fakerRb2 = Instantiate(rb, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
         fakerRb2.AddForce(-magnitude_X, 0, magnitude_Z);
+        player.spreadActivate = false;
 
 
-        player.splitActivate = false;
 
 
     }

@@ -27,7 +27,10 @@ public class Paddle_Controller : MonoBehaviour
     public GameObject right_PaddleEnd;
 
 
-    [HideInInspector] public bool splitActivate = false;
+
+    [HideInInspector] public bool spreadActivate = false;
+    private bool aimActivate = false;
+    private bool extendActivate = false;
 
 
     public FakerScript temporary;
@@ -97,29 +100,37 @@ public class Paddle_Controller : MonoBehaviour
 
         }
 
-        else if (collision.gameObject.CompareTag("Item"))
-        {
-
-            StartCoroutine(scaleUp());
-            //StartCoroutine(Aim_time());
-
-            //temporary.Spread();
-
-        }
     }
     public void ActivatePowerUp()
     {
-        Debug.Log("Split ball status" + splitActivate);
 
-        if (splitActivate == false)
+
+        if (spreadActivate == false && aimActivate == false && extendActivate == false)
         {
-            int powerUp = Random.Range(1, 3);
+
+            int powerUp = Random.Range(1, 4);
             Debug.Log(powerUp);
             if (powerUp == 1)
             {
-                splitActivate = true;
-                //powerup.text = "Rapid Fire";
+                spreadActivate = true;
+                temporary.Spread();
+                
             }
+            else if (powerUp == 2)
+            {
+                aimActivate = true;
+                StartCoroutine(Aim_time());
+
+            }
+
+            else if (powerUp == 3)
+            {
+                extendActivate = true;
+                StartCoroutine(scaleUp());
+
+
+            }
+
 
         }
     }
@@ -142,6 +153,7 @@ public class Paddle_Controller : MonoBehaviour
         cameraChange.Camera.transform.SetParent(perspective_1st.transform, true); // makes the gameobject a child of the refrenced game object
         yield return new WaitForSecondsRealtime(timeTilRelease);
 
+
         Debug.Log("Recall");
 
         ballPrefab.transform.SetParent(null); // sperate child and parent game object
@@ -155,6 +167,7 @@ public class Paddle_Controller : MonoBehaviour
         cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
+        aimActivate = false;
         StopCoroutine(Aim_time());
         
 
@@ -169,14 +182,18 @@ public class Paddle_Controller : MonoBehaviour
         
         speed = speed / slowDown;
         rigidbody.linearVelocity = new Vector3(moveInput.x * speed *  Time.deltaTime, 0, 0);
-        
+
         yield return new WaitForSecondsRealtime(10);
 
-        left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+
+        left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f); 
         right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+        // pevious two lines return paddle ends to original scale values
+        
         speed = speed * slowDown;
         rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
-
+        extendActivate = false;
+        StopCoroutine(scaleUp());
 
 
     }

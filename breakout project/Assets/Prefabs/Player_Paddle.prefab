@@ -193,14 +193,16 @@ MonoBehaviour:
   speed: 15000
   ball_releaseSpeed: 20
   timeTilRelease: 5
+  paddle_Extension: 0.75
+  slowDown: 7
   perspective_1st: {fileID: 4347302299981362828}
   cameraChange: {fileID: 0}
   ballPrefab: {fileID: 0}
   ballRb: {fileID: 0}
   recallPoint: {fileID: 1562819523564857535}
-  right_PaddleEnd: {fileID: 4327713104552020101}
-  left_PaddleEnd: {fileID: 0}
-  splitActivate: 0
+  left_PaddleEnd: {fileID: 4327713104552020101}
+  right_PaddleEnd: {fileID: 571249084119475177}
+  spreadActivate: 0
   temporary: {fileID: 1019975939899639432, guid: 0b0a6e69fba9ad946bff2d4ce3d135b9, type: 3}
   hit: {fileID: 6120899642886271083}
 --- !u!114 &7754972580047524949

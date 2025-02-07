@@ -21,6 +21,6 @@ public class Powerup : MonoBehaviour
 
     public void CannotBeAccessed()
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }
