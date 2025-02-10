@@ -152,7 +152,9 @@ MonoBehaviour:
   rb: {fileID: 672696301743391456}
   magnitude_X: 0
   magnitude_Z: 10
+  temp_hits: 1
   spawner: {fileID: 0}
+  item: {fileID: 0}
   life_Orbs: {fileID: 0}
   lives: 5
   orbSpawner: {fileID: 0}

@@ -13,6 +13,7 @@ public class BallScript : MonoBehaviour
     
     public Transform spawner;
 
+    public Powerup item;
     public GameObject life_Orbs;
     public float lives;
     public Transform orbSpawner;
@@ -58,8 +59,11 @@ public class BallScript : MonoBehaviour
             rb.linearVelocity = new Vector3(-magnitude_X, 0, magnitude_Z);
 
 
-
-            if (lives <= 0)
+            if (lives <= 2 && lives > 0) 
+            { 
+                item.Spawn();  
+            }
+           else if (lives <= 0)
             {
 
                 Destroy(gameObject);

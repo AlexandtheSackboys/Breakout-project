@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\playerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoresystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\playerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerpause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ScoreSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\ScoreSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\ScoreSystem.cs",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\ScoreSystem.cs",
+              "RelativeToolTip": "Assets\\scripts\\ScoreSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T16:04:45.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerPause.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\PlayerPause.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerPause.cs",
@@ -56,25 +73,27 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\Powerup.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Powerup.cs",
               "RelativeToolTip": "Assets\\scripts\\Powerup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T10:05:24.651Z"
+              "WhenOpened": "2025-02-06T10:05:24.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BallScript.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\BallScript.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\BallScript.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\BallScript.cs",
               "RelativeToolTip": "Assets\\scripts\\BallScript.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowD4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:40:12.03Z"
+              "WhenOpened": "2025-02-03T15:40:12.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Paddle_Controller.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Paddle_Controller.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Paddle_Controller.cs",
