@@ -4,7 +4,8 @@ public class blockWall : MonoBehaviour
 {
     public float hitpoints;
     private ScoreSystem scoreSystem; // reference game manager
-    public GameObject Debris;
+    public GameObject debris;
+
     [SerializeField] private AudioSource Break;
 
     private void Start()
@@ -18,8 +19,9 @@ public class blockWall : MonoBehaviour
 
             hitpoints--;
             Break.Play();
+     
             if (hitpoints == 0) {
-                Debris.transform.position = gameObject.transform.position;
+                debris.transform.position = gameObject.transform.position;
                 BlockGone();
 
 
@@ -36,7 +38,7 @@ public class blockWall : MonoBehaviour
 
         }
         Destroy(gameObject); // game object is no longer in scene
-        Instantiate(Debris);
+        Instantiate(debris);
 
 
     }

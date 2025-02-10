@@ -105,7 +105,7 @@ public class Paddle_Controller : MonoBehaviour
     {
 
 
-        if (spreadActivate == false && aimActivate == false && extendActivate == false)
+        if (spreadActivate == false || aimActivate == false || extendActivate == false)
         {
 
             int powerUp = Random.Range(1, 4);
@@ -114,6 +114,7 @@ public class Paddle_Controller : MonoBehaviour
             {
                 spreadActivate = true;
                 temporary.Spread();
+
                 
             }
             else if (powerUp == 2)

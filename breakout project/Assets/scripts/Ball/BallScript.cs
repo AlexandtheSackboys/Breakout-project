@@ -17,7 +17,7 @@ public class BallScript : MonoBehaviour
     public GameObject life_Orbs;
     public float lives;
     public Transform orbSpawner;
-
+    public ScoreSystem itemTrack;
 
 
 
@@ -59,11 +59,11 @@ public class BallScript : MonoBehaviour
             rb.linearVelocity = new Vector3(-magnitude_X, 0, magnitude_Z);
 
 
-            if (lives <= 2 && lives > 0) 
-            { 
-                item.Spawn();  
+            if (lives <= 2 && lives > 0)
+            {
+                item.Spawn();
             }
-           else if (lives <= 0)
+            else if (lives <= 0)
             {
 
                 Destroy(gameObject);
@@ -78,6 +78,8 @@ public class BallScript : MonoBehaviour
                 rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
                 gameObject.transform.position = spawner.transform.position;
             }
+
+
 
 
         } 
@@ -98,4 +100,10 @@ public class BallScript : MonoBehaviour
                 Instantiate(life_Orbs, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
             }
         }
+
+
+
+    
+
+
 }

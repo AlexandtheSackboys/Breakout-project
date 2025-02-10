@@ -1,19 +1,24 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class ScoreSystem : MonoBehaviour
 {
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
-    private int ScoreCount = 0;
+    [HideInInspector] public int scoreCount = 0;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         UpdateScoreText();
     }
 
     public void BlockDestroy()
     {
-        ScoreCount++; // adds a value with to the Score when destroyed
+        scoreCount++; // adds a value with to the Score when destroyed
         UpdateScoreText();
     }
 
@@ -21,7 +26,7 @@ public class ScoreSystem : MonoBehaviour
     {
         if (ScoreCountText != null)
         {
-            ScoreCountText.text = "Score: " + ScoreCount.ToString(); // update the Score text when block has Disappeard 
+            ScoreCountText.text = "Score: " + scoreCount.ToString(); // update the Score text when block has Disappeard 
         }
     }
 
