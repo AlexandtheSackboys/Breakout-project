@@ -242,6 +242,8 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 346789354}
   PauseText: {fileID: 1159776502}
   player: {fileID: 7971283828256552064}
+  pausePower_Ups: {fileID: 7971283828256552070}
+  isPaused: 0
 --- !u!1 &16274746
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &60089581
 BoxCollider:
@@ -535,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &95236677
 BoxCollider:
@@ -659,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &102995663
 BoxCollider:
@@ -929,7 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &168480866
 BoxCollider:
@@ -1086,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &181152993
 BoxCollider:
@@ -1210,7 +1212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &188345052
 BoxCollider:
@@ -1763,7 +1765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &300074773
 BoxCollider:
@@ -2043,7 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &377482173
 BoxCollider:
@@ -2247,7 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &442369898
 BoxCollider:
@@ -2408,7 +2410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &456380452
 BoxCollider:
@@ -2532,7 +2534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &461906069
 BoxCollider:
@@ -2656,7 +2658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &488501427
 BoxCollider:
@@ -2780,7 +2782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &500645487
 BoxCollider:
@@ -2904,7 +2906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &539629871
 BoxCollider:
@@ -3028,7 +3030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &551620785
 BoxCollider:
@@ -3152,7 +3154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &573854840
 BoxCollider:
@@ -3292,7 +3294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &622050991
 BoxCollider:
@@ -3647,7 +3649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &695598397
 BoxCollider:
@@ -3853,7 +3855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &706202590
 BoxCollider:
@@ -3977,7 +3979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &712669840
 BoxCollider:
@@ -4209,7 +4211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &753813919
 BoxCollider:
@@ -4684,7 +4686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &818395676
 BoxCollider:
@@ -4808,7 +4810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &836733960
 BoxCollider:
@@ -4932,7 +4934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &848432639
 BoxCollider:
@@ -5056,7 +5058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &856518806
 BoxCollider:
@@ -5180,7 +5182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &863978410
 BoxCollider:
@@ -5304,7 +5306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &870852183
 BoxCollider:
@@ -5428,7 +5430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &888631265
 BoxCollider:
@@ -5552,7 +5554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &895980235
 BoxCollider:
@@ -5784,7 +5786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &938082279
 BoxCollider:
@@ -5913,7 +5915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &960468528
 BoxCollider:
@@ -6145,7 +6147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &988261939
 BoxCollider:
@@ -6511,7 +6513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1004514861
 BoxCollider:
@@ -6867,7 +6869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1075375283
 BoxCollider:
@@ -6991,7 +6993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1114827990
 BoxCollider:
@@ -7251,7 +7253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1196152635
 BoxCollider:
@@ -8160,7 +8162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 2
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1470287583
 BoxCollider:
@@ -8413,7 +8415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1530585581
 BoxCollider:
@@ -8805,7 +8807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1559555485
 BoxCollider:
@@ -8914,7 +8916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1562192993
 BoxCollider:
@@ -9174,7 +9176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1661579433
 BoxCollider:
@@ -9632,7 +9634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1876917350
 BoxCollider:
@@ -9897,7 +9899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &1972831689
 BoxCollider:
@@ -10403,7 +10405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitpoints: 1
-  debris: {fileID: 0}
+  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   Break: {fileID: 1825150657}
 --- !u!65 &2142932009
 BoxCollider:
@@ -10577,6 +10579,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1825150657}
     - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
+      propertyPath: debris
+      value: 
+      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+    - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: hitpoints
       value: 1
       objectReference: {fileID: 0}
@@ -10687,9 +10693,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 8745155}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: ballRb
       value: 
       objectReference: {fileID: 955869389}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: paused
+      value: 
+      objectReference: {fileID: 8745155}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: slowDown
       value: 7
@@ -10702,6 +10716,10 @@ PrefabInstance:
       propertyPath: cameraChange
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: timeTilShrink
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: left_PaddleEnd
       value: 
@@ -10724,6 +10742,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1149101340605170812, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
   m_PrefabInstance: {fileID: 7020511471675011324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7971283828256552070 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+  m_PrefabInstance: {fileID: 7020511471675011324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971283828256552064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f902045c71600d4b8c7e6801c54549b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8080309600708926597
 PrefabInstance:
   m_ObjectHideFlags: 0

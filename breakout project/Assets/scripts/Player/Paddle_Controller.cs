@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.VisualScripting;
+using UnityEditor.TerrainTools;
 using UnityEditor.Timeline;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,6 +10,7 @@ public class Paddle_Controller : MonoBehaviour
     [SerializeField][Range(5000,30000)] private float speed;
     [SerializeField][Range(20,30)] private float ball_releaseSpeed;
     [SerializeField][Range(3, 10)] private float timeTilRelease;
+    [SerializeField][Range(3, 10)] private float timeTilShrink;
     [SerializeField][Range(0.5f,2.5f)] private float paddle_Extension;
     [SerializeField][Range(2,8)] private float slowDown;
 
@@ -36,6 +38,13 @@ public class Paddle_Controller : MonoBehaviour
     public FakerScript temporary;
 
     [SerializeField] private AudioSource hit;
+    public PauseMenu paused;
+
+    // Timers
+    private float aimTimer = 0f;
+    private float scaleTimer = 0f;
+    private bool isAimActive = false;
+    private bool isScaleActive = false;
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -56,40 +65,57 @@ public class Paddle_Controller : MonoBehaviour
     // Update is called once per frame   
     void Update()
     {
-
-        
-        if (tilt != null)
-        {
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                    tilt.SetTrigger("TiltR_Open");
-
-            } // rotates the paddle in the right direction
-
-            else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow)) {
-                    tilt.SetTrigger("TiltR_Close");
-
-            } // returns paddle to original rotation from the right tilt animation
+            MovementHandler();
+            HandleTimers();
 
 
 
-            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                    tilt.SetTrigger("TiltL_Open");
+       
 
-            } // rotates the paddle in the left direction
-
-            else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-            {
-                    tilt.SetTrigger("TiltL_Close");
-
-            } // returns paddle to original rotation from the left tilt animation
-
-        }
-        rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
 
 
     }
+
+
+    private void MovementHandler()
+    {
+        if (tilt != null)
+        {
+            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+                tilt.SetTrigger("TiltR_Open");
+
+            else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
+                tilt.SetTrigger("TiltR_Close");
+
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+                tilt.SetTrigger("TiltL_Open");
+
+            else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
+                tilt.SetTrigger("TiltL_Close");
+
+            rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);
+        }
+    }
+
+    public void HandleTimers()
+    {
+        if (!paused.isPaused)
+        {
+            // Aim Timer
+            if (isAimActive && Time.time >= aimTimer)
+            {
+                Aim_time();
+            }
+
+            // Scale Timer
+            if (isScaleActive && Time.time >= scaleTimer)
+            {
+                ScaleUp();
+            }
+        }
+    }
+
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -101,6 +127,8 @@ public class Paddle_Controller : MonoBehaviour
         }
 
     }
+
+
     public void ActivatePowerUp()
     {
 
@@ -120,85 +148,87 @@ public class Paddle_Controller : MonoBehaviour
             else if (powerUp == 2)
             {
                 aimActivate = true;
-                StartCoroutine(Aim_time());
+                Aim_time();
+
 
             }
 
             else if (powerUp == 3)
             {
                 extendActivate = true;
-                StartCoroutine(scaleUp());
-
-
+                ScaleUp();
             }
 
 
         }
     }
 
-    public IEnumerator Aim_time()
+    public void Aim_time()
     {
-        // recallpoint will be the ballSpawner child GameObject
-        ballPrefab.transform.position = recallPoint.transform.position;
+        if (!isAimActive)
+        {
+            isAimActive = true;
+            aimTimer = Time.time + timeTilRelease; // will end power up when Time.time is equal to aimTimer as Time.time always counts up
 
-        ballPrefab.transform.SetParent(recallPoint.transform,true); // makes the gameobject a child of the refrenced game object
-        
-        ballRb.constraints = RigidbodyConstraints.FreezePositionX 
-            | RigidbodyConstraints.FreezePositionY 
-            | RigidbodyConstraints.FreezePositionZ; //causes the rigidbodys position in all 3 directions to freeze
-        
-        cameraChange.Camera.transform.position = perspective_1st.transform.position; 
-        cameraChange.Camera.transform.rotation = perspective_1st.transform.rotation;
-        // changes perspective of camera when power up is activated in the two lines above
+            Debug.Log("Time: " + Time.time);
+            Debug.Log("Aim Timer: " + aimTimer);
 
-        cameraChange.Camera.transform.SetParent(perspective_1st.transform, true); // makes the gameobject a child of the refrenced game object
-        yield return new WaitForSecondsRealtime(timeTilRelease);
+            ballPrefab.transform.position = recallPoint.transform.position;
+            ballPrefab.transform.SetParent(recallPoint.transform, true);
+            ballRb.constraints = RigidbodyConstraints.FreezeAll; // frezes rigidbody
 
+            cameraChange.Camera.transform.position = perspective_1st.transform.position;
+            cameraChange.Camera.transform.rotation = perspective_1st.transform.rotation;
+            cameraChange.Camera.transform.SetParent(perspective_1st.transform, true);
+            // changes camera perspective closer to the paddle
+            return;
+        }
+        Debug.Log("Aim Power-up Ended");
 
-        Debug.Log("Recall");
+        ballPrefab.transform.SetParent(null);
+        ballRb.constraints = RigidbodyConstraints.FreezePositionY; 
 
-        ballPrefab.transform.SetParent(null); // sperate child and parent game object
-
-        ballRb.constraints = RigidbodyConstraints.FreezePositionY; //causes the rigidbodys position in the y directions to freeze
-
-        cameraChange.Camera.transform.SetParent(null); // sperate child and parent game object
-
+        cameraChange.Camera.transform.SetParent(null);
         cameraChange.Camera.transform.position = cameraChange.Perspective_3rd.transform.position;
         cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
-        // changes camera perspective back to 3rd person in the two lines above
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
-        aimActivate = false;
-        StopCoroutine(Aim_time());
-        
-
+        isAimActive = false;
+        // causes padddle to return to its original state when Time.time is equal to aimTimer
 
     }
 
-    public IEnumerator scaleUp()
+
+
+
+    // Activate Scale Power-up
+    public void ScaleUp()
     {
-        Debug.Log("Scaling");
-        left_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
-        right_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
-        // entends the paddle ends by the x axis
+        if (!isScaleActive)
+        {
+            isScaleActive = true;
+            scaleTimer = Time.time + timeTilShrink; // will end power up when Time.time is equal to scaleTimer as Time.time always counts up
+            Debug.Log("Time: " + Time.time);
+            Debug.Log("Scale Timer: " + scaleTimer);
+            
 
-        speed = speed / slowDown;
-        rigidbody.linearVelocity = new Vector3(moveInput.x * speed *  Time.deltaTime, 0, 0);
-        // changes the movement speed of the player
+            left_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
+            right_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
+            // changes the length of the edges of the paddle
+            speed /= slowDown;
+            return;
+        }
         
-        yield return new WaitForSecondsRealtime(10);
+            Debug.Log("Scale Power-up Ended");
 
+            left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+            right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
 
-        left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f); 
-        right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
-        // pevious two lines return paddle ends to original scale values
-        
-        speed = speed * slowDown;
-        rigidbody.linearVelocity = new Vector3(moveInput.x * speed * Time.deltaTime, 0, 0);// returns player speed back to normal
-        extendActivate = false;
-        StopCoroutine(scaleUp());
-
-
+            speed *= slowDown;
+            isScaleActive = false;
+        // // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
+
 
 }
+
