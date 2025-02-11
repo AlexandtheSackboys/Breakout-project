@@ -193,7 +193,8 @@ MonoBehaviour:
   speed: 15000
   ball_releaseSpeed: 20
   timeTilRelease: 5
-  paddle_Extension: 0.75
+  timeTilShrink: 10
+  paddle_Extension: 1
   slowDown: 7
   perspective_1st: {fileID: 4347302299981362828}
   cameraChange: {fileID: 0}
@@ -205,6 +206,7 @@ MonoBehaviour:
   spreadActivate: 0
   temporary: {fileID: 1019975939899639432, guid: 0b0a6e69fba9ad946bff2d4ce3d135b9, type: 3}
   hit: {fileID: 6120899642886271083}
+  paused: {fileID: 0}
 --- !u!114 &7754972580047524949
 MonoBehaviour:
   m_ObjectHideFlags: 0

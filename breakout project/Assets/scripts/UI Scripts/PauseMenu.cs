@@ -5,7 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuUI; // Reference to the pause menu UI panel
     public GameObject PauseText;// Reference to the TextMeshProUGUI element for displaying controls
-    public GameObject player;
+
     public Paddle_Controller pausePower_Ups;
 
 
