@@ -43,7 +43,7 @@ public class Paddle_Controller : MonoBehaviour
     // Timers
     private float aimTimer = 0f;
     private float scaleTimer = 0f;
-    private bool isAimActive = false;
+    [HideInInspector] public bool isAimActive = false;
     private bool isScaleActive = false;
     public void OnMove(InputValue value)
     {
@@ -76,7 +76,7 @@ public class Paddle_Controller : MonoBehaviour
 
     }
 
-
+    // function below deals with animation and movement of paddle 
     private void MovementHandler()
     {
         if (tilt != null)
@@ -126,6 +126,12 @@ public class Paddle_Controller : MonoBehaviour
 
         }
 
+        /* if statement for testing
+        if(collision.gameObject.CompareTag("Item"))
+        {
+            Aim_time();
+        }
+        */
     }
 
 
@@ -189,8 +195,8 @@ public class Paddle_Controller : MonoBehaviour
         ballRb.constraints = RigidbodyConstraints.FreezePositionY; 
 
         cameraChange.Camera.transform.SetParent(null);
-        cameraChange.Camera.transform.position = cameraChange.Perspective_3rd.transform.position;
-        cameraChange.Camera.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
+        cameraChange.Camera.transform.position = cameraChange.perspective_3rd.transform.position;
+        cameraChange.Camera.transform.rotation = cameraChange.perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
         isAimActive = false;

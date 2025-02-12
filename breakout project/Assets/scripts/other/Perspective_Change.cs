@@ -2,36 +2,43 @@ using UnityEngine;
 
 public class Perspective_Change : MonoBehaviour
 {
-    private bool Camera_position;
+    private bool camera_Position;
     public GameObject Camera;
-    public GameObject Perspective_3rd;
-    public GameObject Perspective_OG;
+    public GameObject perspective_3rd;
+    public GameObject perspective_OG;
+    public Paddle_Controller fixedCamera_Aim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Camera.transform.position = Perspective_3rd.transform.position;
-        Camera.transform.rotation = Perspective_3rd.transform.rotation;
+        Camera.transform.position = perspective_3rd.transform.position;
+        Camera.transform.rotation = perspective_3rd.transform.rotation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && (Camera_position == true))
+        while (fixedCamera_Aim.isAimActive == false) 
+            /* this while loop above will make sure that the camera remains fixed
+             while the aim power up is active*/
         {
+            if (Input.GetKeyDown(KeyCode.Space) && (camera_Position == true))
+            {
 
-            Camera.transform.position = Perspective_3rd.transform.position;
+                Camera.transform.position = perspective_3rd.transform.position;
 
-            Camera.transform.rotation = Perspective_3rd.transform.rotation;
-            Camera_position = false;
+                Camera.transform.rotation = perspective_3rd.transform.rotation;
+                camera_Position = false;
 
-        }
-        else if (Input.GetKeyDown(KeyCode.Space) && (Camera_position == false))
-        {
-            Camera.transform.position = Perspective_OG.transform.position;
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && (camera_Position == false))
+            {
+                Camera.transform.position = perspective_OG.transform.position;
 
-            Camera.transform.rotation = Perspective_OG.transform.rotation;
-            Camera_position = true;
+                Camera.transform.rotation = perspective_OG.transform.rotation;
+                camera_Position = true;
+            }
+            return;
         }
 
 
