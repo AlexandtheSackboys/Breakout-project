@@ -11228,6 +11228,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8248931233455399578, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
   m_PrefabInstance: {fileID: 1535034384}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1931779174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+  m_PrefabInstance: {fileID: 1535034384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931779173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c839c3ec02b3ef04382bd74e42eb887c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1972831687
 GameObject:
   m_ObjectHideFlags: 0
@@ -12150,6 +12161,10 @@ PrefabInstance:
       propertyPath: timeTilShrink
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: lifeOrb_Increase
+      value: 
+      objectReference: {fileID: 1931779174}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: paddle_Extension
       value: 1

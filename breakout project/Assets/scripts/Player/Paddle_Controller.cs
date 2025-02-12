@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.TerrainTools;
 using UnityEditor.Timeline;
@@ -7,6 +8,7 @@ using UnityEngine.InputSystem;
 
 public class Paddle_Controller : MonoBehaviour
 {
+    // stats that can be edited in editor
     [SerializeField][Range(5000,30000)] private float speed;
     [SerializeField][Range(20,30)] private float ball_releaseSpeed;
     [SerializeField][Range(3, 10)] private float timeTilRelease;
@@ -14,37 +16,39 @@ public class Paddle_Controller : MonoBehaviour
     [SerializeField][Range(0.5f,2.5f)] private float paddle_Extension;
     [SerializeField][Range(2,8)] private float slowDown;
 
+    // effected by player input
     private new Rigidbody rigidbody;
     private Vector2 moveInput;
     private Animator tilt;
 
-
+    // player object references
     public GameObject perspective_1st;
     public Perspective_Change cameraChange;
+    public BallScript lifeOrb_Increase;
     public GameObject ballPrefab;
     public Rigidbody ballRb;
     public GameObject recallPoint;
-
     public GameObject left_PaddleEnd;
     public GameObject right_PaddleEnd;
 
 
-
+    // power up activation 
     [HideInInspector] public bool spreadActivate = false;
     private bool aimActivate = false;
     private bool extendActivate = false;
-
-
+    [HideInInspector] public bool isAimActive = false;
+    private bool isScaleActive = false;
+    private bool gather_LifeOrb = false;
+    
+    // other variables
     public FakerScript temporary;
-
     [SerializeField] private AudioSource hit;
     public PauseMenu paused;
 
     // Timers
     private float aimTimer = 0f;
     private float scaleTimer = 0f;
-    [HideInInspector] public bool isAimActive = false;
-    private bool isScaleActive = false;
+
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -126,12 +130,13 @@ public class Paddle_Controller : MonoBehaviour
 
         }
 
-        /* if statement for testing
-        if(collision.gameObject.CompareTag("Item"))
+        /* if statement for testing         
+        if (collision.gameObject.CompareTag("Item"))
         {
-            Aim_time();
+            life();
         }
         */
+
     }
 
 
@@ -139,19 +144,19 @@ public class Paddle_Controller : MonoBehaviour
     {
 
 
-        if (spreadActivate == false || aimActivate == false || extendActivate == false)
+        if (spreadActivate == false || aimActivate == false || extendActivate == false || gather_LifeOrb == false)
         {
 
-            int powerUp = Random.Range(1, 4);
-            Debug.Log(powerUp);
-            if (powerUp == 1)
+            int powerUp = Random.Range(0, 12);
+            Debug.Log("Power up number: "+ powerUp);
+            if (powerUp >= 1 && powerUp < 4)
             {
                 spreadActivate = true;
                 temporary.Spread();
 
-                
+
             }
-            else if (powerUp == 2)
+            else if (powerUp >= 4 && powerUp < 7)
             {
                 aimActivate = true;
                 Aim_time();
@@ -159,10 +164,16 @@ public class Paddle_Controller : MonoBehaviour
 
             }
 
-            else if (powerUp == 3)
+            else if (powerUp >= 7 && powerUp < 10)
             {
                 extendActivate = true;
                 ScaleUp();
+            }
+
+            else if (powerUp == 10 || powerUp == 11)
+            { 
+                gather_LifeOrb = true;
+                life();
             }
 
 
@@ -232,9 +243,15 @@ public class Paddle_Controller : MonoBehaviour
 
             speed *= slowDown;
             isScaleActive = false;
-        // // causes padddle to return to its original state when Time.time is equal to scaleTimer
+        // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
 
+    public void life()
+    {
+        lifeOrb_Increase.lives++;
+        lifeOrb_Increase.lifeOrbs();        
+        gather_LifeOrb = false;
+    }
 
 }
 

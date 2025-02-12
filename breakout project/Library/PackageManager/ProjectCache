@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638727128412841422
-    m_Hash: 1649812518
+      ticks: 638749591360787184
+    m_Hash: 2822115663
   m_LockFileStatus:
     m_FilePath: C:/Users/Student/Desktop/game builds/Breakout-project/breakout project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638727128678252420
-    m_Hash: 4008328779
+      ticks: 638749591360861847
+    m_Hash: 1042690032
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,216 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/Student/Desktop/game builds/Breakout-project/breakout project/Packages
 m_EditorVersion: 6000.0.33f1 (433b0a79340b)
 m_ResolvedPackages:
+- packageId: com.unity.cinemachine@3.1.3
+  testable: 0
+  isDirectDependency: 1
+  version: 3.1.3
+  source: 1
+  resolvedPath: C:\Users\Student\Desktop\game builds\Breakout-project\breakout project\Library\PackageCache\com.unity.cinemachine
+  assetPath: Packages/com.unity.cinemachine
+  name: com.unity.cinemachine
+  displayName: Cinemachine
+  author:
+    name: 
+    email: 
+    url: 
+  category: cinematography
+  type: 
+  description: "Smart camera tools for passionate creators. \n\nCinemachine 3 is
+    a newer and better version of Cinemachine, but upgrading an existing project
+    from 2.X will likely require some effort.  If you're considering upgrading an
+    older project, please see our upgrade guide in the user manual."
+  errors: []
+  versions:
+    all:
+    - 2.1.11-beta.1
+    - 2.1.12
+    - 2.1.13
+    - 2.2.0
+    - 2.2.7
+    - 2.2.8
+    - 2.2.9
+    - 2.2.10-preview.3
+    - 2.2.10-preview.4
+    - 2.3.1
+    - 2.3.3
+    - 2.3.4
+    - 2.3.5-preview.3
+    - 2.4.0-preview.3
+    - 2.4.0-preview.4
+    - 2.4.0-preview.6
+    - 2.4.0-preview.7
+    - 2.4.0-preview.8
+    - 2.4.0-preview.9
+    - 2.4.0-preview.10
+    - 2.4.0
+    - 2.5.0
+    - 2.6.0-preview.2
+    - 2.6.0-preview.3
+    - 2.6.0-preview.5
+    - 2.6.0-preview.8
+    - 2.6.0
+    - 2.6.1-preview.6
+    - 2.6.1
+    - 2.6.2-preview.1
+    - 2.6.2
+    - 2.6.3-preview.2
+    - 2.6.3
+    - 2.6.4
+    - 2.6.5
+    - 2.6.9
+    - 2.6.10
+    - 2.6.11
+    - 2.6.14
+    - 2.6.15
+    - 2.6.17
+    - 2.7.1
+    - 2.7.2
+    - 2.7.3
+    - 2.7.4
+    - 2.7.5
+    - 2.7.8
+    - 2.7.9
+    - 2.8.0-exp.1
+    - 2.8.0-exp.2
+    - 2.8.0-pre.1
+    - 2.8.0
+    - 2.8.1
+    - 2.8.2
+    - 2.8.3
+    - 2.8.4
+    - 2.8.6
+    - 2.8.9
+    - 2.9.0-pre.1
+    - 2.9.0-pre.6
+    - 2.9.1
+    - 2.9.2
+    - 2.9.4
+    - 2.9.5
+    - 2.9.7
+    - 2.10.0
+    - 2.10.1
+    - 2.10.2
+    - 2.10.3
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    compatible:
+    - 2.10.3
+    - 3.0.0-pre.3
+    - 3.0.0-pre.4
+    - 3.0.0-pre.5
+    - 3.0.0-pre.6
+    - 3.0.0-pre.7
+    - 3.0.0-pre.8
+    - 3.0.0-pre.9
+    - 3.0.1
+    - 3.1.0
+    - 3.1.1
+    - 3.1.2
+    - 3.1.3
+    recommended: 3.1.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.splines
+    version: 2.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.splines
+    version: 2.7.2
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.settings-manager
+    version: 2.0.1
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  keywords:
+  - camera
+  - follow
+  - rig
+  - fps
+  - cinematography
+  - aim
+  - orbit
+  - cutscene
+  - cinematic
+  - collision
+  - freelook
+  - cinemachine
+  - compose
+  - composition
+  - dolly
+  - track
+  - clearshot
+  - noise
+  - framing
+  - handheld
+  - lens
+  - impulse
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638739355014480000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.cinemachine.git
+    revision: 23940e5601df6628d349dc9d1912bd2bb34ad631
+    path: 
+  unityLifecycle:
+    version: 2.10.3
+    nextVersion: 
+    recommendedVersion: 3.1.0
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bugfixes\n- Regression fix: CinemachinePanTilt
+    recentering was ignoring axis Center setting.\n- CameraDeactivated events were
+    not sent consistently when a blend interrupted another blend before completion.\n-
+    CameraActivated events were not sent consistently when activation was due to
+    timeline blends.\n- FramingTransposer with a dead zone would sometimes drift.\n-
+    Decollider would sometimes cause camera to slip inside cracks between adjacent
+    colliders.\n- The Deoccluder failed to reset its state when initially enabled,
+    and sometimes caused small spurious camera rotations.\n- Fixed the Radial Axis
+    input axis in the CinemachineOrbitalFollow component to map to the y axis.\n-
+    Desired blend time is respected when interrupting blends with heterogeneous blend-in
+    and blend-out times.\n\n### Changed\n- Added delayed processing to near and far
+    clip plane inspector fields for the CinemachineCamera lens.\n- Updated the gamepad
+    inputs in the CinemachineDefaultInputActions asset to closer match standard gamepad
+    conventions. Renamed the Player action map to CM Default.\n\n### Added\n- CinemachineConfiner2D.BoundingShapeIsBaked
+    can be used to check if the confiner''s bounding shape is baked.\n- CinemachineConfiner2D.BakeBoundingShape()
+    can be used to force-complete the confiner''s baking of the bounding shape."}'
+  assetStore:
+    productId: 
+  fingerprint: 624f919d8cdd376712eda21b43abcb0330c023e2
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.10.3
+    minimumUnityVersion: 2022.3.0a1
 - packageId: com.unity.collab-proxy@2.6.0
   testable: 0
   isDirectDependency: 1
@@ -383,9 +593,11 @@ m_ResolvedPackages:
     - 1.11.1
     - 1.11.2
     - 1.12.0
+    - 1.13.0
     compatible:
     - 1.11.2
     - 1.12.0
+    - 1.13.0
     recommended: 1.11.2
     deprecated: []
   dependencies:
@@ -660,9 +872,11 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
+    - 1.8.8
     compatible:
     - 1.8.7
-    recommended: 1.8.7
+    - 1.8.8
+    recommended: 1.8.8
     deprecated: []
   dependencies:
   - name: com.unity.modules.audio
@@ -3820,17 +4034,19 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.4.5
+    recommended: 1.4.6
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -4038,6 +4254,120 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 1.2.6
     minimumUnityVersion: 2019.3.0a1
+- packageId: com.unity.splines@2.7.2
+  testable: 0
+  isDirectDependency: 0
+  version: 2.7.2
+  source: 1
+  resolvedPath: C:\Users\Student\Desktop\game builds\Breakout-project\breakout project\Library\PackageCache\com.unity.splines
+  assetPath: Packages/com.unity.splines
+  name: com.unity.splines
+  displayName: Splines
+  author:
+    name: 
+    email: 
+    url: 
+  category: Tool
+  type: tool
+  description: Work with curves and paths. Use the Splines package to generate objects
+    and behaviors along paths, create trajectories, and draw shapes.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 1.0.0-pre.5
+    - 1.0.0-pre.7
+    - 1.0.0-pre.8
+    - 1.0.0-pre.9
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0-pre.2
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.1.0
+    - 2.2.0
+    - 2.2.1
+    - 2.3.0
+    - 2.4.0
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
+    - 2.6.1
+    - 2.7.1
+    - 2.7.2
+    compatible:
+    - 2.7.2
+    recommended: 2.7.2
+    deprecated: []
+  dependencies:
+  - name: com.unity.mathematics
+    version: 1.2.1
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.mathematics
+    version: 1.3.2
+  - name: com.unity.settings-manager
+    version: 2.0.1
+  keywords:
+  - spline
+  - curve
+  - path
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638678084074740000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.splines.git
+    revision: f8048bc97f9cc23fe3db45eceb767e6ab97f37f5
+    path: 
+  unityLifecycle:
+    version: 2.7.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Bug Fixes\n- [SPLB-315] Fixed a bug where the `DrawSplineTool`
+    icon was missing in the tools overlay.  \n- [STO-3434] Fixed a bug where the
+    `DrawSplineTool` would prevent the use of the view tool.\n- [STO-3435] Fixed
+    a bug where the `DrawSplineTool` would not display the tool settings anymore.
+    \n- [SPLB-296] Fixed a bug where a log message would appear in the console when
+    2 knots are at the same position with 0-length tangents.\n- [SPLB-304] Fixed
+    a bug where an exception would be thrown when using `SplineInstantiate` with
+    linear distance instantiate method and multiple splines. \n- Fixed some failures
+    related to the inline API documentation.\n- [SPLB-302] Fixed a bug where an exception
+    would be thrown when adding a knot to a closed spline from inspector.\n- [SPLB-311]
+    Fixed a bug where `SplineAnimate` component would not function properly with
+    non-uniform scale transforms.\n- Fixed compilation errors in builds\n- [SPLB-310]
+    Fixed mesh extrude not being saved when a change is applied to a mesh asset.
+    \n- [SPLB-303] Fixed a bug where spline section foldout labels (shape extrude,
+    geometry, advanced) did not unfold the sections when clicked.\n- [SPLB-294] Fixed
+    a bug where adding new splines by using the `SplineContainer` inspector would
+    dirty all open scenes."}'
+  assetStore:
+    productId: 
+  fingerprint: d3e1e500c9a0fa3a1e812117108982dd612c2e27
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.7.2
+    minimumUnityVersion: 2022.3.0a1
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
   isDirectDependency: 0
@@ -4191,4 +4521,93 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.5
     minimumUnityVersion: 2019.4.0a1
+- packageId: com.unity.mathematics@1.3.2
+  testable: 0
+  isDirectDependency: 0
+  version: 1.3.2
+  source: 1
+  resolvedPath: C:\Users\Student\Desktop\game builds\Breakout-project\breakout project\Library\PackageCache\com.unity.mathematics
+  assetPath: Packages/com.unity.mathematics
+  name: com.unity.mathematics
+  displayName: Mathematics
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Unity's C# SIMD math library providing vector types and math functions
+    with a shader like syntax.
+  errors: []
+  versions:
+    all:
+    - 0.0.12-preview.2
+    - 0.0.12-preview.5
+    - 0.0.12-preview.8
+    - 0.0.12-preview.10
+    - 0.0.12-preview.11
+    - 0.0.12-preview.13
+    - 0.0.12-preview.17
+    - 0.0.12-preview.19
+    - 0.0.12-preview.20
+    - 1.0.0-preview.1
+    - 1.0.1
+    - 1.1.0-preview.1
+    - 1.1.0
+    - 1.2.1
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
+    - 1.3.1
+    - 1.3.2
+    compatible:
+    - 1.3.2
+    recommended: 1.3.2
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638409134840000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/Unity.Mathematics.git
+    revision: 1695a8503482a3131be78cc26308a93f82c05b04
+    path: 
+  unityLifecycle:
+    version: 1.3.2
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"### Fixed\n* Fixed `math.hash` crash when using IL2CPP
+    builds on Arm 32 bit devices.\n* Fixed obsolete method usage warnings for `MatrixDrawer.CanCacheInspectorGUI`
+    and `PrimitiveVectorDrawer.CanCacheInspectorGUI` in UNITY_2023_2_OR_NEWER.\n*
+    Updated minimum editor version to 2021.3"}'
+  assetStore:
+    productId: 
+  fingerprint: 8017b507cc74bf0a1dd14b18aa860569f807314d
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.3.2
+    minimumUnityVersion: 2021.3.0a1
 m_BuiltInPackagesHash: 75028b1d8028e2ecd08833ba9a3c68ea34610ba9

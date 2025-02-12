@@ -9,7 +9,7 @@ public class BallScript : MonoBehaviour
 
     [Range(-25, 25)] public float magnitude_X;
     [Range(10, 25)] public float magnitude_Z;
-    [Range(1,3)] public int temp_hits;
+
     
     public Transform spawner;
 
@@ -85,7 +85,7 @@ public class BallScript : MonoBehaviour
         } 
     }
 
-        void lifeOrbs()
+        public void lifeOrbs()
         {
 
             // Destroy any existing life orbs to avoid duplicates
