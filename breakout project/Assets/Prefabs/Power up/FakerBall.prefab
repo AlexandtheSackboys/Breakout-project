@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3804291075595128028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.07, y: 7.054901, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.36609432, z: 2.0387506}
   m_LocalScale: {x: 1.0375764, y: 1.0375764, z: 1.0375764}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -154,3 +154,4 @@ MonoBehaviour:
   magnitude_Z: 850
   temp_hits: 3
   player: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+  ball: {fileID: 8248931233455399578, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}

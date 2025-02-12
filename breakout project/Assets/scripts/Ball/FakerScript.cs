@@ -9,6 +9,7 @@ public class FakerScript : MonoBehaviour
     [Range(-1250, 1250)] public float magnitude_Z;
     [Range(1, 5)] public int temp_hits;
     public Paddle_Controller player;
+    public GameObject ball;
    // public Transform destination;
 
 
@@ -61,12 +62,12 @@ public class FakerScript : MonoBehaviour
     }
     public void Spread()
     {
-        
 
-        Rigidbody fakerRb = Instantiate(rb, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
+
+        Rigidbody fakerRb = Instantiate(rb, new Vector3(gameObject.transform.position.x, ball.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
         fakerRb.AddForce(magnitude_X,0,magnitude_Z);
         
-        Rigidbody fakerRb2 = Instantiate(rb, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
+        Rigidbody fakerRb2 = Instantiate(rb, new Vector3(gameObject.transform.position.x, ball.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
         fakerRb2.AddForce(-magnitude_X, 0, magnitude_Z);
         // produces 2 temporary balls which have a limited number of times that tey can hit a block
         player.spreadActivate = false;

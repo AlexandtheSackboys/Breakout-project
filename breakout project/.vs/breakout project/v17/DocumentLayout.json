@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\player\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\player\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\paddle_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\ball\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\ball\\fakerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball\\fakerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|c:\\users\\student\\desktop\\game builds\\breakout-project\\breakout project\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\assets\\scripts\\ball\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18DFFD6F-5B0F-DF46-C420-51D1FB963ADF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ball\\ballscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +46,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\GameManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:07:26.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FakerScript.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Ball\\FakerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Ball\\FakerScript.cs",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Ball\\FakerScript.cs",
+              "RelativeToolTip": "Assets\\scripts\\Ball\\FakerScript.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T14:42:31.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BallScript.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Ball\\BallScript.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Ball\\BallScript.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Ball\\BallScript.cs",
               "RelativeToolTip": "Assets\\scripts\\Ball\\BallScript.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDIAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwEYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T13:14:02.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\UI Scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\UI Scripts\\PauseMenu.cs",
@@ -63,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "blockWall.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Blocks \u0026 power ups\\blockWall.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\Blocks \u0026 power ups\\blockWall.cs",
@@ -81,7 +115,7 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\Player\\Paddle_Controller.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\game builds\\Breakout-project\\breakout project\\Assets\\scripts\\Player\\Paddle_Controller.cs",
               "RelativeToolTip": "Assets\\scripts\\Player\\Paddle_Controller.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAwwCsAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAcwIcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T09:59:31.356Z",
               "EditorCaption": ""

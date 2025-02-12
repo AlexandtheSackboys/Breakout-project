@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 {
 
 
-
+    public ScoreSystem score;
+    public TextMeshProUGUI finalScore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,9 +25,10 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit(0);
     }
-    public void Win() // transisions to winning scene
+    public void End() // transisions to winning scene
     {
-        SceneManager.LoadScene(2);
+        finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
+        SceneManager.LoadScene(1);
 
 
 

@@ -18,6 +18,7 @@ public class BallScript : MonoBehaviour
     public float lives;
     public Transform orbSpawner;
     public ScoreSystem itemTrack;
+    public GameManager sceneChange;
 
 
 
@@ -59,7 +60,7 @@ public class BallScript : MonoBehaviour
             rb.linearVelocity = new Vector3(-magnitude_X, 0, magnitude_Z);
 
 
-            if (lives <= 2 && lives > 0)
+            if (lives == 1)
             {
                 item.Spawn();
             }
@@ -67,6 +68,7 @@ public class BallScript : MonoBehaviour
             {
 
                 Destroy(gameObject);
+                sceneChange.End();
             }
 
 

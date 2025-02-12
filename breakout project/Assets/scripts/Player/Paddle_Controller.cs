@@ -133,9 +133,12 @@ public class Paddle_Controller : MonoBehaviour
         /* if statement for testing         
         if (collision.gameObject.CompareTag("Item"))
         {
-            life();
+            //temporary.Spread();
+        //Aim_time();
+        //life();
+        //ScaleUp();
         }
-        */
+         */
 
     }
 
@@ -147,7 +150,7 @@ public class Paddle_Controller : MonoBehaviour
         if (spreadActivate == false || aimActivate == false || extendActivate == false || gather_LifeOrb == false)
         {
 
-            int powerUp = Random.Range(0, 12);
+            int powerUp = Random.Range(0, 11);
             Debug.Log("Power up number: "+ powerUp);
             if (powerUp >= 1 && powerUp < 4)
             {
@@ -170,7 +173,7 @@ public class Paddle_Controller : MonoBehaviour
                 ScaleUp();
             }
 
-            else if (powerUp == 10 || powerUp == 11)
+            else if (powerUp == 10)
             { 
                 gather_LifeOrb = true;
                 life();
