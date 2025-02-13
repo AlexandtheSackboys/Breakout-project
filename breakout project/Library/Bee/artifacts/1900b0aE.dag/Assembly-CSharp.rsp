@@ -370,6 +370,10 @@
 -r:"Library/PackageCache/com.unity.ext.nunit/net40/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/FMODUnity.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/FMODUnityEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/FMODUnityResonance.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/FMODUnityResonanceEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Cinemachine.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
@@ -405,6 +409,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/scripts/backgroundMusic.cs"
 "Assets/scripts/Ball/BallScript.cs"
 "Assets/scripts/Ball/FakerScript.cs"
 "Assets/scripts/Blocks & power ups/blockWall.cs"
@@ -417,6 +422,7 @@
 "Assets/scripts/Player/PlayerPause.cs"
 "Assets/scripts/UI Scripts/PauseMenu.cs"
 "Assets/scripts/UI Scripts/ScoreSystem.cs"
+"Assets/scripts/WallGenerator.cs"
 "Assets/Utilities/PlayerInput.cs"
 -langversion:9.0
 /deterministic

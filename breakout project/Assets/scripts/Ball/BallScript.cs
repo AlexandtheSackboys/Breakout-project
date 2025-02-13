@@ -19,24 +19,27 @@ public class BallScript : MonoBehaviour
     public Transform orbSpawner;
     public ScoreSystem itemTrack;
     public GameManager sceneChange;
-
+    private backgroundMusic music;
+    private bool lowHp;
 
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        music = GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
+        if (music == null )
+        {
+            Debug.Log("music is null");
+            music.NormalMusic();
+        }
 
         lifeOrbs();
         // applies forces to the x and z directions
 
 
         rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
-
-
-
-
+        lowHp = false;
     }
 
 
@@ -50,6 +53,16 @@ public class BallScript : MonoBehaviour
 
             gameObject.transform.position = spawner.transform.position;
             lives--;
+            if (lives < 3 &&!lowHp)
+            {
+                lowHp = true;
+                music.LowHealthMusic();
+            }
+            else if (lives > 2 && lowHp)
+            {
+                lowHp = false;
+                music.NormalMusic();
+            }
 
             Debug.Log(lives);
 
@@ -68,6 +81,7 @@ public class BallScript : MonoBehaviour
             {
 
                 Destroy(gameObject);
+                music.StopMusic();
                 sceneChange.End();
             }
 

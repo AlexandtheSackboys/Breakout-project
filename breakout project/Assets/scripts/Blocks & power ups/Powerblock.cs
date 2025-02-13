@@ -1,3 +1,5 @@
+using FMODUnity;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Powerblock : MonoBehaviour
@@ -7,7 +9,7 @@ public class Powerblock : MonoBehaviour
 
     public Powerup pillSpawner;
 
-    [SerializeField] private AudioSource collect;
+    [SerializeField] private StudioEventEmitter collect;
 
     private void Start()
     {
@@ -17,9 +19,9 @@ public class Powerblock : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-
-            hitpoints--;
             collect.Play();
+            hitpoints--;
+            
 
             if (hitpoints == 0)
             {
@@ -44,6 +46,7 @@ public class Powerblock : MonoBehaviour
 
 
     }
+
 }
 
 

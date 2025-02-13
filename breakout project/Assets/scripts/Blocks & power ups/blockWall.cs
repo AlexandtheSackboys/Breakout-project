@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
+using FMODUnity;
 public class blockWall : MonoBehaviour
 {
     public float hitpoints;
     private ScoreSystem scoreSystem; // reference game manager
     public GameObject debris;
 
-    [SerializeField] private AudioSource Break;
+    [SerializeField]private StudioEventEmitter Break;
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class blockWall : MonoBehaviour
 
             hitpoints--;
             Break.Play();
-     
+
             if (hitpoints == 0) {
                 debris.transform.position = gameObject.transform.position;
                 BlockGone();
@@ -42,4 +43,5 @@ public class blockWall : MonoBehaviour
 
 
     }
+
 }

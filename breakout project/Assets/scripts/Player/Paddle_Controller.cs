@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
@@ -42,7 +43,7 @@ public class Paddle_Controller : MonoBehaviour
     
     // other variables
     public FakerScript temporary;
-    [SerializeField] private AudioSource hit;
+    [SerializeField] private StudioEventEmitter hit;
     public PauseMenu paused;
 
     // Timers

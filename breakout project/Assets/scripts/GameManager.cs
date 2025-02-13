@@ -9,15 +9,18 @@ public class GameManager : MonoBehaviour
 
     public ScoreSystem score;
     public TextMeshProUGUI finalScore;
+    public backgroundMusic music;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     public void Play() //  causes main game to play
     {
-        SceneManager.LoadScene(1);
+        music.StopMusic();
+        SceneManager.LoadScene(0);
+        music.NormalMusic();
     }
 
 
@@ -28,6 +31,7 @@ public class GameManager : MonoBehaviour
     public void End() // transisions to winning scene
     {
         finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
+        music.StopMusic();
         SceneManager.LoadScene(1);
 
 
@@ -36,7 +40,9 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     { // reset to the games title screen
+        music.StopMusic();
         SceneManager.LoadScene(0);
+
         Debug.Log("reset presses i guess");
     }
 

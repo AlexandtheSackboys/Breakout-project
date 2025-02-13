@@ -11,7 +11,6 @@ public class Powerup : MonoBehaviour
         {
             collision.gameObject.GetComponent<Paddle_Controller>().ActivatePowerUp();
             Destroy(gameObject);
-
         }
     }
 
