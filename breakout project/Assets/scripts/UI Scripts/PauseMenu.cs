@@ -6,29 +6,55 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI; // Reference to the pause menu UI panel
     public GameObject PauseText;// Reference to the TextMeshProUGUI element for displaying controls
 
-    public Paddle_Controller pausePower_Ups;
+    private Paddle_Controller pausePower_Ups;
+    private BallScript ballScript;
+    private backgroundMusic pauseMusic;
 
+    [HideInInspector] public bool isPaused = true; // Flag to track if the game is paused
+    private void Start()
+    {
+        pausePower_Ups = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+        ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
+        pauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
 
-    [HideInInspector] public bool isPaused = false; // Flag to track if the game is paused
-
+    }
     public void TogglePause()
     {
         if (isPaused)
         {
+            if (ballScript.lives < 3)
+            {
+
+
+                pauseMusic.LowHealthMusic();
+            }
+            else if (ballScript.lives > 2)
+            {
+
+
+                pauseMusic.NormalMusic();
+            }
+
+
             pausePower_Ups.HandleTimers();
             Debug.Log("Paused");
             pauseMenuUI.SetActive(false); // Hide the pause menu UI panel
+
             PauseText.gameObject.SetActive(true); // Hide the controls TextMeshProUGUI element
             Time.timeScale = 1f; // Set the time scale to normal to resume the game
             isPaused = false; // Update the pause state
-
-
             return;
         }
-        pauseMenuUI.SetActive(true); // Show the pause menu UI panel
-        PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
-        Time.timeScale = 0f; // Set the time scale to 0 to pause the game
-        isPaused = true; // Update the pause state
+            pauseMusic.StopMusic();
+            pauseMenuUI.SetActive(true); // Show the pause menu UI panel
+            PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
+            Time.timeScale = 0f; // Set the time scale to 0 to pause the game
+            isPaused = true; // Update the pause state
+
+
+
+
+
 
     }
 

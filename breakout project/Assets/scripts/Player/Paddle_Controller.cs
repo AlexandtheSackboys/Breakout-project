@@ -24,8 +24,8 @@ public class Paddle_Controller : MonoBehaviour
 
     // player object references
     public GameObject perspective_1st;
-    public Perspective_Change cameraChange;
-    public BallScript lifeOrb_Increase;
+    private Perspective_Change cameraChange;
+    private BallScript ballScript;
     public GameObject ballPrefab;
     public Rigidbody ballRb;
     public GameObject recallPoint;
@@ -39,12 +39,12 @@ public class Paddle_Controller : MonoBehaviour
     private bool extendActivate = false;
     [HideInInspector] public bool isAimActive = false;
     private bool isScaleActive = false;
-    private bool gather_LifeOrb = false;
+    [HideInInspector] public bool gather_LifeOrb = false;
     
     // other variables
     public FakerScript temporary;
     [SerializeField] private StudioEventEmitter hit;
-    public PauseMenu paused;
+    private PauseMenu paused;
 
     // Timers
     private float aimTimer = 0f;
@@ -60,7 +60,9 @@ public class Paddle_Controller : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        cameraChange = GameObject.Find("Main Camera").GetComponent<Perspective_Change>();
+        ballScript = GameObject.Find("Ball").GetComponent<BallScript>();  
+        paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         rigidbody = GetComponent<Rigidbody>();
         tilt = GetComponent<Animator>();
 
@@ -131,15 +133,15 @@ public class Paddle_Controller : MonoBehaviour
 
         }
 
-        /* if statement for testing         
+        /* if statement for testing             
         if (collision.gameObject.CompareTag("Item"))
         {
             //temporary.Spread();
         //Aim_time();
-        //life();
+        //ballScript.life_Increase();
         //ScaleUp();
-        }
-         */
+        } */
+
 
     }
 
@@ -177,7 +179,7 @@ public class Paddle_Controller : MonoBehaviour
             else if (powerUp == 10)
             { 
                 gather_LifeOrb = true;
-                life();
+                ballScript.life_Increase();
             }
 
 
@@ -250,12 +252,7 @@ public class Paddle_Controller : MonoBehaviour
         // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
 
-    public void life()
-    {
-        lifeOrb_Increase.lives++;
-        lifeOrb_Increase.lifeOrbs();        
-        gather_LifeOrb = false;
-    }
+
 
 }
 

@@ -8,22 +8,20 @@ public class backgroundMusic : MonoBehaviour
     [SerializeField] private StudioEventEmitter music;
     private StudioEventEmitter eventEmitter;
     ParamRef[] paramaters;
+    [SerializeField] private GameManager gameManager;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //eventEmitter = new StudioEventEmitter();
-        //FMOD.Studio.PARAMETER_ID switchMusic;
-        //Debug.Log(switchMusic);
+
         paramaters = music.Params;
-        if (!music.IsPlaying())
+        if (gameManager.ismusicPlaying == true)
         {
             NormalMusic();
+            return;
         }
-        //main.setParameterByName("Region A",1);
-        //main.start();
-        //main.release();
+        music.Stop();
 
 
     }
@@ -48,6 +46,8 @@ public class backgroundMusic : MonoBehaviour
     {
         music.Stop();
     }
+
+
 
     // Update is called once per frame
     void Update()

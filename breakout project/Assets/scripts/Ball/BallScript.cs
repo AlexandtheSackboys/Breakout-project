@@ -17,8 +17,9 @@ public class BallScript : MonoBehaviour
     public GameObject life_Orbs;
     public float lives;
     public Transform orbSpawner;
-    public ScoreSystem itemTrack;
+    private ScoreSystem itemTrack;
     public GameManager sceneChange;
+    private Paddle_Controller paddleController;
     private backgroundMusic music;
     private bool lowHp;
 
@@ -28,6 +29,9 @@ public class BallScript : MonoBehaviour
     void Start()
     {
         music = GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
+        paddleController = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+        itemTrack = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
+        
         if (music == null )
         {
             Debug.Log("music is null");
@@ -53,17 +57,8 @@ public class BallScript : MonoBehaviour
 
             gameObject.transform.position = spawner.transform.position;
             lives--;
-            if (lives < 3 &&!lowHp)
-            {
-                lowHp = true;
-                music.LowHealthMusic();
-            }
-            else if (lives > 2 && lowHp)
-            {
-                lowHp = false;
-                music.NormalMusic();
-            }
 
+            DynamicMusic();
             Debug.Log(lives);
 
             lifeOrbs();
@@ -117,9 +112,33 @@ public class BallScript : MonoBehaviour
             }
         }
 
+    public void life_Increase()
+    {
+        lives++;
+        DynamicMusic();
+        lifeOrbs();
+        paddleController.gather_LifeOrb = false;
+
+    }
+
+    //this function below deals with when each song is played based on the number of lives the player has
+    public void DynamicMusic() 
+    {
+        if (lives < 3 && lowHp == false)
+        {
+            lowHp = true;
+
+            music.LowHealthMusic();
+        }
+        else if (lives > 2 && lowHp == true)
+        {
+            lowHp = false;
+
+            music.NormalMusic();
+        }
+    }
 
 
-    
 
 
 }

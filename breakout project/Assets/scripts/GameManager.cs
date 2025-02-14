@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-
+    [HideInInspector] public bool ismusicPlaying = true;
     public ScoreSystem score;
     public TextMeshProUGUI finalScore;
     public backgroundMusic music;
@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
         music.StopMusic();
         SceneManager.LoadScene(1);
+        ismusicPlaying = false;
 
 
 
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     { // reset to the games title screen
         music.StopMusic();
         SceneManager.LoadScene(0);
-
+        ismusicPlaying = true;
         Debug.Log("reset presses i guess");
     }
 

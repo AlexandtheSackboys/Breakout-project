@@ -5237,7 +5237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
+  nonRigidbodyVelocity: 1
   attenuationObject: {fileID: 0}
 --- !u!1 &988261937
 GameObject:
@@ -8199,6 +8199,10 @@ PrefabInstance:
       propertyPath: ball_Health
       value: 
       objectReference: {fileID: 1931779174}
+    - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1529189048}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8580,6 +8584,10 @@ PrefabInstance:
       propertyPath: ballPrefab
       value: 
       objectReference: {fileID: 1931779173}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: ballScript
+      value: 
+      objectReference: {fileID: 1931779174}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: cameraChange
       value: 
