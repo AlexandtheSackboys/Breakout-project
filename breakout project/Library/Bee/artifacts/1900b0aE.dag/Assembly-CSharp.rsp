@@ -422,7 +422,6 @@
 "Assets/scripts/Player/PlayerPause.cs"
 "Assets/scripts/UI Scripts/PauseMenu.cs"
 "Assets/scripts/UI Scripts/ScoreSystem.cs"
-"Assets/scripts/WallGenerator.cs"
 "Assets/Utilities/PlayerInput.cs"
 -langversion:9.0
 /deterministic

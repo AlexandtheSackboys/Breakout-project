@@ -34,12 +34,10 @@ public class Paddle_Controller : MonoBehaviour
 
 
     // power up activation 
-    [HideInInspector] public bool spreadActivate = false;
-    private bool aimActivate = false;
-    private bool extendActivate = false;
-    [HideInInspector] public bool isAimActive = false;
-    private bool isScaleActive = false;
-    [HideInInspector] public bool gather_LifeOrb = false;
+    [HideInInspector] public bool SpreadActivate = false;
+    [HideInInspector] public bool AimActive = false;
+    private bool scaleActive = false;
+    [HideInInspector] public bool Gather_LifeOrb = false;
     
     // other variables
     public FakerScript temporary;
@@ -109,13 +107,13 @@ public class Paddle_Controller : MonoBehaviour
         if (!paused.isPaused)
         {
             // Aim Timer
-            if (isAimActive && Time.time >= aimTimer)
+            if (AimActive && Time.time >= aimTimer)
             {
                 Aim_time();
             }
 
             // Scale Timer
-            if (isScaleActive && Time.time >= scaleTimer)
+            if (scaleActive && Time.time >= scaleTimer)
             {
                 ScaleUp();
             }
@@ -150,21 +148,21 @@ public class Paddle_Controller : MonoBehaviour
     {
 
 
-        if (spreadActivate == false || aimActivate == false || extendActivate == false || gather_LifeOrb == false)
+        if (SpreadActivate == false || AimActive == false|| scaleActive == false || Gather_LifeOrb == false)
         {
 
             int powerUp = Random.Range(0, 11);
             Debug.Log("Power up number: "+ powerUp);
             if (powerUp >= 1 && powerUp < 4)
             {
-                spreadActivate = true;
+                SpreadActivate = true;
                 temporary.Spread();
 
 
             }
             else if (powerUp >= 4 && powerUp < 7)
             {
-                aimActivate = true;
+
                 Aim_time();
 
 
@@ -172,13 +170,13 @@ public class Paddle_Controller : MonoBehaviour
 
             else if (powerUp >= 7 && powerUp < 10)
             {
-                extendActivate = true;
+
                 ScaleUp();
             }
 
             else if (powerUp == 10)
             { 
-                gather_LifeOrb = true;
+                Gather_LifeOrb = true;
                 ballScript.life_Increase();
             }
 
@@ -188,9 +186,9 @@ public class Paddle_Controller : MonoBehaviour
 
     public void Aim_time()
     {
-        if (!isAimActive)
+        if (!AimActive)
         {
-            isAimActive = true;
+            AimActive = true;
             aimTimer = Time.time + timeTilRelease; // will end power up when Time.time is equal to aimTimer as Time.time always counts up
 
             Debug.Log("Time: " + Time.time);
@@ -212,11 +210,11 @@ public class Paddle_Controller : MonoBehaviour
         ballRb.constraints = RigidbodyConstraints.FreezePositionY; 
 
         cameraChange.CameraObject.transform.SetParent(null);
-        cameraChange.CameraObject.transform.position = cameraChange.perspective_3rd.transform.position;
-        cameraChange.CameraObject.transform.rotation = cameraChange.perspective_3rd.transform.rotation;
+        cameraChange.CameraObject.transform.position = cameraChange.Perspective_3rd.transform.position;
+        cameraChange.CameraObject.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
-        isAimActive = false;
+        AimActive = false;
         // causes padddle to return to its original state when Time.time is equal to aimTimer
 
     }
@@ -227,9 +225,9 @@ public class Paddle_Controller : MonoBehaviour
     // Activate Scale Power-up
     public void ScaleUp()
     {
-        if (!isScaleActive)
+        if (!scaleActive)
         {
-            isScaleActive = true;
+            scaleActive = true;
             scaleTimer = Time.time + timeTilShrink; // will end power up when Time.time is equal to scaleTimer as Time.time always counts up
             Debug.Log("Time: " + Time.time);
             Debug.Log("Scale Timer: " + scaleTimer);
@@ -248,7 +246,7 @@ public class Paddle_Controller : MonoBehaviour
             right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
 
             speed *= slowDown;
-            isScaleActive = false;
+            scaleActive = false;
         // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
 

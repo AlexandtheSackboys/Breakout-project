@@ -5222,9 +5222,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraObject: {fileID: 963194225}
-  perspective_3rd: {fileID: 201605168}
-  perspective_OG: {fileID: 692630619}
-  fixedCamera_Aim: {fileID: 7971283828256552070}
+  Perspective_3rd: {fileID: 201605168}
+  Perspective_OG: {fileID: 692630619}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

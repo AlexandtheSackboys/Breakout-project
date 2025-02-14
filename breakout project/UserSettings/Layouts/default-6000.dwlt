@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 76}
     m_SelectedIDs: 08900000
     m_LastClickedID: 36872
-    m_ExpandedIDs: 00000000a28f00000490000006900000089000000c90000052900000489c000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000588d00005a8d00005c8d00005e8d0000608d0000628d0000648d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a28f0000
+    m_ExpandedIDs: 00000000588d00005a8d00005c8d00005e8d0000608d0000628d0000648d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,8 +567,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1467
-    y: 79
+    x: 1468
+    y: 24
     width: 452
     height: 907
   m_SerializedDataModeController:
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79
+    y: 24
     width: 378
     height: 569
   m_SerializedDataModeController:
@@ -634,8 +634,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 301a0300
-      m_LastClickedID: 203312
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 32eafcff36eafcfff0eafcff4cebfcffbaf1fcffe8fefcfff4fefcffb84dfdffc24dfdffd64dfdffbc57fdff1a5bfdffac62fdff366bfdff2273fdff9091fdff8897fdff0099fdff62a0fdff7aa1fdffe4a3fdff8ac3feff9cc3feffa8c4feffb2c4feffccc4feff36c6feff8cc8feff56cafeff20ccfeffe6c5ffffeac5ffffa4c6ffff02c7ffffa0daffffb0daffffcce9ffff54efffff56efffff26fbffffc8cf000090d1000050d200009e260200fe260200662802002629020026cf0200e2010300f6170300
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -682,8 +682,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 379
-    y: 79
+    x: 380
+    y: 24
     width: 1086
     height: 569
   m_SerializedDataModeController:
@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.34122974, y: 0.16010734, z: -0.0588676, w: -0.9244692}
     speed: 2
-    m_Value: {x: -0.3411989, y: 0.16009288, z: -0.05886228, w: -0.92438567}
+    m_Value: {x: -0.34122974, y: 0.16010734, z: -0.0588676, w: -0.9244691}
   m_Size:
     m_Target: 23.503773
     speed: 2
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 674
+    y: 619
     width: 1466
     height: 312
   m_SerializedDataModeController:

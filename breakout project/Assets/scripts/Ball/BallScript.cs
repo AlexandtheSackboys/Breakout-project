@@ -117,7 +117,7 @@ public class BallScript : MonoBehaviour
         lives++;
         DynamicMusic();
         lifeOrbs();
-        paddleController.gather_LifeOrb = false;
+        paddleController.Gather_LifeOrb = false;
 
     }
 

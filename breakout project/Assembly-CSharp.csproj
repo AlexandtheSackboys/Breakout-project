@@ -73,7 +73,6 @@
     <Compile Include="Assets\scripts\Blocks &amp; power ups\blockWall.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\Player\PlayerPause.cs" />
-    <Compile Include="Assets\scripts\WallGenerator.cs" />
     <Compile Include="Assets\scripts\other\Perspective_Change.cs" />
     <Compile Include="Assets\scripts\other\DestroyParticles.cs" />
   </ItemGroup>
