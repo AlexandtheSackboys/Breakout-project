@@ -3,7 +3,7 @@ using UnityEngine;
 public class Perspective_Change : MonoBehaviour
 {
     private bool camera_Position;
-    public GameObject Camera;
+    public GameObject CameraObject;
     public GameObject perspective_3rd;
     public GameObject perspective_OG;
     public Paddle_Controller fixedCamera_Aim;
@@ -11,8 +11,8 @@ public class Perspective_Change : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Camera.transform.position = perspective_3rd.transform.position;
-        Camera.transform.rotation = perspective_3rd.transform.rotation;
+        CameraObject.transform.position = perspective_3rd.transform.position;
+        CameraObject.transform.rotation = perspective_3rd.transform.rotation;
     }
 
     // Update is called once per frame
@@ -25,17 +25,17 @@ public class Perspective_Change : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && (camera_Position == true))
             {
 
-                Camera.transform.position = perspective_3rd.transform.position;
+                CameraObject.transform.position = perspective_3rd.transform.position;
 
-                Camera.transform.rotation = perspective_3rd.transform.rotation;
+                CameraObject.transform.rotation = perspective_3rd.transform.rotation;
                 camera_Position = false;
 
             }
             else if (Input.GetKeyDown(KeyCode.Space) && (camera_Position == false))
             {
-                Camera.transform.position = perspective_OG.transform.position;
+                CameraObject.transform.position = perspective_OG.transform.position;
 
-                Camera.transform.rotation = perspective_OG.transform.rotation;
+                CameraObject.transform.rotation = perspective_OG.transform.rotation;
                 camera_Position = true;
             }
             return;

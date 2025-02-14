@@ -200,9 +200,9 @@ public class Paddle_Controller : MonoBehaviour
             ballPrefab.transform.SetParent(recallPoint.transform, true);
             ballRb.constraints = RigidbodyConstraints.FreezeAll; // frezes rigidbody
 
-            cameraChange.Camera.transform.position = perspective_1st.transform.position;
-            cameraChange.Camera.transform.rotation = perspective_1st.transform.rotation;
-            cameraChange.Camera.transform.SetParent(perspective_1st.transform, true);
+            cameraChange.CameraObject.transform.position = perspective_1st.transform.position;
+            cameraChange.CameraObject.transform.rotation = perspective_1st.transform.rotation;
+            cameraChange.CameraObject.transform.SetParent(perspective_1st.transform, true);
             // changes camera perspective closer to the paddle
             return;
         }
@@ -211,9 +211,9 @@ public class Paddle_Controller : MonoBehaviour
         ballPrefab.transform.SetParent(null);
         ballRb.constraints = RigidbodyConstraints.FreezePositionY; 
 
-        cameraChange.Camera.transform.SetParent(null);
-        cameraChange.Camera.transform.position = cameraChange.perspective_3rd.transform.position;
-        cameraChange.Camera.transform.rotation = cameraChange.perspective_3rd.transform.rotation;
+        cameraChange.CameraObject.transform.SetParent(null);
+        cameraChange.CameraObject.transform.position = cameraChange.perspective_3rd.transform.position;
+        cameraChange.CameraObject.transform.rotation = cameraChange.perspective_3rd.transform.rotation;
 
         ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
         isAimActive = false;

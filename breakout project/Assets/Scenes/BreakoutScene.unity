@@ -5221,7 +5221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 052d8ad3384398a4287c79326d6b71b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 963194225}
+  CameraObject: {fileID: 963194225}
   perspective_3rd: {fileID: 201605168}
   perspective_OG: {fileID: 692630619}
   fixedCamera_Aim: {fileID: 7971283828256552070}
