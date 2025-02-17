@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenuUI; // Reference to the pause menu UI panel
+    public GameObject MenuUI; // Reference to the pause menu UI panel
     public GameObject PauseText;// Reference to the TextMeshProUGUI element for displaying controls
 
     private Paddle_Controller pausePower_Ups;
     private BallScript ballScript;
-    private backgroundMusic pauseMusic;
+    [HideInInspector] public backgroundMusic pauseMusic;
+
 
     [HideInInspector] public bool isPaused = true; // Flag to track if the game is paused
     private void Start()
@@ -37,8 +38,8 @@ public class PauseMenu : MonoBehaviour
 
 
             pausePower_Ups.HandleTimers();
-            Debug.Log("Paused");
-            pauseMenuUI.SetActive(false); // Hide the pause menu UI panel
+
+            MenuUI.SetActive(false); // Hide the pause menu UI panel
 
             PauseText.gameObject.SetActive(true); // Hide the controls TextMeshProUGUI element
             Time.timeScale = 1f; // Set the time scale to normal to resume the game
@@ -46,7 +47,7 @@ public class PauseMenu : MonoBehaviour
             return;
         }
             pauseMusic.StopMusic();
-            pauseMenuUI.SetActive(true); // Show the pause menu UI panel
+            MenuUI.SetActive(true); // Show the pause menu UI panel
             PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
             Time.timeScale = 0f; // Set the time scale to 0 to pause the game
             isPaused = true; // Update the pause state

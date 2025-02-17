@@ -6730,6 +6730,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4766708608816786471}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: ballSpawner
+      value: 
+      objectReference: {fileID: 1244133905145696005}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: magnitude_X
       value: -10
       objectReference: {fileID: 0}
@@ -8592,14 +8596,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194229}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: temporaryBalls
+      value: 
+      objectReference: {fileID: 1019975939899639432, guid: 0b0a6e69fba9ad946bff2d4ce3d135b9, type: 3}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: lifeOrb_Increase
       value: 
       objectReference: {fileID: 1931779174}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: perspectivePowerUp
+      value: 
+      objectReference: {fileID: 7020511471675011325}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+--- !u!1 &7020511471675011325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4347302299981362828, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+  m_PrefabInstance: {fileID: 7020511471675011324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7971283828256552070 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}

@@ -1,9 +1,4 @@
 using FMODUnity;
-using System.Collections;
-using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.TerrainTools;
-using UnityEditor.Timeline;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,7 +18,7 @@ public class Paddle_Controller : MonoBehaviour
     private Animator tilt;
 
     // player object references
-    public GameObject perspective_1st;
+    [SerializeField]private GameObject perspectivePowerUp;
     private Perspective_Change cameraChange;
     private BallScript ballScript;
     public GameObject ballPrefab;
@@ -38,9 +33,9 @@ public class Paddle_Controller : MonoBehaviour
     [HideInInspector] public bool AimActive = false;
     private bool scaleActive = false;
     [HideInInspector] public bool Gather_LifeOrb = false;
-    
+
     // other variables
-    public FakerScript temporary;
+    [SerializeField] private FakerScript temporaryBalls;
     [SerializeField] private StudioEventEmitter hit;
     private PauseMenu paused;
 
@@ -109,7 +104,7 @@ public class Paddle_Controller : MonoBehaviour
             // Aim Timer
             if (AimActive && Time.time >= aimTimer)
             {
-                Aim_time();
+                AimTime();
             }
 
             // Scale Timer
@@ -134,7 +129,7 @@ public class Paddle_Controller : MonoBehaviour
         /* if statement for testing             
         if (collision.gameObject.CompareTag("Item"))
         {
-            //temporary.Spread();
+            //temporaryBalls.Spread();
         //Aim_time();
         //ballScript.life_Increase();
         //ScaleUp();
@@ -156,14 +151,14 @@ public class Paddle_Controller : MonoBehaviour
             if (powerUp >= 1 && powerUp < 4)
             {
                 SpreadActivate = true;
-                temporary.Spread();
+                temporaryBalls.Spread();
 
 
             }
             else if (powerUp >= 4 && powerUp < 7)
             {
 
-                Aim_time();
+                AimTime();
 
 
             }
@@ -184,7 +179,7 @@ public class Paddle_Controller : MonoBehaviour
         }
     }
 
-    public void Aim_time()
+    public void AimTime()
     {
         if (!AimActive)
         {
@@ -198,9 +193,9 @@ public class Paddle_Controller : MonoBehaviour
             ballPrefab.transform.SetParent(recallPoint.transform, true);
             ballRb.constraints = RigidbodyConstraints.FreezeAll; // frezes rigidbody
 
-            cameraChange.CameraObject.transform.position = perspective_1st.transform.position;
-            cameraChange.CameraObject.transform.rotation = perspective_1st.transform.rotation;
-            cameraChange.CameraObject.transform.SetParent(perspective_1st.transform, true);
+            cameraChange.CameraObject.transform.position = perspectivePowerUp.transform.position;
+            cameraChange.CameraObject.transform.rotation = perspectivePowerUp.transform.rotation;
+            cameraChange.CameraObject.transform.SetParent(perspectivePowerUp.transform, true);
             // changes camera perspective closer to the paddle
             return;
         }

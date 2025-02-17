@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
     public void Play() //  causes main game to play
     {
         music.StopMusic();
-        SceneManager.LoadScene(0);
-        music.NormalMusic();
+        SceneManager.LoadScene(1);
+        ismusicPlaying = true;
     }
 
 
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
         music.StopMusic();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
         ismusicPlaying = false;
 
 

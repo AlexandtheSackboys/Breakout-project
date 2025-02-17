@@ -70,7 +70,9 @@
     <Compile Include="Assets\scripts\UI Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Utilities\PlayerInput.cs" />
     <Compile Include="Assets\scripts\Ball\FakerScript.cs" />
+    <Compile Include="Assets\scripts\UI Scripts\SceneTransition.cs" />
     <Compile Include="Assets\scripts\Blocks &amp; power ups\blockWall.cs" />
+    <Compile Include="Assets\scripts\UI Scripts\TitleBlock.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\Player\PlayerPause.cs" />
     <Compile Include="Assets\scripts\other\Perspective_Change.cs" />

@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -10,8 +11,8 @@ public class BallScript : MonoBehaviour
     [Range(-25, 25)] public float magnitude_X;
     [Range(10, 25)] public float magnitude_Z;
 
-    
-    public Transform spawner;
+
+    public Transform ballSpawner;
 
     public Powerup item;
     public GameObject life_Orbs;
@@ -21,7 +22,9 @@ public class BallScript : MonoBehaviour
     public GameManager sceneChange;
     private Paddle_Controller paddleController;
     private backgroundMusic music;
+
     private bool lowHp;
+
 
 
 
@@ -31,8 +34,11 @@ public class BallScript : MonoBehaviour
         music = GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
         paddleController = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
         itemTrack = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
-        
-        if (music == null )
+
+
+
+
+        if (music == null)
         {
             Debug.Log("music is null");
             music.NormalMusic();
@@ -55,7 +61,7 @@ public class BallScript : MonoBehaviour
         {
 
 
-            gameObject.transform.position = spawner.transform.position;
+            gameObject.transform.position = ballSpawner.transform.position;
             lives--;
 
             DynamicMusic();
@@ -84,33 +90,33 @@ public class BallScript : MonoBehaviour
 
 
 
-            else if (collide.gameObject.CompareTag("Contingency"))
-            {
-                rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
-                gameObject.transform.position = spawner.transform.position;
-            }
 
 
 
+        }
+        else if (collide.gameObject.CompareTag("Contingency"))
+        {
+            rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
+            gameObject.transform.position = ballSpawner.transform.position;
+        }
 
-        } 
     }
 
-        public void lifeOrbs()
-        {
+    public void lifeOrbs()
+    {
 
-            // Destroy any existing life orbs to avoid duplicates
-            foreach (Transform child in orbSpawner)
-            {
-                Destroy(child.gameObject);
-            }
-            // Spawn life orbs based on lives left
-            for (int i = 0; i < lives; i++)
-            {
-                // You can position these orbs in different spots around the OrbSpawner
-                Instantiate(life_Orbs, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
-            }
+        // Destroy any existing life orbs to avoid duplicates
+        foreach (Transform child in orbSpawner)
+        {
+            Destroy(child.gameObject);
         }
+        // Spawn life orbs based on lives left
+        for (int i = 0; i < lives; i++)
+        {
+            // You can position these orbs in different spots around the OrbSpawner
+            Instantiate(life_Orbs, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
+        }
+    }
 
     public void life_Increase()
     {
@@ -122,7 +128,7 @@ public class BallScript : MonoBehaviour
     }
 
     //this function below deals with when each song is played based on the number of lives the player has
-    public void DynamicMusic() 
+    public void DynamicMusic()
     {
         if (lives < 3 && lowHp == false)
         {
@@ -137,7 +143,6 @@ public class BallScript : MonoBehaviour
             music.NormalMusic();
         }
     }
-
 
 
 

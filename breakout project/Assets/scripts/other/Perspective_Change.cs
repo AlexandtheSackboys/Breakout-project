@@ -14,6 +14,7 @@ public class Perspective_Change : MonoBehaviour
         CameraObject.transform.position = Perspective_3rd.transform.position;
         CameraObject.transform.rotation = Perspective_3rd.transform.rotation;
         paddle_Controller = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+
     }
 
     // Update is called once per frame
