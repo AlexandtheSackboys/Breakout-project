@@ -7,7 +7,7 @@ public class PlayerPause : MonoBehaviour
     private void Start()
     {
         pawnMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-        Debug.Log("Pause");
+        //Debug.Log("Pause");
     }
     public void OnPause()
     {

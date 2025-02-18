@@ -416,8 +416,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419120155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4996, y: 2.1208797, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 41}
+  m_LocalScale: {x: 1.5873904, y: 1.3468812, z: 0.6350578}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2052408313}
@@ -427,9 +427,9 @@ RectTransform:
   - {fileID: 543055074}
   m_Father: {fileID: 97587774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 394, y: 121}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 313, y: 72}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &453648489
@@ -3079,24 +3079,36 @@ PrefabInstance:
       value: 4278222335
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5999
+      value: 2.2189944
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5999
+      value: 2.2189944
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5999
+      value: 2.2189944
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 125
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108501999671606913, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2116089687159034187, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_Color.b
@@ -3459,9 +3471,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8745155}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: aimText
+      value: 
+      objectReference: {fileID: 1476095260580517749, guid: e9c416f2c35fa9141b0538527c771c61, type: 3}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: paddleHit
+      value: 
+      objectReference: {fileID: 7971283828256552080}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: ballPrefab
       value: 
@@ -3471,9 +3491,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1931779174}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: extendText
+      value: 
+      objectReference: {fileID: 2255398730380962010, guid: a4a98c5c9189d2840ad111f197cd2c14, type: 3}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: spreadText
+      value: 
+      objectReference: {fileID: 7656142071387334734, guid: d79e1a2574672e14ebc4a2f9c573f350, type: 3}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: timeShrink
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: paddleSpeed
+      value: 30000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: timeRelease
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: cameraChange
       value: 
       objectReference: {fileID: 963194229}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: spreadLifetime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: temporaryBalls
       value: 
