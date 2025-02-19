@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Paddle_Controller : MonoBehaviour
+public class PaddleController : MonoBehaviour
 {
     // stats that can be edited in editor
     [SerializeField][Range(5000, 30000)] private float paddleSpeed;
@@ -40,7 +40,7 @@ public class Paddle_Controller : MonoBehaviour
     [HideInInspector] public bool SpreadActivate = false;
     [HideInInspector] public bool AimActive = false;
     private bool scaleActive = false;
-    [HideInInspector] public bool Gather_LifeOrb = false;
+    [HideInInspector] public bool GatherLife = false;
 
     // other variables
     [SerializeField] private FakerScript temporaryBalls;
@@ -151,7 +151,7 @@ public class Paddle_Controller : MonoBehaviour
     {
 
 
-        if (SpreadActivate == false || AimActive == false || scaleActive == false || Gather_LifeOrb == false)
+        if (SpreadActivate == false || AimActive == false || scaleActive == false || GatherLife == false)
         {
 
             int powerUp = Random.Range(0,11);
@@ -181,8 +181,8 @@ public class Paddle_Controller : MonoBehaviour
 
             else if (powerUp == 10)
             {
-                Gather_LifeOrb = true;
-                ballScript.life_Increase();
+                GatherLife = true;
+                ballScript.lifeIncrease();
             }
 
 

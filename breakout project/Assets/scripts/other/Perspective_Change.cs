@@ -6,14 +6,14 @@ public class Perspective_Change : MonoBehaviour
     public GameObject CameraObject;
     public GameObject Perspective_3rd;
     public GameObject Perspective_OG;
-    private Paddle_Controller paddle_Controller;
+    private PaddleController paddle_Controller;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         CameraObject.transform.position = Perspective_3rd.transform.position;
         CameraObject.transform.rotation = Perspective_3rd.transform.rotation;
-        paddle_Controller = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+        paddle_Controller = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
 
     }
 

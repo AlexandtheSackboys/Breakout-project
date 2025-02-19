@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool ismusicPlaying = true;
     public ScoreSystem score;
     public TextMeshProUGUI finalScore;
-    public backgroundMusic music;
+    public BackgroundMusic music;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,8 +32,9 @@ public class GameManager : MonoBehaviour
     {
         finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
         music.StopMusic();
-        SceneManager.LoadScene(2);
         ismusicPlaying = false;
+        SceneManager.LoadScene(2);
+
 
 
 

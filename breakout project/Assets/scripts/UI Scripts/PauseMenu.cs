@@ -6,17 +6,17 @@ public class PauseMenu : MonoBehaviour
     public GameObject MenuUI; // Reference to the pause menu UI panel
     public GameObject PauseText;// Reference to the TextMeshProUGUI element for displaying controls
 
-    private Paddle_Controller pausePower_Ups;
+    private PaddleController pausePower_Ups;
     private BallScript ballScript;
-    [HideInInspector] public backgroundMusic pauseMusic;
+    [HideInInspector] public BackgroundMusic pauseMusic;
 
 
     [HideInInspector] public bool isPaused = true; // Flag to track if the game is paused
     private void Start()
     {
-        pausePower_Ups = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+        pausePower_Ups = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
         ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
-        pauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
+        pauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
 
     }
     public void TogglePause()

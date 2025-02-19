@@ -15,13 +15,13 @@ public class BallScript : MonoBehaviour
     public Transform ballSpawner;
 
     public Powerup item;
-    public GameObject life_Orbs;
+    public GameObject DiegeticLives;
     public float lives;
     public Transform orbSpawner;
     private ScoreSystem itemTrack;
     public GameManager sceneChange;
-    private Paddle_Controller paddleController;
-    private backgroundMusic music;
+    private PaddleController paddleController;
+    private BackgroundMusic music;
 
     private bool lowHp;
 
@@ -31,8 +31,8 @@ public class BallScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        music = GameObject.Find("BackgroundMusic_emitter").GetComponent<backgroundMusic>();
-        paddleController = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();
+        music = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
         itemTrack = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
 
 
@@ -114,16 +114,16 @@ public class BallScript : MonoBehaviour
         for (int i = 0; i < lives; i++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(life_Orbs, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
+            Instantiate(DiegeticLives, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
         }
     }
 
-    public void life_Increase()
+    public void lifeIncrease()
     {
         lives++;
         DynamicMusic();
         lifeOrbs();
-        paddleController.Gather_LifeOrb = false;
+        paddleController.GatherLife = false;
 
     }
 

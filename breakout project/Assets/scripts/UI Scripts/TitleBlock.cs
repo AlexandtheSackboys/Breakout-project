@@ -6,7 +6,7 @@ public class TitleBlock : MonoBehaviour
     [SerializeField] private GameObject screenSpawned;
     [SerializeField] private Transform ballSpawner;
     [SerializeField] private GameObject titleBall;
-    private Paddle_Controller paddleController;
+    private PaddleController paddleController;
 
 
     private PauseMenu pauseMenu;
@@ -14,7 +14,7 @@ public class TitleBlock : MonoBehaviour
     void Start()
     {
         pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-        paddleController = GameObject.Find("Player_Paddle").GetComponent<Paddle_Controller>();  
+        paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();  
     }
 
     private void spawnUI()

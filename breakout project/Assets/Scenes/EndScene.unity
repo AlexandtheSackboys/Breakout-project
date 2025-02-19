@@ -365,6 +365,10 @@ PrefabInstance:
       value: 1.2696
       objectReference: {fileID: 0}
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: ballScript
+      value: 
+      objectReference: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+    - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: ScoreCountText
       value: 
       objectReference: {fileID: 0}

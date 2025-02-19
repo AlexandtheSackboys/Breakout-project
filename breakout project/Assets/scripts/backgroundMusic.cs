@@ -1,7 +1,7 @@
 using UnityEngine;
 using FMODUnity;
 
-public class backgroundMusic : MonoBehaviour
+public class BackgroundMusic : MonoBehaviour
 {
 
     public BallScript ball_Health;
@@ -52,6 +52,6 @@ public class backgroundMusic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

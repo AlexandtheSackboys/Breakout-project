@@ -6914,6 +6914,10 @@ PrefabInstance:
       propertyPath: sceneChange
       value: 
       objectReference: {fileID: 1529189048}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: DiegeticLives
+      value: 
+      objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0375764
@@ -8807,6 +8811,10 @@ PrefabInstance:
       propertyPath: finalScore
       value: 
       objectReference: {fileID: 888788683430226830, guid: 7f703372be7e00942a995c4b87ae62c3, type: 3}
+    - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: hasMusic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6757564914055348120, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_Pivot.x
       value: 0

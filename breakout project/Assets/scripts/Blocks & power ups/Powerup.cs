@@ -9,7 +9,7 @@ public class Powerup : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Paddle_Controller>().ActivatePowerUp();
+            collision.gameObject.GetComponent<PaddleController>().ActivatePowerUp();
             Destroy(gameObject);
         }
     }
