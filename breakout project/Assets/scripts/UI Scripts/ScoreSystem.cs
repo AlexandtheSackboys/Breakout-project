@@ -8,8 +8,12 @@ public class ScoreSystem : MonoBehaviour
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
     [HideInInspector] public int scoreCount;
     [SerializeField] private bool hasMusic;
+    [SerializeField] private bool isLevel1;
     private GameManager gameManager;
     private BackgroundMusic backgroundMusic = null;
+    [SerializeField] private GameObject layerBorder;
+    private int maxPoints = 50;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,12 +44,27 @@ public class ScoreSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (scoreCount  == 50) 
+        if (scoreCount >= maxPoints / 2) 
+        {
+            Destroy(layerBorder);
+        }
+        if (isLevel1)
+        {
+            if (scoreCount == maxPoints)
+            {
+                backgroundMusic.StopMusic();
+                gameManager.NextLevel();
+
+            }
+            return; 
+        }
+        if (scoreCount == maxPoints)
         {
             backgroundMusic.StopMusic();
             gameManager.End();
-            
+
         }
+
 
     }
 }

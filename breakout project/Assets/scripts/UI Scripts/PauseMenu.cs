@@ -23,13 +23,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (isPaused)
         {
-            if (ballScript.lives < 3)
+            if (ballScript.Lives < 3)
             {
 
 
                 pauseMusic.LowHealthMusic();
             }
-            else if (ballScript.lives > 2)
+            else if (ballScript.Lives > 2)
             {
 
 

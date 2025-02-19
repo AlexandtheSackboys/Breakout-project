@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public ScoreSystem score;
     public TextMeshProUGUI finalScore;
     public BackgroundMusic music;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,12 +34,26 @@ public class GameManager : MonoBehaviour
         finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
         music.StopMusic();
         ismusicPlaying = false;
+        SceneManager.LoadScene(3);
+
+
+
+
+    }
+
+    public void NextLevel() // transisions to winning scene
+    {
+        finalScore.text = " Your Score: " + score.scoreCount.ToString(); // update the Score text when block has Disappeard 
+
+        music.StopMusic();
+        ismusicPlaying = false;
         SceneManager.LoadScene(2);
 
 
 
 
     }
+
 
     public void ResetGame()
     { // reset to the games title screen

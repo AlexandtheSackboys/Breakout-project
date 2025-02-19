@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: d0259975befb97f49ba7ef30ab7cabed
   - enabled: 1
-    path: Assets/Scenes/BreakoutScene.unity
+    path: Assets/Scenes/FirstBoard.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/SecondBoard.unity
+    guid: 170d88a291a01564181ee57a89a736fb
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: a2fce09247536f7409ef8521519a18dc
