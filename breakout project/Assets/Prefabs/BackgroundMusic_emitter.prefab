@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c619917f063a9d042b531697d3be5f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball_Health: {fileID: 0}
+  ballHealth: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
   music: {fileID: 2023813319022155355}
+  gameManager: {fileID: 498210912058048944, guid: 80a7c20415f7e1a4b8d3580a1ec9519c, type: 3}
 --- !u!114 &2023813319022155355
 MonoBehaviour:
   m_ObjectHideFlags: 0

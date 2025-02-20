@@ -12,7 +12,7 @@ public class ScoreSystem : MonoBehaviour
     private GameManager gameManager;
     private BackgroundMusic backgroundMusic = null;
     [SerializeField] private GameObject layerBorder;
-    private int maxPoints = 10;
+    private int maxPoints = 50;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

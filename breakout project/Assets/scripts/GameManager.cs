@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI finalScore;
     public BackgroundMusic music;
     [SerializeField] private IntSO paddleLives;
+    [SerializeField] private int maxLives;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     public void Play() //  causes main game to play
     {
         music.StopMusic();
+        paddleLives.CharacterLives = maxLives;
         SceneManager.LoadScene(1);
         ismusicPlaying = true;
     }
@@ -59,7 +61,7 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     { // reset to the games title screen
         music.StopMusic();
-        paddleLives.CharacterLives = 5;
+        paddleLives.CharacterLives = maxLives;
         SceneManager.LoadScene(0);
         ismusicPlaying = true;
         Debug.Log("reset presses i guess");

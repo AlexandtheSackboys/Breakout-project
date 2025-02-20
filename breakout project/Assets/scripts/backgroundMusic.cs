@@ -4,8 +4,9 @@ using FMODUnity;
 public class BackgroundMusic : MonoBehaviour
 {
 
-    public BallScript ball_Health;
+    [SerializeField] private BallScript ballHealth;
     [SerializeField] private StudioEventEmitter music;
+    [SerializeField] private IntSO sceneLives;
     private StudioEventEmitter eventEmitter;
     ParamRef[] paramaters;
     [SerializeField] private GameManager gameManager;
@@ -18,7 +19,12 @@ public class BackgroundMusic : MonoBehaviour
         paramaters = music.Params;
         if (gameManager.ismusicPlaying == true)
         {
-            NormalMusic();
+            if(sceneLives.CharacterLives > 2)
+            {
+                NormalMusic();
+                return;
+            }
+            LowHealthMusic();
             return;
         }
         music.Stop();
