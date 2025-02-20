@@ -67,6 +67,7 @@
     <Compile Include="Assets\scripts\Blocks &amp; power ups\Powerup.cs" />
     <Compile Include="Assets\scripts\Ball\BallScript.cs" />
     <Compile Include="Assets\scripts\UI Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\scripts\Scriptable objects\IntSO.cs" />
     <Compile Include="Assets\scripts\UI Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Utilities\PlayerInput.cs" />
     <Compile Include="Assets\scripts\Ball\FakerScript.cs" />

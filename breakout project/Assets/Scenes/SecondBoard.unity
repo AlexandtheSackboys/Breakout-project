@@ -4909,6 +4909,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: Lives
+      value: 
+      objectReference: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: force_X
       value: -750
       objectReference: {fileID: 0}
@@ -6180,6 +6184,10 @@ PrefabInstance:
       propertyPath: finalScore
       value: 
       objectReference: {fileID: 888788683430226830, guid: 7f703372be7e00942a995c4b87ae62c3, type: 3}
+    - target: {fileID: 3997512395688580884, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: paddleLives
+      value: 
+      objectReference: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: hasMusic
       value: 1

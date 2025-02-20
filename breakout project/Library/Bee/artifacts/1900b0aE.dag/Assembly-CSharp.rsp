@@ -420,6 +420,7 @@
 "Assets/scripts/other/Perspective_Change.cs"
 "Assets/scripts/Player/Paddle_Controller.cs"
 "Assets/scripts/Player/PlayerPause.cs"
+"Assets/scripts/Scriptable objects/IntSO.cs"
 "Assets/scripts/UI Scripts/PauseMenu.cs"
 "Assets/scripts/UI Scripts/SceneTransition.cs"
 "Assets/scripts/UI Scripts/ScoreSystem.cs"

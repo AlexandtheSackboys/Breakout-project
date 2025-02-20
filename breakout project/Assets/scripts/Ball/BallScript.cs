@@ -16,7 +16,7 @@ public class BallScript : MonoBehaviour
 
     public Powerup item;
     public GameObject DiegeticLives;
-    public float Lives;
+    public IntSO Lives;
     public Transform orbSpawner;
     private ScoreSystem itemTrack;
     public GameManager sceneChange;
@@ -62,7 +62,7 @@ public class BallScript : MonoBehaviour
 
 
             gameObject.transform.position = ballSpawner.transform.position;
-            Lives--;
+            Lives.CharacterLives--;
 
             DynamicMusic();
             Debug.Log(Lives);
@@ -74,11 +74,11 @@ public class BallScript : MonoBehaviour
             rb.linearVelocity = new Vector3(-magnitude_X, 0, magnitude_Z);
 
 
-            if (Lives == 1)
+            if (Lives.CharacterLives == 1)
             {
                 item.Spawn();
             }
-            else if (Lives <= 0)
+            else if (Lives.CharacterLives <= 0)
             {
 
                 Destroy(gameObject);
@@ -111,16 +111,16 @@ public class BallScript : MonoBehaviour
             Destroy(child.gameObject);
         }
         // Spawn life orbs based on lives left
-        for (int i = 0; i < Lives; i++)
+        for (int orbNumber = 0; orbNumber < Lives.CharacterLives;orbNumber++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(DiegeticLives, orbSpawner.position - new Vector3(i * 2, 0, 0), Quaternion.identity, orbSpawner);
+            Instantiate(DiegeticLives, orbSpawner.position - new Vector3(orbNumber * 2, 0, 0), Quaternion.identity, orbSpawner);
         }
     }
 
     public void lifeIncrease()
     {
-        Lives++;
+        Lives.CharacterLives++;
         DynamicMusic();
         lifeOrbs();
         paddleController.GatherLife = false;
@@ -130,13 +130,13 @@ public class BallScript : MonoBehaviour
     //this function below deals with when each song is played based on the number of lives the player has
     public void DynamicMusic()
     {
-        if (Lives < 3 && lowHp == false)
+        if (Lives.CharacterLives < 3 && lowHp == false)
         {
             lowHp = true;
 
             music.LowHealthMusic();
         }
-        else if (Lives > 2 && lowHp == true)
+        else if (Lives.CharacterLives > 2 && lowHp == true)
         {
             lowHp = false;
 

@@ -794,6 +794,10 @@ PrefabInstance:
       propertyPath: finalScore
       value: 
       objectReference: {fileID: 423291886}
+    - target: {fileID: 498210912058048944, guid: 80a7c20415f7e1a4b8d3580a1ec9519c, type: 3}
+      propertyPath: paddleLives
+      value: 
+      objectReference: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
     - target: {fileID: 4534687155146528778, guid: 80a7c20415f7e1a4b8d3580a1ec9519c, type: 3}
       propertyPath: m_Name
       value: GameManager
