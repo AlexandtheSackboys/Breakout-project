@@ -19,9 +19,9 @@ public class BallScript : MonoBehaviour
     public IntSO Lives;
     public Transform orbSpawner;
     private ScoreSystem itemTrack;
-    public GameManager sceneChange;
+
     private PaddleController paddleController;
-    private BackgroundMusic music;
+    private BackgroundMusic backgroundMusic;
 
     private bool lowHp;
 
@@ -31,17 +31,17 @@ public class BallScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        music = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
         paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
         itemTrack = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
 
 
 
 
-        if (music == null)
+        if (backgroundMusic == null)
         {
             Debug.Log("music is null");
-            music.NormalMusic();
+            backgroundMusic.NormalMusic();
         }
 
         lifeOrbs();
@@ -82,8 +82,8 @@ public class BallScript : MonoBehaviour
             {
 
                 Destroy(gameObject);
-                music.StopMusic();
-                sceneChange.End();
+                backgroundMusic.StopMusic();
+                GameManager.Instance.End();
             }
 
 
@@ -134,13 +134,13 @@ public class BallScript : MonoBehaviour
         {
             lowHp = true;
 
-            music.LowHealthMusic();
+            backgroundMusic.LowHealthMusic();
         }
         else if (Lives.CharacterLives > 2 && lowHp == true)
         {
             lowHp = false;
 
-            music.NormalMusic();
+            backgroundMusic.NormalMusic();
         }
     }
 

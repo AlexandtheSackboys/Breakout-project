@@ -9,7 +9,7 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField] private IntSO sceneLives;
     private StudioEventEmitter eventEmitter;
     ParamRef[] paramaters;
-    [SerializeField] private GameManager gameManager;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,7 +17,7 @@ public class BackgroundMusic : MonoBehaviour
     {
 
         paramaters = music.Params;
-        if (gameManager.ismusicPlaying == true)
+        if (GameManager.Instance.ismusicPlaying == true)
         {
             if(sceneLives.CharacterLives > 2)
             {

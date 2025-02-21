@@ -6,19 +6,18 @@ using UnityEngine;
 public class ScoreSystem : MonoBehaviour
 {
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
-    [HideInInspector] public int scoreCount;
+    [HideInInspector] public static int ScoreCount;
     [SerializeField] private bool hasMusic;
     [SerializeField] private bool isLevel1;
-    private GameManager gameManager;
+
     private BackgroundMusic backgroundMusic = null;
     [SerializeField] private GameObject layerBorder;
-    private int maxPoints = 50;
+    private float maxPoints = 20;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
         if (hasMusic) 
         {
@@ -29,7 +28,7 @@ public class ScoreSystem : MonoBehaviour
 
     public void BlockDestroy()
     {
-        scoreCount++; // adds a value with to the Score when destroyed
+        ScoreCount++; // adds a value with to the Score when destroyed
         UpdateScoreText();
     }
 
@@ -37,31 +36,32 @@ public class ScoreSystem : MonoBehaviour
     {
         if (ScoreCountText != null)
         {
-            ScoreCountText.text = "Score: " + scoreCount.ToString(); // update the Score text when block has Disappeard 
+            ScoreCountText.text = "Score: " + ScoreCount.ToString(); // update the Score text when block has Disappeard 
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (scoreCount >= maxPoints / 2) 
-        {
-            Destroy(layerBorder);
-        }
+ 
         if (isLevel1)
         {
-            if (scoreCount == maxPoints)
+            if (ScoreCount == maxPoints/2)
             {
                 backgroundMusic.StopMusic();
-                gameManager.NextLevel();
+                GameManager.Instance.NextLevel();
 
             }
             return; 
         }
-        if (scoreCount == maxPoints)
+        if (ScoreCount >= maxPoints * 0.75f)
+        {
+            Destroy(layerBorder);
+        }
+        if (ScoreCount == maxPoints)
         {
             backgroundMusic.StopMusic();
-            gameManager.End();
+            GameManager.Instance.End();
 
         }
 

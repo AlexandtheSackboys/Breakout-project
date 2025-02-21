@@ -51,12 +51,6 @@ public class PauseMenu : MonoBehaviour
             PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
             Time.timeScale = 0f; // Set the time scale to 0 to pause the game
             isPaused = true; // Update the pause state
-
-
-
-
-
-
     }
 
     void Update()

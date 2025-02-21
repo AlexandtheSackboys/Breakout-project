@@ -4881,17 +4881,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c205636e6da77b3469c197191577a1ab, type: 3}
---- !u!114 &1529189048 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3997512395688580884, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
-  m_PrefabInstance: {fileID: 4803351650577894914}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3aeb51c3afe0248bfbd451777120ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1535034384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4975,7 +4964,7 @@ PrefabInstance:
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: sceneChange
       value: 
-      objectReference: {fileID: 1529189048}
+      objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: DiegeticLives
       value: 
@@ -6079,7 +6068,7 @@ PrefabInstance:
     - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 1529189048}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6313,7 +6302,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7971283828256552070}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1116458977434373806, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6757564914055348120, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       insertIndex: -1
