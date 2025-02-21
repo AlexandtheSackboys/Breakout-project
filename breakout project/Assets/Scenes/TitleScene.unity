@@ -3110,6 +3110,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: sceneLives
+      value: 
+      objectReference: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
+    - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
       propertyPath: ball_Health
       value: 
       objectReference: {fileID: 1931779174}
@@ -3724,9 +3728,9 @@ SceneRoots:
   - {fileID: 773291832}
   - {fileID: 1535034384}
   - {fileID: 1149840546139482683}
+  - {fileID: 1159990770}
   - {fileID: 389268172}
   - {fileID: 101000708}
   - {fileID: 875169933}
   - {fileID: 638964151}
   - {fileID: 788675549}
-  - {fileID: 1159990770}

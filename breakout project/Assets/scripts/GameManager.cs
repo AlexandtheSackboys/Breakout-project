@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public bool ismusicPlaying = true;
     public TextMeshProUGUI finalScore;
-    public BackgroundMusic music;
+    private BackgroundMusic  backgroundMusic;
     [SerializeField] private IntSO paddleLives;
     [SerializeField] private int maxLives;
     public static GameManager Instance;
@@ -21,12 +21,13 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
         DontDestroyOnLoad(gameObject);
     }
 
     public void Play() //  causes main game to play
     {
-        music.StopMusic();
+        backgroundMusic.StopMusic();
         paddleLives.CharacterLives = maxLives;
         SceneManager.LoadScene(1);
         ismusicPlaying = true;
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
     public void End() // transisions to winning scene
     {
         finalScore.text = " Your Score: " + ScoreSystem.ScoreCount.ToString(); // update the Score text when block has Disappeard 
-        music.StopMusic();
+        backgroundMusic.StopMusic();
         ismusicPlaying = false;
         SceneManager.LoadScene(3);
 
@@ -53,7 +54,7 @@ public class GameManager : MonoBehaviour
     {
         finalScore.text = " Your Score: " + ScoreSystem.ScoreCount.ToString(); // update the Score text when block has Disappeard 
 
-        music.StopMusic();
+        backgroundMusic.StopMusic();
         ismusicPlaying = false;
         SceneManager.LoadScene(2);
 
@@ -65,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     { // reset to the games title screen
-        music.StopMusic();
+        backgroundMusic.StopMusic();
         paddleLives.CharacterLives = maxLives;
         SceneManager.LoadScene(0);
         ismusicPlaying = true;

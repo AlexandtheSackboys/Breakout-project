@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270bcf107fa4f4044b6349fd82882845, type: 3}
   m_Name: ConsistentLives
   m_EditorClassIdentifier: 
-  paddleLives: 4
+  paddleLives: 5
