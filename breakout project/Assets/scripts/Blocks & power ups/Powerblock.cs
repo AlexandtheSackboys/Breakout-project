@@ -7,7 +7,7 @@ public class Powerblock : MonoBehaviour
     public float hitpoints;
     private ScoreSystem scoreSystem; // reference game manager
 
-    public Powerup pillSpawner;
+    [SerializeField]private PowerUp pillSpawner;
 
     [SerializeField] private StudioEventEmitter collect;
 

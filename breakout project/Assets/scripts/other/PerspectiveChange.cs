@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Perspective_Change : MonoBehaviour
+public class PerspectiveChange : MonoBehaviour
 {
     private bool camera_Position;
     public GameObject CameraObject;

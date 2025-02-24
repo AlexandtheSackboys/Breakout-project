@@ -31,7 +31,7 @@ public class TitleBlock : MonoBehaviour
             pauseMenu.isPaused = false; // Update the pause state
             return;
         }
-        pauseMenu.pauseMusic.StopMusic();
+        pauseMenu.PauseMusic.StopMusic();
         screenSpawned.SetActive(true); // Show the pause menu UI panel
         pauseMenu.PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
         Time.timeScale = 0f; // Set the time scale to 0 to pause the game

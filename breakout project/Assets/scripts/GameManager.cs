@@ -9,8 +9,11 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool ismusicPlaying = true;
     public TextMeshProUGUI finalScore;
     [SerializeField]private BackgroundMusic  backgroundMusic;
-    [SerializeField] private IntSO paddleLives;
+    [SerializeField] private ScoreSystem scoreSystem;
+
+[SerializeField] private IntSO paddleLives;
     [SerializeField] private int maxLives;
+    [HideInInspector]public int SceneIndex = 0;
     public static GameManager Instance;
 
     private void Awake()
@@ -27,10 +30,11 @@ public class GameManager : MonoBehaviour
 
     public void Play() //  causes main game to play
     {
-        backgroundMusic.StopMusic();
+        ScoreSystem.ScoreCount = 0;
         paddleLives.CharacterLives = maxLives;
+        SceneIndex = 1;
         ismusicPlaying = true;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneIndex);
 
     }
 
@@ -41,10 +45,11 @@ public class GameManager : MonoBehaviour
     }
     public void End() // transisions to winning scene
     {
-        finalScore.text = " Your Score: " + ScoreSystem.ScoreCount.ToString(); // update the Score text when block has Disappeard 
-        backgroundMusic.StopMusic();
+
+       backgroundMusic.StopMusic();
+        SceneIndex = 3;
         ismusicPlaying = false;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(SceneIndex);
 
 
 
@@ -53,11 +58,12 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel() // transisions to winning scene
     {
-        finalScore.text = " Your Score: " + ScoreSystem.ScoreCount.ToString(); // update the Score text when block has Disappeard 
+
         paddleLives.CharacterLives++;
         backgroundMusic.StopMusic();
+        SceneIndex = 2;
         ismusicPlaying = true;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneIndex);
 
 
 
@@ -67,9 +73,12 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     { // reset to the games title screen
+        ScoreSystem.ScoreCount = 0;
+        
         backgroundMusic.StopMusic();
         paddleLives.CharacterLives = maxLives;
-        SceneManager.LoadScene(0);
+        SceneIndex = 0;
+        SceneManager.LoadScene(SceneIndex);
         ismusicPlaying = true;
         Debug.Log("reset presses i guess");
     }

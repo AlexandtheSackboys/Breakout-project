@@ -14,7 +14,7 @@ public class BallScript : MonoBehaviour
 
     public Transform ballSpawner;
 
-    public Powerup item;
+    public PowerUp Item;
     public GameObject DiegeticLives;
     public IntSO Lives;
     public Transform orbSpawner;
@@ -76,7 +76,7 @@ public class BallScript : MonoBehaviour
 
             if (Lives.CharacterLives == 1)
             {
-                item.Spawn();
+                Item.Spawn();
             }
             else if (Lives.CharacterLives <= 0)
             {

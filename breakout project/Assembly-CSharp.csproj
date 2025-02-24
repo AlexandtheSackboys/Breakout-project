@@ -61,13 +61,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\backgroundMusic.cs" />
-    <Compile Include="Assets\scripts\Player\Paddle_Controller.cs" />
-    <Compile Include="Assets\scripts\Blocks &amp; power ups\Powerblock.cs" />
-    <Compile Include="Assets\scripts\Blocks &amp; power ups\Powerup.cs" />
+    <Compile Include="Assets\scripts\BackgroundMusic.cs" />
+    <Compile Include="Assets\scripts\Blocks &amp; power ups\PowerUp.cs" />
     <Compile Include="Assets\scripts\Ball\BallScript.cs" />
+    <Compile Include="Assets\scripts\Blocks &amp; power ups\PowerBlock.cs" />
     <Compile Include="Assets\scripts\UI Scripts\PauseMenu.cs" />
     <Compile Include="Assets\scripts\Scriptable objects\IntSO.cs" />
+    <Compile Include="Assets\scripts\other\PerspectiveChange.cs" />
     <Compile Include="Assets\scripts\UI Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Utilities\PlayerInput.cs" />
     <Compile Include="Assets\scripts\Ball\FakerScript.cs" />
@@ -76,8 +76,8 @@
     <Compile Include="Assets\scripts\UI Scripts\TitleBlock.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\Player\PlayerPause.cs" />
-    <Compile Include="Assets\scripts\other\Perspective_Change.cs" />
     <Compile Include="Assets\scripts\other\DestroyParticles.cs" />
+    <Compile Include="Assets\scripts\Player\PaddleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

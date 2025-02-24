@@ -10,8 +10,7 @@ public class PaddleController : MonoBehaviour
     [SerializeField][Range(5000, 30000)] private float paddleSpeed;
     [SerializeField][Range(20, 30)] private float ball_releaseSpeed;
 
-    [SerializeField][Range(3, 10)] private float timeRelease;
-    [SerializeField][Range(3, 10)] private float timeShrink;
+    [SerializeField][Range(3, 10)] private float timeRelease, timeShrink;
     [SerializeField][Range(1,5)]  private float spreadLifetime;
 
     [SerializeField][Range(0.5f, 2.5f)] private float paddle_Extension;
@@ -25,22 +24,18 @@ public class PaddleController : MonoBehaviour
     // player object references
     [SerializeField] private GameObject perspectivePowerUp;
 
-    private Perspective_Change cameraChange;
+    private PerspectiveChange cameraChange;
     private BallScript ballScript;
     
     [SerializeField]private GameObject ballPrefab;
     [SerializeField]private Rigidbody ballRb;
 
-    [SerializeField] private GameObject recallPoint;
-    [SerializeField] private GameObject left_PaddleEnd;
-    [SerializeField] private GameObject right_PaddleEnd;
+    [SerializeField] private GameObject recallPoint, left_PaddleEnd ,right_PaddleEnd;
 
 
     // power up activation 
-    [HideInInspector] public bool SpreadActivate = false;
-    [HideInInspector] public bool AimActive = false;
+    [HideInInspector] public bool SpreadActivate = false, AimActive = false, GatherLife = false;
     private bool scaleActive = false;
-    [HideInInspector] public bool GatherLife = false;
 
     // other variables
     [SerializeField] private FakerScript temporaryBalls;
@@ -48,15 +43,13 @@ public class PaddleController : MonoBehaviour
     private PauseMenu paused;
 
     // Power Up texxt objects
-    [SerializeField] private GameObject aimText;
-    [SerializeField] private GameObject extendText;
-    [SerializeField] private GameObject spreadText;
+    [SerializeField] private GameObject aimText,extendText, spreadText;
 
 
     // Timers
-    private float aimTimer = 0f;
-    private float scaleTimer = 0f;
-    [HideInInspector] public float TextShow = 0f;
+    private float aimTimer = 0f, scaleTimer = 0f;
+    [HideInInspector] public float SpreadTextTimer = 0f;
+    
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
@@ -67,7 +60,7 @@ public class PaddleController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cameraChange = GameObject.Find("Main Camera").GetComponent<Perspective_Change>();
+        cameraChange = GameObject.Find("Main Camera").GetComponent<PerspectiveChange>();
         ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
         paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         rigidbody = GetComponent<Rigidbody>();
@@ -126,7 +119,7 @@ public class PaddleController : MonoBehaviour
             {
                 ScaleUp();
             }
-            if (SpreadActivate && Time.time >= TextShow)
+            if (SpreadActivate && Time.time >= SpreadTextTimer)
             {
                 Spread();
 
@@ -265,7 +258,7 @@ public class PaddleController : MonoBehaviour
         if (!SpreadActivate)
         {
             SpreadActivate = true;
-            TextShow = Time.time + spreadLifetime;
+            SpreadTextTimer = Time.time + spreadLifetime;
             spreadText.SetActive(true);
             Rigidbody fakerRb = Instantiate(temporaryBalls.rb, new Vector3(gameObject.transform.position.x, ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
             fakerRb.AddForce(temporaryBalls.Magnitude_X, 0, temporaryBalls.Magnitude_Z);

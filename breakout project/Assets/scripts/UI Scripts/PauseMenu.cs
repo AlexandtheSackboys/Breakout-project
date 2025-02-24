@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 
     private PaddleController pausePower_Ups;
     private BallScript ballScript;
-    [HideInInspector] public BackgroundMusic pauseMusic;
+    [HideInInspector] public BackgroundMusic PauseMusic;
 
 
     [HideInInspector] public bool isPaused = true; // Flag to track if the game is paused
@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
     {
         pausePower_Ups = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
         ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
-        pauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        PauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
 
     }
     public void TogglePause()
@@ -27,13 +27,13 @@ public class PauseMenu : MonoBehaviour
             {
 
 
-                pauseMusic.LowHealthMusic();
+                PauseMusic.LowHealthMusic();
             }
             else if (ballScript.Lives.CharacterLives > 2)
             {
 
 
-                pauseMusic.NormalMusic();
+                PauseMusic.NormalMusic();
             }
 
 
@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
             isPaused = false; // Update the pause state
             return;
         }
-            pauseMusic.StopMusic();
+            PauseMusic.StopMusic();
             MenuUI.SetActive(true); // Show the pause menu UI panel
             PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
             Time.timeScale = 0f; // Set the time scale to 0 to pause the game

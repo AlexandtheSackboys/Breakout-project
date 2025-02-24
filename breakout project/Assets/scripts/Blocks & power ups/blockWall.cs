@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using FMODUnity;
-public class blockWall : MonoBehaviour
+public class BlockWall : MonoBehaviour
 {
     public float hitpoints;
     private ScoreSystem scoreSystem; // reference game manager

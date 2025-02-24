@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Powerup : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
     private bool isTaken = false;
 
@@ -19,10 +19,7 @@ public class Powerup : MonoBehaviour
         return isTaken;
     }
 
-    public void CannotBeAccessed()
-    {
-        Destroy(gameObject);
-    }
+
 
     public void Spawn() { 
     Instantiate(gameObject, new Vector3(Random.Range(-19.76f,19.76f), 7.35f, -3.08f), Quaternion.identity);

@@ -1577,9 +1577,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe36e7c74f29fe48a9d16a4fb792371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 8270499951407449860}
+  MenuUI: {fileID: 0}
   PauseText: {fileID: 8875962879868053990}
-  pausePower_Ups: {fileID: 0}
+  pauseMusic: {fileID: 0}
   isPaused: 0
 --- !u!1 &3816926601351439461
 GameObject:
@@ -2965,7 +2965,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreCountText: {fileID: 5377771811255259771}
-  scoreCount: 0
+  hasMusic: 0
+  isLevel1: 0
+  GameOver: 0
+  layerBorder: {fileID: 0}
+  maxPoints: 20
 --- !u!1 &7230938038056209790
 GameObject:
   m_ObjectHideFlags: 0
