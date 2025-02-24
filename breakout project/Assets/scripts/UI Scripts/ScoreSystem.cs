@@ -1,5 +1,6 @@
 
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -7,8 +8,7 @@ public class ScoreSystem : MonoBehaviour
 {
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
     [HideInInspector] public static int ScoreCount;
-    [SerializeField] private bool hasMusic;
-    [SerializeField] private bool isLevel1;
+    [SerializeField] private bool hasMusic,isLevel1;
 
     private BackgroundMusic backgroundMusic = null;
     [SerializeField] private GameObject layerBorder;
@@ -62,6 +62,7 @@ public class ScoreSystem : MonoBehaviour
         {
             backgroundMusic.StopMusic();
             GameManager.Instance.End();
+            
 
         }
 
