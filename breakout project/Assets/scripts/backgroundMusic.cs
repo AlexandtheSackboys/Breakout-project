@@ -1,8 +1,9 @@
-using UnityEngine;
 using FMODUnity;
+using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour
 {
+
 
     [SerializeField] private BallScript ballHealth;
     [SerializeField] private StudioEventEmitter music;
@@ -19,7 +20,7 @@ public class BackgroundMusic : MonoBehaviour
         paramaters = music.Params;
         if (GameManager.Instance.ismusicPlaying == true)
         {
-            if(sceneLives.CharacterLives > 2)
+            if (sceneLives.CharacterLives > 2)
             {
                 NormalMusic();
                 return;

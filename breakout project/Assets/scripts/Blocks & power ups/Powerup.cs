@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PowerUp : MonoBehaviour
@@ -21,8 +20,9 @@ public class PowerUp : MonoBehaviour
 
 
 
-    public void Spawn() { 
-    Instantiate(gameObject, new Vector3(Random.Range(-19.76f,19.76f), 7.35f, -3.08f), Quaternion.identity);
+    public void Spawn()
+    {
+        Instantiate(gameObject, new Vector3(Random.Range(-19.76f, 19.76f), 7.35f, -3.08f), Quaternion.identity);
 
     }
 }

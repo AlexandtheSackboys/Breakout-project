@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ismusicPlaying: 1
   finalScore: {fileID: 888788683430226830, guid: 7f703372be7e00942a995c4b87ae62c3, type: 3}
-  backgroundMusic: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+  backgroundMusic: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+  scoreSystem: {fileID: 1892721407728537356, guid: 09abf84d28b741f4f82d8801db8aafae, type: 3}
   paddleLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
   maxLives: 5
+  SceneIndex: 0

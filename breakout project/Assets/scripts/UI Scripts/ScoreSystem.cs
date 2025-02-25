@@ -8,7 +8,7 @@ public class ScoreSystem : MonoBehaviour
 {
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
     [HideInInspector] public static int ScoreCount;
-    [SerializeField] private bool hasMusic;
+
     [HideInInspector] public bool GameOver = false;
     private BackgroundMusic backgroundMusic;
     [SerializeField] private GameObject layerBorder;
@@ -20,10 +20,9 @@ public class ScoreSystem : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        if (hasMusic)
-        {
-            backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
-        }
+
+       backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        
         UpdateScoreText();
     }
 

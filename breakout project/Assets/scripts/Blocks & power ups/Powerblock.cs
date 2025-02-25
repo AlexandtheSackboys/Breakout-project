@@ -1,13 +1,12 @@
 using FMODUnity;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Powerblock : MonoBehaviour
+public class PowerBlock : MonoBehaviour
 {
     public float hitpoints;
     private ScoreSystem scoreSystem; // reference game manager
 
-    [SerializeField]private PowerUp pillSpawner;
+    [SerializeField] private PowerUp pillSpawner;
 
     [SerializeField] private StudioEventEmitter collect;
 
@@ -21,7 +20,7 @@ public class Powerblock : MonoBehaviour
         {
             collect.Play();
             hitpoints--;
-            
+
 
             if (hitpoints == 0)
             {
@@ -48,5 +47,3 @@ public class Powerblock : MonoBehaviour
     }
 
 }
-
-

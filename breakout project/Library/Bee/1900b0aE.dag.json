@@ -55273,7 +55273,7 @@
         "Assets/scripts/BackgroundMusic.cs",
         "Assets/scripts/Ball/BallScript.cs",
         "Assets/scripts/Ball/FakerScript.cs",
-        "Assets/scripts/Blocks & power ups/blockWall.cs",
+        "Assets/scripts/Blocks & power ups/BlockWall.cs",
         "Assets/scripts/Blocks & power ups/PowerBlock.cs",
         "Assets/scripts/Blocks & power ups/PowerUp.cs",
         "Assets/scripts/GameManager.cs",

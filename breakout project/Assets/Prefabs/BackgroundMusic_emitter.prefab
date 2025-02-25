@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256579995876970909}
-  - component: {fileID: 6339797527182132108}
   - component: {fileID: 2023813319022155355}
   - component: {fileID: 8694788190077547712}
+  - component: {fileID: 5113238093059222988}
   m_Layer: 0
   m_Name: BackgroundMusic_emitter
   m_TagString: Untagged
@@ -34,21 +34,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6339797527182132108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169002340180958540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c619917f063a9d042b531697d3be5f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballHealth: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
-  music: {fileID: 2023813319022155355}
-  gameManager: {fileID: 498210912058048944, guid: 80a7c20415f7e1a4b8d3580a1ec9519c, type: 3}
 --- !u!114 &2023813319022155355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,4 +85,19 @@ MonoBehaviour:
     Params:
     - Name: SwitchMusic
       Value: 1
-  TriggerEvent: 1
+  TriggerEvent: 0
+--- !u!114 &5113238093059222988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169002340180958540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c619917f063a9d042b531697d3be5f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballHealth: {fileID: 0}
+  music: {fileID: 2023813319022155355}
+  sceneLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}

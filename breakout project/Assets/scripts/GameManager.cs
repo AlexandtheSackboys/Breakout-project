@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(Instance);
     }
 
     public void Play() //  causes main game to play
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
     { // reset to the games title screen
         ScoreSystem.ScoreCount = 0;
         
-        backgroundMusic.StopMusic();
+
         paddleLives.CharacterLives = maxLives;
         SceneIndex = 0;
         SceneManager.LoadScene(SceneIndex);

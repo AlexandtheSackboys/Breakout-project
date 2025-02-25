@@ -383,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: layerBorder
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9099736073792077987, guid: 3a0073f14198553488d591ec83fafe00, type: 3}
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: ScoreCountText
       value: 
@@ -603,6 +603,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: ballHealth
+      value: 
+      objectReference: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
     - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1250,7 +1254,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359991238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2}
   m_LocalScale: {x: 0.40268, y: 0.23740408, z: 0.80683}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1259,7 +1263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.8, y: -13.2}
+  m_AnchoredPosition: {x: 55.3, y: -13.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359991240
@@ -1594,7 +1598,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 888788683430226830, guid: 7f703372be7e00942a995c4b87ae62c3, type: 3}
       propertyPath: m_text
-      value: ' Your Score:'
+      value: 'Score:'
       objectReference: {fileID: 0}
     - target: {fileID: 2871412985246127372, guid: 7f703372be7e00942a995c4b87ae62c3, type: 3}
       propertyPath: m_Name
