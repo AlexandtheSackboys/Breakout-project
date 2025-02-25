@@ -335,17 +335,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 22.744, y: 1.355, z: 2.315}
---- !u!114 &265068647 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
-  m_PrefabInstance: {fileID: 4803351650577894914}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b83ce313ae7d5944a2ddf9e080976ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &389268170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,7 +2561,7 @@ PrefabInstance:
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: itemTrack
       value: 
-      objectReference: {fileID: 265068647}
+      objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: life_Orbs
       value: 
@@ -2623,6 +2612,10 @@ PrefabInstance:
       objectReference: {fileID: 1347497788}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: DiegeticLives
+      value: 
+      objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: diegeticLives
       value: 
       objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
@@ -3247,7 +3240,7 @@ PrefabInstance:
     - target: {fileID: 3997512395688580884, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: score
       value: 
-      objectReference: {fileID: 265068647}
+      objectReference: {fileID: 0}
     - target: {fileID: 3997512395688580884, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: maxLives
       value: 5
@@ -3483,10 +3476,12 @@ PrefabInstance:
       propertyPath: pausePower_Ups
       value: 
       objectReference: {fileID: 7971283828256552070}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8467761586773302011, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
     - {fileID: 1116458977434373806, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+    - {fileID: 7080023750751057922, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 835523778473173995, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       insertIndex: -1

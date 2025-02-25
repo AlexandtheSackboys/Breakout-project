@@ -9,7 +9,6 @@ public class ScoreSystem : MonoBehaviour
     public TextMeshProUGUI ScoreCountText; //reference to UI in scene
     [HideInInspector] public static int ScoreCount;
 
-    [HideInInspector] public bool GameOver = false;
     private BackgroundMusic backgroundMusic;
     [SerializeField] private GameObject layerBorder;
     [Range(20,100)][SerializeField]private float maxPoints;

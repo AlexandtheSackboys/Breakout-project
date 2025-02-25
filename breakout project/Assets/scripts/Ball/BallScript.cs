@@ -8,17 +8,17 @@ public class BallScript : MonoBehaviour
 
     public Rigidbody rb;
 
-    [Range(-25, 25)] public float magnitude_X;
-    [Range(10, 25)] public float magnitude_Z;
+    [SerializeField][Range(-25, 25)] private float magnitude_X;
+    [SerializeField][Range(10, 25)] private float magnitude_Z;
 
 
     public Transform ballSpawner;
 
-    public PowerUp Item;
-    public GameObject DiegeticLives;
+    [SerializeField] private PowerUp item;
+    [SerializeField] private GameObject diegeticLives;
     public IntSO Lives;
-    public Transform orbSpawner;
-    private ScoreSystem itemTrack;
+    [SerializeField] private Transform orbSpawner;
+
 
     private PaddleController paddleController;
     private BackgroundMusic backgroundMusic;
@@ -33,7 +33,7 @@ public class BallScript : MonoBehaviour
     {
         backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
         paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
-        itemTrack = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
+
 
 
 
@@ -76,7 +76,7 @@ public class BallScript : MonoBehaviour
 
             if (Lives.CharacterLives == 1)
             {
-                Item.Spawn();
+                item.Spawn();
             }
             else if (Lives.CharacterLives <= 0)
             {
@@ -114,7 +114,7 @@ public class BallScript : MonoBehaviour
         for (int orbNumber = 0; orbNumber < Lives.CharacterLives;orbNumber++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(DiegeticLives, orbSpawner.position - new Vector3(orbNumber * 2, 0, 0), Quaternion.identity, orbSpawner);
+            Instantiate(diegeticLives, orbSpawner.position - new Vector3(orbNumber * 2, 0, 0), Quaternion.identity, orbSpawner);
         }
     }
 
