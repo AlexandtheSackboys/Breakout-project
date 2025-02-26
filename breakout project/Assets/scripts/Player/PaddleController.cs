@@ -8,7 +8,7 @@ public class PaddleController : MonoBehaviour
 {
     // stats that can be edited in editor
     [SerializeField][Range(5000, 30000)] private float paddleSpeed;
-    [SerializeField][Range(20, 30)] private float ball_releaseSpeed;
+    [SerializeField][Range(20, 30)] private float releaseSpeed;
 
     [SerializeField][Range(3, 10)] private float timeRelease, timeShrink;
     [SerializeField][Range(1,5)]  private float spreadLifetime;
@@ -214,7 +214,7 @@ public class PaddleController : MonoBehaviour
         cameraChange.CameraObject.transform.position = cameraChange.Perspective_3rd.transform.position;
         cameraChange.CameraObject.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
 
-        ballRb.linearVelocity = new Vector3(5, 0, ball_releaseSpeed);
+        ballRb.linearVelocity = new Vector3(5, 0, releaseSpeed);
         AimActive = false;
         // causes padddle to return to its original state when Time.time is equal to aimTimer
 

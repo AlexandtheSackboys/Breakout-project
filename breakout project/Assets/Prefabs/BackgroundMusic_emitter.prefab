@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 256579995876970909}
   - component: {fileID: 2023813319022155355}
-  - component: {fileID: 8694788190077547712}
   - component: {fileID: 5113238093059222988}
   m_Layer: 0
   m_Name: BackgroundMusic_emitter
@@ -67,25 +66,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!114 &8694788190077547712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169002340180958540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Emitters:
-  - Target: {fileID: 2023813319022155355}
-    Params:
-    - Name: SwitchMusic
-      Value: 1
-  TriggerEvent: 0
 --- !u!114 &5113238093059222988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,6 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c619917f063a9d042b531697d3be5f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballHealth: {fileID: 0}
+  ballHealth: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
   musicEmitter: {fileID: 2023813319022155355}
   sceneLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}

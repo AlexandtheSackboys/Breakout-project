@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paddleSpeed: 15000
-  ball_releaseSpeed: 20
+  releaseSpeed: 25
   timeRelease: 3
   timeShrink: 3
   spreadLifetime: 1

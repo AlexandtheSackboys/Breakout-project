@@ -9,6 +9,7 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField] private StudioEventEmitter musicEmitter;
     [SerializeField] private IntSO sceneLives;
 
+
     ParamRef[] paramaters;
 
 
