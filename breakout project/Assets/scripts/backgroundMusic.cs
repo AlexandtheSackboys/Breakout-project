@@ -18,7 +18,7 @@ public class BackgroundMusic : MonoBehaviour
     {
 
         paramaters = music.Params;
-        if (GameManager.Instance.ismusicPlaying == true)
+        if (GameManager.IsMusicPlaying == true)
         {
             if (sceneLives.CharacterLives > 2)
             {

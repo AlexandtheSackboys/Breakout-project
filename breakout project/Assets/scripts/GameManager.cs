@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    [HideInInspector] public bool ismusicPlaying = true;
+    [HideInInspector] public static bool IsMusicPlaying = true;
     public TextMeshProUGUI finalScore;
     [SerializeField]private BackgroundMusic  backgroundMusic;
     [SerializeField] private ScoreSystem scoreSystem;
@@ -30,11 +30,15 @@ public class GameManager : MonoBehaviour
 
     public void Play() //  causes main game to play
     {
+        backgroundMusic.StopMusic();
         ScoreSystem.ScoreCount = 0;
         paddleLives.CharacterLives = maxLives;
+
         SceneIndex = 1;
-        ismusicPlaying = true;
+
+        IsMusicPlaying = true;
         SceneManager.LoadScene(SceneIndex);
+
 
     }
 
@@ -48,7 +52,7 @@ public class GameManager : MonoBehaviour
 
        backgroundMusic.StopMusic();
         SceneIndex = 3;
-        ismusicPlaying = false;
+        IsMusicPlaying = false;
         SceneManager.LoadScene(SceneIndex);
 
 
@@ -62,7 +66,7 @@ public class GameManager : MonoBehaviour
         paddleLives.CharacterLives++;
         backgroundMusic.StopMusic();
         SceneIndex = 2;
-        ismusicPlaying = true;
+        IsMusicPlaying = true;
         SceneManager.LoadScene(SceneIndex);
 
 
@@ -79,7 +83,7 @@ public class GameManager : MonoBehaviour
         paddleLives.CharacterLives = maxLives;
         SceneIndex = 0;
         SceneManager.LoadScene(SceneIndex);
-        ismusicPlaying = true;
+        IsMusicPlaying = true;
         Debug.Log("reset presses i guess");
     }
 
