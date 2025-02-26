@@ -12,13 +12,12 @@ public class ScoreSystem : MonoBehaviour
     private BackgroundMusic backgroundMusic;
     [SerializeField] private GameObject layerBorder;
     [Range(20,100)][SerializeField]private float maxPoints;
-    private GameManager gameManager;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
 
        backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
         
@@ -44,7 +43,7 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
 
-        switch (gameManager.SceneIndex) {
+        switch (GameManager.SceneIndex) {
 
 
             case 1:

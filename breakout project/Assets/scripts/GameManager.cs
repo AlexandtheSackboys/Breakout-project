@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
 [SerializeField] private IntSO paddleLives;
     [SerializeField] private int maxLives;
-    [HideInInspector]public int SceneIndex = 0;
+    [HideInInspector]public static int SceneIndex = 0;
     public static GameManager Instance;
 
     private void Awake()

@@ -8,7 +8,7 @@ public class BackgroundMusic : MonoBehaviour
     [SerializeField] private BallScript ballHealth;
     [SerializeField] private StudioEventEmitter music;
     [SerializeField] private IntSO sceneLives;
-    private StudioEventEmitter eventEmitter;
+
     ParamRef[] paramaters;
 
 
