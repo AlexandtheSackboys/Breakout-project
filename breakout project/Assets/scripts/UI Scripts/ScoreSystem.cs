@@ -48,31 +48,44 @@ public class ScoreSystem : MonoBehaviour
 
             case 1:
 
-                if (ScoreCount == maxPoints / 2)
-                {
-                    backgroundMusic.StopMusic();
-                    GameManager.Instance.NextLevel();
-
-                }
+                firstBoard();
                 break;
 
             case 2:    
 
-                if (ScoreCount == maxPoints * 0.75f)
-                {
-                    Destroy(layerBorder);
-                }
-                if (ScoreCount == maxPoints)
-                {
-
-                    backgroundMusic.StopMusic();
-                    GameManager.Instance.End();
-
-                }
+                secondBoard();
                 break;
 
+                // make them function calls instead of Switch
+        }
+
+        
+    }
+
+    void firstBoard() 
+    {
+
+        if (ScoreCount >= maxPoints / 2)
+        {
+            backgroundMusic.StopMusic();
+            GameManager.Instance.NextLevel();
 
         }
-    } 
+    }
+
+    void secondBoard() 
+    {
+        if (ScoreCount == maxPoints * 0.75f)
+        {
+            Destroy(layerBorder);
+        }
+        if (ScoreCount == maxPoints)
+        {
+
+            backgroundMusic.StopMusic();
+            GameManager.Instance.End();
+
+        }
+    }
 }
 

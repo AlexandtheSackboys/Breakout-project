@@ -99,5 +99,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballHealth: {fileID: 0}
-  music: {fileID: 2023813319022155355}
+  musicEmitter: {fileID: 2023813319022155355}
   sceneLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}

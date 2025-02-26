@@ -6,7 +6,7 @@ public class BackgroundMusic : MonoBehaviour
 
 
     [SerializeField] private BallScript ballHealth;
-    [SerializeField] private StudioEventEmitter music;
+    [SerializeField] private StudioEventEmitter musicEmitter;
     [SerializeField] private IntSO sceneLives;
 
     ParamRef[] paramaters;
@@ -17,18 +17,13 @@ public class BackgroundMusic : MonoBehaviour
     void Start()
     {
 
-        paramaters = music.Params;
+        paramaters = musicEmitter.Params;
         if (GameManager.IsMusicPlaying == true)
         {
-            if (sceneLives.CharacterLives > 2)
-            {
-                NormalMusic();
-                return;
-            }
-            LowHealthMusic();
+            adaptiveMusic();
             return;
         }
-        music.Stop();
+        musicEmitter.Stop();
 
 
     }
@@ -36,22 +31,22 @@ public class BackgroundMusic : MonoBehaviour
 
     public void LowHealthMusic()
     {
-        music.Stop();
+        musicEmitter.Stop();
         paramaters[0].Value = 1;
-        music.Play();
+        musicEmitter.Play();
         return;
     }
 
     public void NormalMusic()
     {
-        music.Stop();
+        musicEmitter.Stop();
         paramaters[0].Value = 0;
-        music.Play();
+        musicEmitter.Play();
         return;
     }
     public void StopMusic()
     {
-        music.Stop();
+        musicEmitter.Stop();
     }
 
 
@@ -59,6 +54,18 @@ public class BackgroundMusic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    void adaptiveMusic()
+    {
+        if (sceneLives.CharacterLives > 2)
+        {
+            NormalMusic();
+            return;
+        }
+        LowHealthMusic();
+
 
     }
 }

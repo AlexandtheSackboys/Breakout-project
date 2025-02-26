@@ -8629,6 +8629,10 @@ PrefabInstance:
       propertyPath: ballHealth
       value: 
       objectReference: {fileID: 1931779174}
+    - target: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: musicEmitter
+      value: 
+      objectReference: {fileID: 8775958060611802237}
     - target: {fileID: 6339797527182132108, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
       propertyPath: music
       value: 
