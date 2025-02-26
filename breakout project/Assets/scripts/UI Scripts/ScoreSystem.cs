@@ -75,11 +75,11 @@ public class ScoreSystem : MonoBehaviour
 
     void secondBoard() 
     {
-        if (ScoreCount == maxPoints * 0.75f)
+        if (ScoreCount >= maxPoints * 0.75f)
         {
             Destroy(layerBorder);
         }
-        if (ScoreCount == maxPoints)
+        if (ScoreCount >= maxPoints)
         {
 
             backgroundMusic.StopMusic();

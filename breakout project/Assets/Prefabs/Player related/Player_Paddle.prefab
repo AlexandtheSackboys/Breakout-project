@@ -190,25 +190,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f902045c71600d4b8c7e6801c54549b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15000
+  paddleSpeed: 15000
   ball_releaseSpeed: 20
-  timeTilRelease: 5
-  timeTilShrink: 10
+  timeRelease: 3
+  timeShrink: 3
+  spreadLifetime: 1
   paddle_Extension: 1
   slowDown: 7
-  perspective_1st: {fileID: 4347302299981362828}
-  cameraChange: {fileID: 0}
-  lifeOrb_Increase: {fileID: 0}
+  perspectivePowerUp: {fileID: 0}
   ballPrefab: {fileID: 0}
   ballRb: {fileID: 0}
   recallPoint: {fileID: 1562819523564857535}
   left_PaddleEnd: {fileID: 4327713104552020101}
   right_PaddleEnd: {fileID: 571249084119475177}
-  spreadActivate: 0
-  isAimActive: 0
-  temporary: {fileID: 1019975939899639432, guid: 0b0a6e69fba9ad946bff2d4ce3d135b9, type: 3}
-  hit: {fileID: 2571920332642988990}
-  paused: {fileID: 0}
+  SpreadActivate: 0
+  AimActive: 0
+  GatherLife: 0
+  temporaryBalls: {fileID: 0}
+  paddleHit: {fileID: 0}
+  aimText: {fileID: 0}
+  extendText: {fileID: 0}
+  spreadText: {fileID: 0}
+  SpreadTextTimer: 0
 --- !u!114 &7754972580047524949
 MonoBehaviour:
   m_ObjectHideFlags: 0
