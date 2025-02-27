@@ -21,6 +21,7 @@ public class BackgroundMusic : MonoBehaviour
         paramaters = musicEmitter.Params;
         if (GameManager.IsMusicPlaying == true)
         {
+           
             adaptiveMusic();
             return;
         }
@@ -62,10 +63,15 @@ public class BackgroundMusic : MonoBehaviour
     {
         if (sceneLives.CharacterLives > 2)
         {
+            Debug.Log("music playing");
             NormalMusic();
             return;
         }
-        LowHealthMusic();
+        else
+        {
+            LowHealthMusic();
+        }
+
 
 
     }

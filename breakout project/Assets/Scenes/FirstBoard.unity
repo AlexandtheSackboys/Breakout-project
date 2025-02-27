@@ -8462,6 +8462,18 @@ PrefabInstance:
       value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.80426157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.80426157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.80426157
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700614666887619428, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -210
       objectReference: {fileID: 0}
@@ -8628,6 +8640,10 @@ PrefabInstance:
     - target: {fileID: 6058690042577292191, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629073361580545985, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_text
+      value: "press the P key to pause the game \n\npress SpaceBar to change perspective"
       objectReference: {fileID: 0}
     - target: {fileID: 6629073361580545985, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_margin.z

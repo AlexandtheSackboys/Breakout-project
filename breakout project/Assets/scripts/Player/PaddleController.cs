@@ -147,7 +147,7 @@ public class PaddleController : MonoBehaviour
         if (SpreadActivate == false || AimActive == false || scaleActive == false || GatherLife == false)
         {
 
-            int powerUp = Random.Range(0,11);
+            int powerUp =10 /*Random.Range(0,11)*/;
             Debug.Log("Power up number: " + powerUp);
             if (powerUp >= 1 && powerUp < 4)
             {

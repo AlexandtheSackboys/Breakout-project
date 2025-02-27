@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ScoreSystem scoreSystem;
 
 [SerializeField] private IntSO paddleLives;
-    [SerializeField] private int maxLives;
+    [SerializeField] private  int maxLives;
     [HideInInspector]public static int SceneIndex = 0;
     public static GameManager Instance;
 
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     public void NextLevel() // transisions to winning scene
     {
 
-        paddleLives.CharacterLives++;
+        paddleLives.CharacterLives+= 2;
         backgroundMusic.StopMusic();
         SceneIndex = 2;
         IsMusicPlaying = true;
