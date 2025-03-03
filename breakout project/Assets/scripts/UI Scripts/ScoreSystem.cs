@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class ScoreSystem : MonoBehaviour
 {
-    public TextMeshProUGUI ScoreCountText; //reference to UI in scene
-    [HideInInspector] public static int ScoreCount;
+    [SerializeField]private TextMeshProUGUI _scoreCountText; //reference to UI in scene
+    public static int s_ScoreCount;
 
-    private BackgroundMusic backgroundMusic;
+
+    private BackgroundMusic _backgroundMusic;
     [SerializeField] private GameObject layerBorder;
     [Range(20,100)][SerializeField]private float maxPoints;
 
@@ -19,23 +20,23 @@ public class ScoreSystem : MonoBehaviour
     {
 
 
-       backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+       _backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
         
         UpdateScoreText();
     }
 
     public void BlockDestroy()
     {
-        ScoreCount++; // adds a value with to the Score when destroyed
+        s_ScoreCount++; // adds a value with to the Score when destroyed
         UpdateScoreText();
     }
 
     void UpdateScoreText()
     {
-        if (ScoreCountText != null)
+        if (_scoreCountText != null)
         {
 
-                ScoreCountText.text = "Score: " + ScoreCount.ToString(); // update the Score text when block has Disappeard 
+                _scoreCountText.text = "Score: " + s_ScoreCount.ToString(); // update the Score text when block has Disappeard 
         }
     }
 
@@ -43,7 +44,7 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
 
-        switch (GameManager.SceneIndex) {
+        switch (GameManager.s_SceneIndex) {
 
 
             case 1:
@@ -65,25 +66,25 @@ public class ScoreSystem : MonoBehaviour
     void firstBoard() 
     {
 
-        if (ScoreCount >= maxPoints / 2)
+        if (s_ScoreCount >= maxPoints / 2)
         {
-            backgroundMusic.StopMusic();
-            GameManager.Instance.NextLevel();
+            _backgroundMusic.StopMusic();
+            GameManager.s_Instance.NextLevel();
 
         }
     }
 
     void secondBoard() 
     {
-        if (ScoreCount >= maxPoints * 0.75f)
+        if (s_ScoreCount >= maxPoints * 0.75f)
         {
             Destroy(layerBorder);
         }
-        if (ScoreCount >= maxPoints)
+        if (s_ScoreCount >= maxPoints)
         {
 
-            backgroundMusic.StopMusic();
-            GameManager.Instance.End();
+            _backgroundMusic.StopMusic();
+            GameManager.s_Instance.End();
 
         }
     }

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FakerScript : MonoBehaviour
 {
-
-    public Rigidbody rb;
+    // Fakers are the pink ball that appear when the Spread power up is activated
+    public Rigidbody FakerRb;
 
     [Range(-1250, 1250)] public float Magnitude_X;
     [Range(-1250, 1250)] public float Magnitude_Z;
-    [Range(1, 5)] private int tempHits;
+    [Range(1, 5)] private int _tempHits;
 
 
 
@@ -20,7 +20,7 @@ public class FakerScript : MonoBehaviour
     {
         // applies forces to the x and z directions
 
-        rb.AddForce(Magnitude_X, 0, Magnitude_Z);
+        FakerRb.AddForce(Magnitude_X, 0, Magnitude_Z);
 
 
 
@@ -43,15 +43,15 @@ public class FakerScript : MonoBehaviour
 
         else if (collide.gameObject.CompareTag("Contingency"))
         {
-            rb.linearVelocity = new Vector3(Magnitude_X, 0, Magnitude_Z);
+            FakerRb.linearVelocity = new Vector3(Magnitude_X, 0, Magnitude_Z);
 
         }
 
         else if (collide.gameObject.CompareTag("Block"))
         {
-            tempHits--;
+            _tempHits--;
 
-            if (tempHits <= 0)
+            if (_tempHits <= 0)
             {
 
                 Destroy(gameObject);

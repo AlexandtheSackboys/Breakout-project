@@ -8,22 +8,22 @@ public class BallScript : MonoBehaviour
 
     public Rigidbody rb;
 
-    [SerializeField][Range(-25, 25)] private float magnitude_X;
-    [SerializeField][Range(10, 25)] private float magnitude_Z;
+    [SerializeField][Range(-25, 25)] private float _magnitude_X;
+    [SerializeField][Range(10, 25)] private float _magnitude_Z;
 
 
-    public Transform ballSpawner;
+    [SerializeField] private Transform _ballSpawner, _orbSpawner;
 
-    [SerializeField] private PowerUp item;
-    [SerializeField] private GameObject diegeticLives;
+
+    [SerializeField] private PowerUp _itemPill;
+    [SerializeField] private GameObject _diegeticLives;
     public IntSO Lives;
-    [SerializeField] private Transform orbSpawner;
 
 
-    private PaddleController paddleController;
-    private BackgroundMusic backgroundMusic;
+    private PaddleController _paddleController;
+    private BackgroundMusic _backgroundMusic;
 
-    private bool lowHp;
+    private bool _lowHp;
 
 
 
@@ -31,25 +31,25 @@ public class BallScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
-        paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
+        _backgroundMusic = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        _paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
 
 
 
 
 
-        if (backgroundMusic == null)
+        if (_backgroundMusic == null)
         {
             Debug.Log("music is null");
-            backgroundMusic.NormalMusic();
+            _backgroundMusic.NormalMusic();
         }
 
         lifeOrbs();
         // applies forces to the x and z directions
 
 
-        rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
-        lowHp = false;
+        rb.linearVelocity = new Vector3(_magnitude_X, 0, _magnitude_Z);
+        _lowHp = false;
     }
 
 
@@ -61,7 +61,7 @@ public class BallScript : MonoBehaviour
         {
 
 
-            gameObject.transform.position = ballSpawner.transform.position;
+            gameObject.transform.position = _ballSpawner.transform.position;
             Lives.CharacterLives--;
 
             DynamicMusic();
@@ -71,19 +71,19 @@ public class BallScript : MonoBehaviour
 
 
 
-            rb.linearVelocity = new Vector3(-magnitude_X, 0, magnitude_Z);
+            rb.linearVelocity = new Vector3(-_magnitude_X, 0, _magnitude_Z);
 
 
             if (Lives.CharacterLives == 1)
             {
-                item.Spawn();
+                _itemPill.Spawn();
             }
             else if (Lives.CharacterLives <= 0)
             {
 
                 Destroy(gameObject);
-                backgroundMusic.StopMusic();
-                GameManager.Instance.End();
+                _backgroundMusic.StopMusic();
+                GameManager.s_Instance.End();
             }
 
 
@@ -96,8 +96,8 @@ public class BallScript : MonoBehaviour
         }
         else if (collide.gameObject.CompareTag("Contingency"))
         {
-            rb.linearVelocity = new Vector3(magnitude_X, 0, magnitude_Z);
-            gameObject.transform.position = ballSpawner.transform.position;
+            rb.linearVelocity = new Vector3(_magnitude_X, 0, _magnitude_Z);
+            gameObject.transform.position = _ballSpawner.transform.position;
         }
 
     }
@@ -106,7 +106,7 @@ public class BallScript : MonoBehaviour
     {
 
         // Destroy any existing life orbs to avoid duplicates
-        foreach (Transform child in orbSpawner)
+        foreach (Transform child in _orbSpawner)
         {
             Destroy(child.gameObject);
         }
@@ -114,7 +114,7 @@ public class BallScript : MonoBehaviour
         for (int orbNumber = 0; orbNumber < Lives.CharacterLives;orbNumber++)
         {
             // You can position these orbs in different spots around the OrbSpawner
-            Instantiate(diegeticLives, orbSpawner.position - new Vector3(orbNumber * 2, 0, 0), Quaternion.identity, orbSpawner);
+            Instantiate(_diegeticLives, _orbSpawner.position - new Vector3(orbNumber * 2, 0, 0), Quaternion.identity, _orbSpawner);
         }
     }
 
@@ -123,24 +123,24 @@ public class BallScript : MonoBehaviour
         Lives.CharacterLives++;
         DynamicMusic();
         lifeOrbs();
-        paddleController.GatherLife = false;
+        _paddleController.GatherLife = false;
 
     }
 
     //this function below deals with when each song is played based on the number of lives the player has
     public void DynamicMusic()
     {
-        if (Lives.CharacterLives < 3 && lowHp == false)
+        if (Lives.CharacterLives < 3 && _lowHp == false)
         {
-            lowHp = true;
+            _lowHp = true;
 
-            backgroundMusic.LowHealthMusic();
+            _backgroundMusic.LowHealthMusic();
         }
-        else if (Lives.CharacterLives > 2 && lowHp == true)
+        else if (Lives.CharacterLives > 2 && _lowHp == true)
         {
-            lowHp = false;
+            _lowHp = false;
 
-            backgroundMusic.NormalMusic();
+            _backgroundMusic.NormalMusic();
         }
     }
 

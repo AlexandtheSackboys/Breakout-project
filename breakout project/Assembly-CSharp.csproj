@@ -64,7 +64,6 @@
     <Compile Include="Assets\scripts\BackgroundMusic.cs" />
     <Compile Include="Assets\scripts\Blocks &amp; power ups\PowerUp.cs" />
     <Compile Include="Assets\scripts\Ball\BallScript.cs" />
-    <Compile Include="Assets\scripts\Blocks &amp; power ups\PowerBlock.cs" />
     <Compile Include="Assets\scripts\UI Scripts\PauseMenu.cs" />
     <Compile Include="Assets\scripts\Scriptable objects\IntSO.cs" />
     <Compile Include="Assets\scripts\other\PerspectiveChange.cs" />

@@ -7,52 +7,52 @@ using UnityEngine.InputSystem;
 public class PaddleController : MonoBehaviour
 {
     // stats that can be edited in editor
-    [SerializeField][Range(5000, 30000)] private float paddleSpeed;
-    [SerializeField][Range(20, 30)] private float releaseSpeed;
+    [SerializeField][Range(5000, 30000)] private float _paddleSpeed;
+    [SerializeField][Range(20, 30)] private float _ballReleaseSpeed;
 
-    [SerializeField][Range(3, 10)] private float timeRelease, timeShrink;
-    [SerializeField][Range(1,5)]  private float spreadLifetime;
+    [SerializeField][Range(3, 10)] private float _timeRelease, _timeTilShrink;
+    [SerializeField][Range(1,5)]  private float _spreadLifetime;
 
-    [SerializeField][Range(0.5f, 2.5f)] private float paddle_Extension;
-    [SerializeField][Range(2, 8)] private float slowDown;
+    [SerializeField][Range(0.5f, 2.5f)] private float _paddleExtension;
+    [SerializeField][Range(2, 8)] private float _slowDown;
 
     // effected by player input
-    private new Rigidbody rigidbody;
-    private Vector2 moveInput;
-    private Animator tilt;
+    private Rigidbody _paddleRigidbody;
+    private Vector2 _moveInput;
+    private Animator _paddleTilt;
 
     // player object references
-    [SerializeField] private GameObject perspectivePowerUp;
+    [SerializeField] private GameObject _perspectivePowerUp;
 
-    private PerspectiveChange cameraChange;
-    private BallScript ballScript;
+    private PerspectiveChange _cameraChange;
+    private BallScript _ballScript;
     
-    [SerializeField]private GameObject ballPrefab;
-    [SerializeField]private Rigidbody ballRb;
+    [SerializeField]private GameObject _ballPrefab;
+    [SerializeField]private Rigidbody _ballRb;
 
-    [SerializeField] private GameObject recallPoint, left_PaddleEnd ,right_PaddleEnd;
+    [SerializeField] private GameObject _recallPoint, _leftPaddleEnd ,_rightPaddleEnd;
 
 
     // power up activation 
     [HideInInspector] public bool SpreadActivate = false, AimActive = false, GatherLife = false;
-    private bool scaleActive = false;
+    private bool _scaleActive = false;
 
     // other variables
-    [SerializeField] private FakerScript temporaryBalls;
-    [SerializeField] private StudioEventEmitter paddleHit;
-    private PauseMenu paused;
+    [SerializeField] private FakerScript _temporaryBalls;
+    [SerializeField] private StudioEventEmitter _paddleHit;
+    private PauseMenu _paused;
 
     // Power Up texxt objects
-    [SerializeField] private GameObject aimText,extendText, spreadText;
+    [SerializeField] private GameObject _aimText,_extendText, _spreadText;
 
 
     // Timers
-    private float aimTimer = 0f, scaleTimer = 0f;
+    private float _aimTimer = 0f, _scaleTimer = 0f;
     [HideInInspector] public float SpreadTextTimer = 0f;
     
     public void OnMove(InputValue value)
     {
-        moveInput = value.Get<Vector2>();
+        _moveInput = value.Get<Vector2>();
 
     }
 
@@ -60,11 +60,11 @@ public class PaddleController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        cameraChange = GameObject.Find("Main Camera").GetComponent<PerspectiveChange>();
-        ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
-        paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-        rigidbody = GetComponent<Rigidbody>();
-        tilt = GetComponent<Animator>();
+        _cameraChange = GameObject.Find("Main Camera").GetComponent<PerspectiveChange>();
+        _ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
+        _paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
+        _paddleRigidbody = GetComponent<Rigidbody>();
+        _paddleTilt = GetComponent<Animator>();
 
 
     }
@@ -86,36 +86,36 @@ public class PaddleController : MonoBehaviour
     // function below deals with animation and movement of paddle 
     private void MovementHandler()
     {
-        if (tilt != null)
+        if (_paddleTilt != null)
         {
             if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-                tilt.SetTrigger("TiltR_Open");
+                _paddleTilt.SetTrigger("TiltR_Open");
 
             else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
-                tilt.SetTrigger("TiltR_Close");
+                _paddleTilt.SetTrigger("TiltR_Close");
 
             if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-                tilt.SetTrigger("TiltL_Open");
+                _paddleTilt.SetTrigger("TiltL_Open");
 
             else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-                tilt.SetTrigger("TiltL_Close");
+                _paddleTilt.SetTrigger("TiltL_Close");
 
-            rigidbody.linearVelocity = new Vector3(moveInput.x * paddleSpeed * Time.deltaTime, 0, 0);
+            _paddleRigidbody.linearVelocity = new Vector3(_moveInput.x * _paddleSpeed * Time.deltaTime, 0, 0);
         }
     }
 
     public void HandleTimers()
     {
-        if (!paused.isPaused)
+        if (!_paused.isPaused)
         {
             // Aim Timer
-            if (AimActive && Time.time >= aimTimer)
+            if (AimActive && Time.time >= _aimTimer)
             {
                 AimTime();
             }
 
             // Scale Timer
-            if (scaleActive && Time.time >= scaleTimer)
+            if (_scaleActive && Time.time >= _scaleTimer)
             {
                 ScaleUp();
             }
@@ -133,7 +133,7 @@ public class PaddleController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
-            paddleHit.Play();
+            _paddleHit.Play();
 
 
         }
@@ -144,10 +144,10 @@ public class PaddleController : MonoBehaviour
     {
 
 
-        if (SpreadActivate == false || AimActive == false || scaleActive == false || GatherLife == false)
+        if (SpreadActivate == false || AimActive == false || _scaleActive == false || GatherLife == false)
         {
 
-            int powerUp =10 /*Random.Range(0,11)*/;
+            int powerUp =Random.Range(0,11);
             Debug.Log("Power up number: " + powerUp);
             if (powerUp >= 1 && powerUp < 4)
             {
@@ -175,7 +175,7 @@ public class PaddleController : MonoBehaviour
             else if (powerUp == 10)
             {
                 GatherLife = true;
-                ballScript.lifeIncrease();
+                _ballScript.lifeIncrease();
             }
 
 
@@ -187,34 +187,34 @@ public class PaddleController : MonoBehaviour
         if (!AimActive)
         {
             AimActive = true;
-            aimTimer = Time.time + timeRelease; // will end power up when Time.time is equal to aimTimer as Time.time always counts up
+            _aimTimer = Time.time + _timeRelease; // will end power up when Time.time is equal to aimTimer as Time.time always counts up
 
             Debug.Log("Time: " + Time.time);
-            Debug.Log("Aim Timer: " + aimTimer);
+            Debug.Log("Aim Timer: " + _aimTimer);
 
-            ballPrefab.transform.position = recallPoint.transform.position;
-            ballPrefab.transform.SetParent(recallPoint.transform, true);
-            ballRb.constraints = RigidbodyConstraints.FreezeAll; // freezes rigidbody
-            aimText.SetActive(true);
+            _ballPrefab.transform.position = _recallPoint.transform.position;
+            _ballPrefab.transform.SetParent(_recallPoint.transform, true);
+            _ballRb.constraints = RigidbodyConstraints.FreezeAll; // freezes rigidbody
+            _aimText.SetActive(true);
 
 
-            cameraChange.CameraObject.transform.position = perspectivePowerUp.transform.position;
-            cameraChange.CameraObject.transform.rotation = perspectivePowerUp.transform.rotation;
-            cameraChange.CameraObject.transform.SetParent(perspectivePowerUp.transform, true);
+            _cameraChange.CameraObject.transform.position = _perspectivePowerUp.transform.position;
+            _cameraChange.CameraObject.transform.rotation = _perspectivePowerUp.transform.rotation;
+            _cameraChange.CameraObject.transform.SetParent(_perspectivePowerUp.transform, true);
             // changes camera perspective closer to the paddle
             return;
         }
         Debug.Log("Aim Power-up Ended");
 
-        aimText.SetActive(false);
-        ballPrefab.transform.SetParent(null);
-        ballRb.constraints = RigidbodyConstraints.FreezePositionY;
+        _aimText.SetActive(false);
+        _ballPrefab.transform.SetParent(null);
+        _ballRb.constraints = RigidbodyConstraints.FreezePositionY;
 
-        cameraChange.CameraObject.transform.SetParent(null);
-        cameraChange.CameraObject.transform.position = cameraChange.Perspective_3rd.transform.position;
-        cameraChange.CameraObject.transform.rotation = cameraChange.Perspective_3rd.transform.rotation;
+        _cameraChange.CameraObject.transform.SetParent(null);
+        _cameraChange.CameraObject.transform.position = _cameraChange.Perspective_3rd.transform.position;
+        _cameraChange.CameraObject.transform.rotation = _cameraChange.Perspective_3rd.transform.rotation;
 
-        ballRb.linearVelocity = new Vector3(5, 0, releaseSpeed);
+        _ballRb.linearVelocity = new Vector3(5, 0, _ballReleaseSpeed);
         AimActive = false;
         // causes padddle to return to its original state when Time.time is equal to aimTimer
 
@@ -226,29 +226,29 @@ public class PaddleController : MonoBehaviour
     // Activate Scale Power-up
     public void ScaleUp()
     {
-        if (!scaleActive)
+        if (!_scaleActive)
         {
-            scaleActive = true;
-            scaleTimer = Time.time + timeShrink; // will end power up when Time.time is equal to scaleTimer as Time.time always counts up
+            _scaleActive = true;
+            _scaleTimer = Time.time + _timeTilShrink; // will end power up when Time.time is equal to scaleTimer as Time.time always counts up
             Debug.Log("Time: " + Time.time);
-            Debug.Log("Scale Timer: " + scaleTimer);
-            extendText.SetActive(true);
+            Debug.Log("Scale Timer: " + _scaleTimer);
+            _extendText.SetActive(true);
 
-            left_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
-            right_PaddleEnd.transform.localScale = new Vector3(paddle_Extension, 1.46672726f, 1.54101229f);
+            _leftPaddleEnd.transform.localScale = new Vector3(_paddleExtension, 1.46672726f, 1.54101229f);
+            _rightPaddleEnd.transform.localScale = new Vector3(_paddleExtension, 1.46672726f, 1.54101229f);
             // changes the length of the edges of the paddle
 
-            paddleSpeed /= slowDown;
+            _paddleSpeed /= _slowDown;
             return;
         }
 
         Debug.Log("Scale Power-up Ended");
-        extendText.SetActive(false);
-        left_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
-        right_PaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+        _extendText.SetActive(false);
+        _leftPaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
+        _rightPaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
 
-        paddleSpeed *= slowDown;
-        scaleActive = false;
+        _paddleSpeed *= _slowDown;
+        _scaleActive = false;
         // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
 
@@ -258,21 +258,21 @@ public class PaddleController : MonoBehaviour
         if (!SpreadActivate)
         {
             SpreadActivate = true;
-            SpreadTextTimer = Time.time + spreadLifetime;
-            spreadText.SetActive(true);
-            Rigidbody fakerRb = Instantiate(temporaryBalls.rb, new Vector3(gameObject.transform.position.x, ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-            fakerRb.AddForce(temporaryBalls.Magnitude_X, 0, temporaryBalls.Magnitude_Z);
+            SpreadTextTimer = Time.time + _spreadLifetime;
+            _spreadText.SetActive(true);
+            Rigidbody fakerRb = Instantiate(_temporaryBalls.FakerRb, new Vector3(gameObject.transform.position.x, _ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
+            fakerRb.AddForce(_temporaryBalls.Magnitude_X, 0, _temporaryBalls.Magnitude_Z);
 
 
 
-            Rigidbody fakerRb2 = Instantiate(temporaryBalls.rb, new Vector3(gameObject.transform.position.x, ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-            fakerRb2.AddForce(-temporaryBalls.Magnitude_X, 0, temporaryBalls.Magnitude_Z);
+            Rigidbody fakerRb2 = Instantiate(_temporaryBalls.FakerRb, new Vector3(gameObject.transform.position.x, _ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
+            fakerRb2.AddForce(-_temporaryBalls.Magnitude_X, 0, _temporaryBalls.Magnitude_Z);
             // produces 2 temporary balls which have a limited number of times that they can hit a block
             return;
 
         }
 
-        spreadText.SetActive(false);
+        _spreadText.SetActive(false);
         SpreadActivate = false;
 
 

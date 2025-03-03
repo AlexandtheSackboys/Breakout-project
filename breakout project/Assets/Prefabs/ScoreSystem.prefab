@@ -48,8 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b83ce313ae7d5944a2ddf9e080976ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreCountText: {fileID: 0}
-  hasMusic: 0
-  GameOver: 0
+  _scoreCountText: {fileID: 0}
   layerBorder: {fileID: 0}
-  maxPoints: 20
+  maxPoints: 100

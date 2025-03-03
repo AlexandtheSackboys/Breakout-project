@@ -3,45 +3,63 @@ using System.Collections;
 using FMODUnity;
 public class BlockWall : MonoBehaviour
 {
-    public float hitpoints;
-    private ScoreSystem scoreSystem; // reference game manager
-    public GameObject debris;
+    [SerializeField] private float _hitPoints;
+    private ScoreSystem _scoreSystem; // reference game manager
+    public GameObject Debris;
 
-    [SerializeField]private StudioEventEmitter Break;
+    [SerializeField] private PowerUp _pillSpawner;
+
+
+    [SerializeField]private StudioEventEmitter _breakBlock;
+    [SerializeField] private bool _hasPowerUp = false;
 
     private void Start()
     {
-        scoreSystem = FindAnyObjectByType<ScoreSystem>(); // Find the GameManager in the scene
+        _scoreSystem = FindAnyObjectByType<ScoreSystem>(); // Find the GameManager in the scene
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
 
-            hitpoints--;
-            Break.Play();
+            _hitPoints--;
+            _breakBlock.Play();
 
-            if (hitpoints == 0) {
-                debris.transform.position = gameObject.transform.position;
-                BlockGone();
+            if (_hitPoints == 0) {
 
+                isPowerBlock();
 
             }
         }
 
     }
 
-    private void BlockGone()
+    private void blockGone()
     {
-        if (scoreSystem != null)
+        if (_scoreSystem != null)
         {
-            scoreSystem.BlockDestroy(); // Notify GameManager that an enemy is killed
+            _scoreSystem.BlockDestroy(); // Notify GameManager that an enemy is killed
 
         }
         Destroy(gameObject); // game object is no longer in scene
-        Instantiate(debris);
+        Instantiate(Debris);
 
 
     }
+
+    private void isPowerBlock() 
+    
+    {
+        if (_hasPowerUp)
+        {
+            blockGone();
+            _pillSpawner.Spawn();
+            return;
+        }
+        Debris.transform.position = gameObject.transform.position;
+        blockGone();
+    }
+
+
 
 }

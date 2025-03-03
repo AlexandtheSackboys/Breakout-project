@@ -162,9 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &60089581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -286,9 +288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &95236677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -410,9 +414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &102995663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -544,9 +550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &168480866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -701,9 +709,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &181152993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -825,9 +835,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &188345052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1073,9 +1085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &300074773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1177,7 +1191,6 @@ GameObject:
   - component: {fileID: 329165237}
   - component: {fileID: 329165236}
   - component: {fileID: 329165235}
-  - component: {fileID: 329165234}
   - component: {fileID: 329165238}
   m_Layer: 0
   m_Name: Powerup_Block (3)
@@ -1201,21 +1214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 988375285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &329165234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329165232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9394afd35eaff541b396210aba5d549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoints: 1
-  pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  collect: {fileID: 329165238}
 --- !u!65 &329165235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1299,28 +1297,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 329165232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 936686377
-      Data2: 1200586329
-      Data3: 1533678009
-      Data4: 564691511
-    Path: event:/itemBlock_Hit
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 988375286}
+  _hasPowerUp: 1
 --- !u!1 &377482171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,9 +1337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &377482173
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1477,9 +1463,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &442369898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1638,9 +1626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &456380452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1762,9 +1752,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &461906069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1886,9 +1878,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &488501427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2010,9 +2004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &500645487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2134,9 +2130,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &539629871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2258,9 +2256,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &551620785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2382,9 +2382,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &573854840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2506,9 +2508,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &622050991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2861,9 +2865,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &695598397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3067,9 +3073,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &706202590
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3191,9 +3199,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &712669840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3423,9 +3433,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &753813919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3762,9 +3774,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &818395676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3886,9 +3900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &836733960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4010,9 +4026,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &848432639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4134,9 +4152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &856518806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4258,9 +4278,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &863978410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4387,9 +4409,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &870852183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4511,9 +4535,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &888631265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4635,9 +4661,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &895980235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4872,9 +4900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &938082279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5001,9 +5031,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &960468528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5239,9 +5271,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &988261939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5340,6 +5374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 988375285}
+  - component: {fileID: 988375286}
   m_Layer: 0
   m_Name: ItemBlock _Setup
   m_TagString: Untagged
@@ -5367,6 +5402,37 @@ Transform:
   - {fileID: 1007011044}
   m_Father: {fileID: 178091735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988375286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988375284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 936686377
+      Data2: 1200586329
+      Data3: 1533678009
+      Data4: 564691511
+    Path: event:/itemBlock_Hit
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &992550895
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,9 +5573,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1004514861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5719,7 +5787,6 @@ GameObject:
   - component: {fileID: 1007011048}
   - component: {fileID: 1007011047}
   - component: {fileID: 1007011046}
-  - component: {fileID: 1007011045}
   - component: {fileID: 1007011049}
   m_Layer: 0
   m_Name: Powerup_Block (1)
@@ -5743,21 +5810,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 988375285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007011045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9394afd35eaff541b396210aba5d549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoints: 2
-  pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  collect: {fileID: 1007011049}
 --- !u!65 &1007011046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5841,28 +5893,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007011043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 936686377
-      Data2: 1200586329
-      Data3: 1533678009
-      Data4: 564691511
-    Path: event:/itemBlock_Hit
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 988375286}
+  _hasPowerUp: 1
 --- !u!1 &1075375281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,9 +5933,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1075375283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6019,9 +6059,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1114827990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6143,9 +6185,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1196152635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6287,11 +6331,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: _ballHealth
+      value: 
+      objectReference: {fileID: 1931779174}
+    - target: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: _sceneLives
+      value: 
+      objectReference: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
+    - target: {fileID: 5113238093059222988, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+      propertyPath: _musicEmitter
+      value: 
+      objectReference: {fileID: 1201069498}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+--- !u!114 &1201069498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2023813319022155355, guid: 0d23ca87a11df114d91b88c0171ec340, type: 3}
+  m_PrefabInstance: {fileID: 1201069497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1470287580
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,9 +6406,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 2
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1470287583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6592,9 +6661,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1530585581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6725,6 +6796,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _itemPill
+      value: 
+      objectReference: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: itemTrack
       value: 
       objectReference: {fileID: 265068647}
@@ -6757,6 +6832,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4766708608816786471}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _orbSpawner
+      value: 
+      objectReference: {fileID: 4766708608816786471}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: ballSpawner
       value: 
       objectReference: {fileID: 1244133905145696005}
@@ -6773,11 +6852,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _ballSpawner
+      value: 
+      objectReference: {fileID: 1244133905145696005}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _magnitude_X
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _magnitude_Z
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: DiegeticLives
       value: 
       objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: diegeticLives
+      value: 
+      objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _diegeticLives
       value: 
       objectReference: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
     - target: {fileID: 2845206692436991085, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
@@ -6853,7 +6948,6 @@ GameObject:
   - component: {fileID: 1557957115}
   - component: {fileID: 1557957114}
   - component: {fileID: 1557957113}
-  - component: {fileID: 1557957112}
   - component: {fileID: 1557957116}
   m_Layer: 0
   m_Name: Powerup_Block (2)
@@ -6877,21 +6971,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 988375285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1557957112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557957110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9394afd35eaff541b396210aba5d549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoints: 1
-  pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  collect: {fileID: 1557957116}
 --- !u!65 &1557957113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6975,28 +7054,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557957110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 936686377
-      Data2: 1200586329
-      Data3: 1533678009
-      Data4: 564691511
-    Path: event:/itemBlock_Hit
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 988375286}
+  _hasPowerUp: 1
 --- !u!1 &1559555482
 GameObject:
   m_ObjectHideFlags: 0
@@ -7044,9 +7109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1559555485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7153,9 +7220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1562192993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7287,9 +7356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1661579433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7391,7 +7462,6 @@ GameObject:
   - component: {fileID: 1759554168}
   - component: {fileID: 1759554167}
   - component: {fileID: 1759554166}
-  - component: {fileID: 1759554165}
   - component: {fileID: 1759554169}
   m_Layer: 0
   m_Name: Powerup_Block (4)
@@ -7415,21 +7485,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 988375285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1759554165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759554163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9394afd35eaff541b396210aba5d549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoints: 1
-  pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  collect: {fileID: 1759554169}
 --- !u!65 &1759554166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7513,28 +7568,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1759554163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 936686377
-      Data2: 1200586329
-      Data3: 1533678009
-      Data4: 564691511
-    Path: event:/itemBlock_Hit
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 988375286}
+  _hasPowerUp: 1
 --- !u!1 &1825150655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,19 +7624,6 @@ Transform:
   - {fileID: 753813922}
   - {fileID: 300074776}
   - {fileID: 836733963}
-  - {fileID: 870852186}
-  - {fileID: 863978413}
-  - {fileID: 1972831692}
-  - {fileID: 377482176}
-  - {fileID: 60089584}
-  - {fileID: 102995666}
-  - {fileID: 188345055}
-  - {fileID: 456380455}
-  - {fileID: 818395679}
-  - {fileID: 960468531}
-  - {fileID: 1470287581}
-  - {fileID: 1114827993}
-  - {fileID: 895980238}
   - {fileID: 573854843}
   - {fileID: 1004514864}
   - {fileID: 1562192996}
@@ -7610,6 +7638,19 @@ Transform:
   - {fileID: 988261942}
   - {fileID: 95236680}
   - {fileID: 500645490}
+  - {fileID: 870852186}
+  - {fileID: 863978413}
+  - {fileID: 1972831692}
+  - {fileID: 377482176}
+  - {fileID: 60089584}
+  - {fileID: 102995666}
+  - {fileID: 188345055}
+  - {fileID: 456380455}
+  - {fileID: 818395679}
+  - {fileID: 960468531}
+  - {fileID: 1470287581}
+  - {fileID: 1114827993}
+  - {fileID: 895980238}
   m_Father: {fileID: 178091735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1825150658
@@ -7675,9 +7716,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1876917350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7815,9 +7858,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &1972831689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7917,17 +7962,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7972711421817751117, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
   m_PrefabInstance: {fileID: 1157186442523978993}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1982896374 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8795478938369413125, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
-  m_PrefabInstance: {fileID: 1157186442523978993}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2029695776
 GameObject:
   m_ObjectHideFlags: 0
@@ -8129,9 +8163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
-  debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  Break: {fileID: 1825150658}
+  _hitPoints: 1
+  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _breakBlock: {fileID: 1825150658}
+  _hasPowerUp: 0
 --- !u!65 &2142932009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8236,7 +8272,15 @@ PrefabInstance:
     - target: {fileID: 4638536285533177247, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: collect
       value: 
-      objectReference: {fileID: 1982896374}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638536285533177247, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
+      propertyPath: hitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
+      propertyPath: _breakBlock
+      value: 
+      objectReference: {fileID: 988375286}
     - target: {fileID: 7972711421817751117, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.250027
@@ -8304,6 +8348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
     - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
+      propertyPath: hitPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: hitpoints
       value: 1
       objectReference: {fileID: 0}
@@ -8311,6 +8359,14 @@ PrefabInstance:
       propertyPath: Break.Path
       value: event:/normalBlock_Hit
       objectReference: {fileID: 0}
+    - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
+      propertyPath: _breakBlock
+      value: 
+      objectReference: {fileID: 1825150658}
+    - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
+      propertyPath: _pillSpawner
+      value: 
+      objectReference: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
     - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: Break.Guid.Data1
       value: -2118896140
@@ -8617,6 +8673,10 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _scoreCountText
+      value: 
+      objectReference: {fileID: 4803351650577894915}
     - target: {fileID: 5377771811255259771, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_text
       value: 'Score: '
@@ -8778,6 +8838,17 @@ PrefabInstance:
       addedObject: {fileID: 864189200}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+--- !u!114 &4803351650577894915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5377771811255259771, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+  m_PrefabInstance: {fileID: 4803351650577894914}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7020511471675011324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8847,7 +8918,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8745155}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _ballRb
+      value: 
+      objectReference: {fileID: 955869389}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: aimText
+      value: 
+      objectReference: {fileID: 272075644}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _aimText
       value: 
       objectReference: {fileID: 272075644}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
@@ -8878,6 +8957,18 @@ PrefabInstance:
       propertyPath: timeShrink
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _ballPrefab
+      value: 
+      objectReference: {fileID: 1931779173}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _extendText
+      value: 
+      objectReference: {fileID: 935068637}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _spreadText
+      value: 
+      objectReference: {fileID: 1622789785}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: paddleSpeed
       value: 5000

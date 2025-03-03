@@ -5,12 +5,12 @@ public class BackgroundMusic : MonoBehaviour
 {
 
 
-    [SerializeField] private BallScript ballHealth;
-    [SerializeField] private StudioEventEmitter musicEmitter;
-    [SerializeField] private IntSO sceneLives;
+    [SerializeField] private BallScript _ballHealth;
+    [SerializeField] private StudioEventEmitter _musicEmitter;
+    [SerializeField] private IntSO _sceneLives;
 
 
-    ParamRef[] paramaters;
+    ParamRef[] _musicParamaters;
 
 
 
@@ -18,14 +18,14 @@ public class BackgroundMusic : MonoBehaviour
     void Start()
     {
 
-        paramaters = musicEmitter.Params;
-        if (GameManager.IsMusicPlaying == true)
+        _musicParamaters = _musicEmitter.Params;
+        if (GameManager.s_IsMusicPlaying == true)
         {
            
             adaptiveMusic();
             return;
         }
-        musicEmitter.Stop();
+        _musicEmitter.Stop();
 
 
     }
@@ -33,35 +33,30 @@ public class BackgroundMusic : MonoBehaviour
 
     public void LowHealthMusic()
     {
-        musicEmitter.Stop();
-        paramaters[0].Value = 1;
-        musicEmitter.Play();
+        _musicEmitter.Stop();
+        _musicParamaters[0].Value = 1;
+        _musicEmitter.Play();
         return;
     }
 
     public void NormalMusic()
     {
-        musicEmitter.Stop();
-        paramaters[0].Value = 0;
-        musicEmitter.Play();
+        _musicEmitter.Stop();
+        _musicParamaters[0].Value = 0;
+        _musicEmitter.Play();
         return;
     }
     public void StopMusic()
     {
-        musicEmitter.Stop();
+        _musicEmitter.Stop();
     }
 
 
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void adaptiveMusic()
     {
-        if (sceneLives.CharacterLives > 2)
+        if (_sceneLives.CharacterLives > 2)
         {
             Debug.Log("music playing");
             NormalMusic();

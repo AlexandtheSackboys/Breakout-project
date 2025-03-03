@@ -78,6 +78,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c619917f063a9d042b531697d3be5f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballHealth: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
-  musicEmitter: {fileID: 2023813319022155355}
-  sceneLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}
+  _ballHealth: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+  _musicEmitter: {fileID: 2023813319022155355}
+  _sceneLives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}

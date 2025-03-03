@@ -121,5 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoints: 1
+  _hitPoints: 1
   Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _pillSpawner: {fileID: 0}
+  _breakBlock: {fileID: 0}
+  _hasPowerUp: 0

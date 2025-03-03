@@ -149,6 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7d00883978d2d418069e3becb45e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 4142728517695188205}
+  FakerRb: {fileID: 4142728517695188205}
   Magnitude_X: 750
   Magnitude_Z: 850

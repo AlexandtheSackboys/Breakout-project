@@ -6,38 +6,38 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    [HideInInspector] public static bool IsMusicPlaying = true;
-    public TextMeshProUGUI finalScore;
-    [SerializeField]private BackgroundMusic  backgroundMusic;
-    [SerializeField] private ScoreSystem scoreSystem;
+    [HideInInspector] public static bool s_IsMusicPlaying = true;
 
-[SerializeField] private IntSO paddleLives;
-    [SerializeField] private  int maxLives;
-    [HideInInspector]public static int SceneIndex = 0;
-    public static GameManager Instance;
+    [SerializeField] private BackgroundMusic _backgroundMusic;
+    [SerializeField] private ScoreSystem _scoreSystem;
+
+    [SerializeField] private IntSO _paddleLives;
+    [SerializeField] private int _maxLives;
+    [HideInInspector] public static int s_SceneIndex = 0;
+    public static GameManager s_Instance;
 
     private void Awake()
     {
-        Instance = this;
+        s_Instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        DontDestroyOnLoad(Instance);
+        DontDestroyOnLoad(s_Instance);
     }
 
     public void Play() //  causes main game to play
     {
-        backgroundMusic.StopMusic();
-        ScoreSystem.ScoreCount = 0;
-        paddleLives.CharacterLives = maxLives;
+        _backgroundMusic.StopMusic();
+        ScoreSystem.s_ScoreCount = 0;
+       _paddleLives.CharacterLives = _maxLives;
 
-        SceneIndex = 1;
+        s_SceneIndex = 1;
 
-        IsMusicPlaying = true;
-        SceneManager.LoadScene(SceneIndex);
+        s_IsMusicPlaying = true;
+        SceneManager.LoadScene(s_SceneIndex);
 
 
     }
@@ -50,10 +50,10 @@ public class GameManager : MonoBehaviour
     public void End() // transisions to winning scene
     {
 
-       backgroundMusic.StopMusic();
-        SceneIndex = 3;
-        IsMusicPlaying = false;
-        SceneManager.LoadScene(SceneIndex);
+        _backgroundMusic.StopMusic();
+        s_SceneIndex = 3;
+        s_IsMusicPlaying = false;
+        SceneManager.LoadScene(s_SceneIndex);
 
 
 
@@ -63,11 +63,11 @@ public class GameManager : MonoBehaviour
     public void NextLevel() // transisions to winning scene
     {
 
-        paddleLives.CharacterLives+= 2;
-        backgroundMusic.StopMusic();
-        SceneIndex = 2;
-        IsMusicPlaying = true;
-        SceneManager.LoadScene(SceneIndex);
+        _paddleLives.CharacterLives += 2;
+        _backgroundMusic.StopMusic();
+        s_SceneIndex = 2;
+        s_IsMusicPlaying = true;
+        SceneManager.LoadScene(s_SceneIndex);
 
 
 
@@ -77,20 +77,15 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     { // reset to the games title screen
-        ScoreSystem.ScoreCount = 0;
-        
+        ScoreSystem.s_ScoreCount = 0;
 
-        paddleLives.CharacterLives = maxLives;
-        SceneIndex = 0;
-        SceneManager.LoadScene(SceneIndex);
-        IsMusicPlaying = true;
+
+        _paddleLives.CharacterLives = _maxLives;
+        s_SceneIndex = 0;
+        SceneManager.LoadScene(s_SceneIndex);
+        s_IsMusicPlaying = true;
         Debug.Log("reset presses i guess");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
 

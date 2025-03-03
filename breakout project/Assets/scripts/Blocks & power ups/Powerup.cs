@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    private bool isTaken = false;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -13,10 +13,7 @@ public class PowerUp : MonoBehaviour
         }
     }
 
-    public bool IsTaken()
-    {
-        return isTaken;
-    }
+
 
 
 

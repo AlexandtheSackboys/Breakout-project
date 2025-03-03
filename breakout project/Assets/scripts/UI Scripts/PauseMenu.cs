@@ -6,16 +6,16 @@ public class PauseMenu : MonoBehaviour
     public GameObject MenuUI; // Reference to the pause menu UI panel
     public GameObject PauseText;// Reference to the TextMeshProUGUI element for displaying controls
 
-    private PaddleController pausePower_Ups;
-    private BallScript ballScript;
+    private PaddleController _pausePowerUps;
+    private BallScript _ballScript;
     [HideInInspector] public BackgroundMusic PauseMusic;
 
 
     [HideInInspector] public bool isPaused = true; // Flag to track if the game is paused
-    private void Start()
+    void Start()
     {
-        pausePower_Ups = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
-        ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
+        _pausePowerUps = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
+        _ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
         PauseMusic =  GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
 
     }
@@ -23,13 +23,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (isPaused)
         {
-            if (ballScript.Lives.CharacterLives < 3)
+            if (_ballScript.Lives.CharacterLives < 3)
             {
 
 
                 PauseMusic.LowHealthMusic();
             }
-            else if (ballScript.Lives.CharacterLives > 2)
+            else if (_ballScript.Lives.CharacterLives > 2)
             {
 
 
@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
             }
 
 
-            pausePower_Ups.HandleTimers();
+            _pausePowerUps.HandleTimers();
 
             MenuUI.SetActive(false); // Hide the pause menu UI panel
 
