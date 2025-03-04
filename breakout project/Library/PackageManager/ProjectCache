@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638762529112943248
-    m_Hash: 2960690535
+      ticks: 638766981507742270
+    m_Hash: 3120665875
   m_LockFileStatus:
     m_FilePath: C:/Users/Student/Desktop/game builds/Breakout-project/breakout project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638762529112986661
-    m_Hash: 2614703987
+      ticks: 638766981507742270
+    m_Hash: 1646299861
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3925,9 +3925,12 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-pre.1
     - 1.0.0
+    - 1.1.0-exp.1
     compatible:
     - 1.0.0
+    - 1.1.0-exp.1
     recommended: 1.0.0
     deprecated: []
   dependencies:
@@ -3963,9 +3966,9 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638465519290000000
   documentationUrl: 
   hasRepository: 1
   repository:
