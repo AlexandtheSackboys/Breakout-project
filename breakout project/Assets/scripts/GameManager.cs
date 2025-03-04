@@ -6,38 +6,38 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    [HideInInspector] public static bool s_IsMusicPlaying = true;
+    [HideInInspector] public static bool IsMusicPlaying = true;
 
     [SerializeField] private BackgroundMusic _backgroundMusic;
     [SerializeField] private ScoreSystem _scoreSystem;
 
     [SerializeField] private IntSO _paddleLives;
     [SerializeField] private int _maxLives;
-    [HideInInspector] public static int s_SceneIndex = 0;
-    public static GameManager s_Instance;
+    [HideInInspector] public static int SceneIndex = 0;
+    public static GameManager Instance;
 
     private void Awake()
     {
-        s_Instance = this;
+        Instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
 
-        DontDestroyOnLoad(s_Instance);
+        DontDestroyOnLoad(Instance);
     }
 
     public void Play() //  causes main game to play
     {
         _backgroundMusic.StopMusic();
-        ScoreSystem.s_ScoreCount = 0;
+        ScoreSystem.ScoreCount = 0;
        _paddleLives.CharacterLives = _maxLives;
 
-        s_SceneIndex = 1;
+        SceneIndex = 1;
 
-        s_IsMusicPlaying = true;
-        SceneManager.LoadScene(s_SceneIndex);
+        IsMusicPlaying = true;
+        SceneManager.LoadScene(SceneIndex);
 
 
     }
@@ -51,9 +51,9 @@ public class GameManager : MonoBehaviour
     {
 
         _backgroundMusic.StopMusic();
-        s_SceneIndex = 3;
-        s_IsMusicPlaying = false;
-        SceneManager.LoadScene(s_SceneIndex);
+        SceneIndex = 3;
+        IsMusicPlaying = false;
+        SceneManager.LoadScene(SceneIndex);
 
 
 
@@ -65,9 +65,9 @@ public class GameManager : MonoBehaviour
 
         _paddleLives.CharacterLives += 2;
         _backgroundMusic.StopMusic();
-        s_SceneIndex = 2;
-        s_IsMusicPlaying = true;
-        SceneManager.LoadScene(s_SceneIndex);
+        SceneIndex = 2;
+        IsMusicPlaying = true;
+        SceneManager.LoadScene(SceneIndex);
 
 
 
@@ -77,13 +77,13 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     { // reset to the games title screen
-        ScoreSystem.s_ScoreCount = 0;
+        ScoreSystem.ScoreCount = 0;
 
 
         _paddleLives.CharacterLives = _maxLives;
-        s_SceneIndex = 0;
-        SceneManager.LoadScene(s_SceneIndex);
-        s_IsMusicPlaying = true;
+        SceneIndex = 0;
+        SceneManager.LoadScene(SceneIndex);
+        IsMusicPlaying = true;
         Debug.Log("reset presses i guess");
     }
 

@@ -17,11 +17,11 @@ public class SceneTransition : MonoBehaviour
         {
             if (!continueGame)
             {
-                GameManager.s_Instance.Quit();
+                GameManager.Instance.Quit();
                 return;
             }
             endTitle.StopMusic();
-            GameManager.s_Instance.Play();
+            GameManager.Instance.Play();
 
         }
     }

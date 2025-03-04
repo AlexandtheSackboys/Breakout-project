@@ -196,7 +196,7 @@ MonoBehaviour:
   _timeTilShrink: 10
   _spreadLifetime: 3
   _paddleExtension: 1.25
-  _slowDown: 7
+  _slowDown: 5
   _perspectivePowerUp: {fileID: 4347302299981362828}
   _ballPrefab: {fileID: 0}
   _ballRb: {fileID: 0}

@@ -150,5 +150,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FakerRb: {fileID: 4142728517695188205}
-  Magnitude_X: 750
-  Magnitude_Z: 850
+  MagnitudeX: 750
+  MagnitudeZ: 850

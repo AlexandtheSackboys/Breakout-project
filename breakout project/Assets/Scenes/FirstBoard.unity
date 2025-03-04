@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 60089581}
   - component: {fileID: 60089580}
   m_Layer: 0
-  m_Name: block (49)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,8 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 95236677}
   - component: {fileID: 95236676}
   m_Layer: 0
-  m_Name: block (37)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 102995663}
   - component: {fileID: 102995662}
   m_Layer: 0
-  m_Name: block (48)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,8 +414,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 168480866}
   - component: {fileID: 168480865}
   m_Layer: 0
-  m_Name: block (1)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 181152993}
   - component: {fileID: 181152992}
   m_Layer: 0
-  m_Name: block (15)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -797,7 +797,7 @@ Transform:
   m_GameObject: {fileID: 181152991}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.352287, y: -20.309269, z: 22.102985}
+  m_LocalPosition: {x: -15.5, y: -20.309269, z: 22.59}
   m_LocalScale: {x: 8.564777, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 188345052}
   - component: {fileID: 188345051}
   m_Layer: 0
-  m_Name: block (47)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,8 +835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -923,7 +923,7 @@ Transform:
   m_GameObject: {fileID: 188345050}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 19.422985}
+  m_LocalPosition: {x: -1.1999989, y: -20.309269, z: 19.91}
   m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 300074773}
   - component: {fileID: 300074772}
   m_Layer: 0
-  m_Name: block (18)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1193,7 +1193,7 @@ GameObject:
   - component: {fileID: 329165235}
   - component: {fileID: 329165238}
   m_Layer: 0
-  m_Name: Powerup_Block (3)
+  m_Name: 'PowerUpBlock '
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -1319,7 +1319,7 @@ GameObject:
   - component: {fileID: 377482173}
   - component: {fileID: 377482172}
   m_Layer: 0
-  m_Name: block (22)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,7 +1338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 442369898}
   - component: {fileID: 442369897}
   m_Layer: 0
-  m_Name: block (10)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 456380452}
   - component: {fileID: 456380451}
   m_Layer: 0
-  m_Name: block (45)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,8 +1626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1734,7 +1734,7 @@ GameObject:
   - component: {fileID: 461906069}
   - component: {fileID: 461906068}
   m_Layer: 0
-  m_Name: block (34)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1860,7 +1860,7 @@ GameObject:
   - component: {fileID: 488501427}
   - component: {fileID: 488501426}
   m_Layer: 0
-  m_Name: block (31)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -1986,7 +1986,7 @@ GameObject:
   - component: {fileID: 500645487}
   - component: {fileID: 500645486}
   m_Layer: 0
-  m_Name: block (36)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 539629871}
   - component: {fileID: 539629870}
   m_Layer: 0
-  m_Name: block (4)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,7 +2131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -2238,7 +2238,7 @@ GameObject:
   - component: {fileID: 551620785}
   - component: {fileID: 551620784}
   m_Layer: 0
-  m_Name: block (13)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2257,7 +2257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -2364,7 +2364,7 @@ GameObject:
   - component: {fileID: 573854840}
   - component: {fileID: 573854839}
   m_Layer: 0
-  m_Name: block (26)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -2490,7 +2490,7 @@ GameObject:
   - component: {fileID: 622050991}
   - component: {fileID: 622050990}
   m_Layer: 0
-  m_Name: block (12)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -2832,7 +2832,7 @@ GameObject:
   - component: {fileID: 695598397}
   - component: {fileID: 695598396}
   m_Layer: 0
-  m_Name: block (8)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2866,7 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -3055,7 +3055,7 @@ GameObject:
   - component: {fileID: 706202590}
   - component: {fileID: 706202589}
   m_Layer: 0
-  m_Name: block (7)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3074,7 +3074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -3181,7 +3181,7 @@ GameObject:
   - component: {fileID: 712669840}
   - component: {fileID: 712669839}
   m_Layer: 0
-  m_Name: block (14)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3200,7 +3200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -3415,7 +3415,7 @@ GameObject:
   - component: {fileID: 753813919}
   - component: {fileID: 753813918}
   m_Layer: 0
-  m_Name: block (16)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -3756,7 +3756,7 @@ GameObject:
   - component: {fileID: 818395676}
   - component: {fileID: 818395675}
   m_Layer: 0
-  m_Name: block (44)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3774,8 +3774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -3862,7 +3862,7 @@ Transform:
   m_GameObject: {fileID: 818395674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 25.012985}
+  m_LocalPosition: {x: -1.1999989, y: -20.309269, z: 25.5}
   m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3882,7 +3882,7 @@ GameObject:
   - component: {fileID: 836733960}
   - component: {fileID: 836733959}
   m_Layer: 0
-  m_Name: block (19)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3901,7 +3901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4008,7 +4008,7 @@ GameObject:
   - component: {fileID: 848432639}
   - component: {fileID: 848432638}
   m_Layer: 0
-  m_Name: block (11)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4027,7 +4027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4114,7 +4114,7 @@ Transform:
   m_GameObject: {fileID: 848432637}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.352287, y: -20.309269, z: 25.012985}
+  m_LocalPosition: {x: -15.5, y: -20.309269, z: 25.5}
   m_LocalScale: {x: 8.564777, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4134,7 +4134,7 @@ GameObject:
   - component: {fileID: 856518806}
   - component: {fileID: 856518805}
   m_Layer: 0
-  m_Name: block (2)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4153,7 +4153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4260,7 +4260,7 @@ GameObject:
   - component: {fileID: 863978410}
   - component: {fileID: 863978409}
   m_Layer: 0
-  m_Name: block (21)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4279,7 +4279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4391,7 +4391,7 @@ GameObject:
   - component: {fileID: 870852183}
   - component: {fileID: 870852182}
   m_Layer: 0
-  m_Name: block (20)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4410,7 +4410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4517,7 +4517,7 @@ GameObject:
   - component: {fileID: 888631265}
   - component: {fileID: 888631264}
   m_Layer: 0
-  m_Name: block (3)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4536,7 +4536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4643,7 +4643,7 @@ GameObject:
   - component: {fileID: 895980235}
   - component: {fileID: 895980234}
   m_Layer: 0
-  m_Name: block (40)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4661,8 +4661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -4749,7 +4749,7 @@ Transform:
   m_GameObject: {fileID: 895980233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 8.402984}
+  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 8.5}
   m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4882,7 +4882,7 @@ GameObject:
   - component: {fileID: 938082279}
   - component: {fileID: 938082278}
   m_Layer: 0
-  m_Name: block (29)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4901,7 +4901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -5013,7 +5013,7 @@ GameObject:
   - component: {fileID: 960468528}
   - component: {fileID: 960468527}
   m_Layer: 0
-  m_Name: block (43)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5031,8 +5031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -5119,7 +5119,7 @@ Transform:
   m_GameObject: {fileID: 960468526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 13.992984}
+  m_LocalPosition: {x: -1.1999989, y: -20.309269, z: 14.479999}
   m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5223,8 +5223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraObject: {fileID: 963194225}
-  Perspective_3rd: {fileID: 201605168}
-  Perspective_OG: {fileID: 692630619}
+  PerspectiveThird: {fileID: 201605168}
+  _perspectiveClassic: {fileID: 692630619}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5253,7 +5253,7 @@ GameObject:
   - component: {fileID: 988261939}
   - component: {fileID: 988261938}
   m_Layer: 0
-  m_Name: block (38)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5272,7 +5272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -5376,7 +5376,7 @@ GameObject:
   - component: {fileID: 988375285}
   - component: {fileID: 988375286}
   m_Layer: 0
-  m_Name: ItemBlock _Setup
+  m_Name: ItemBlockSetup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5391,7 +5391,7 @@ Transform:
   m_GameObject: {fileID: 988375284}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13000107, y: -10.539, z: -3.4658947}
+  m_LocalPosition: {x: -0.01771164, y: -10.539, z: -2.97888}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5555,7 +5555,7 @@ GameObject:
   - component: {fileID: 1004514861}
   - component: {fileID: 1004514860}
   m_Layer: 0
-  m_Name: block (27)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5574,7 +5574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -5775,132 +5775,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 453648490}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!1 &1007011043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1007011044}
-  - component: {fileID: 1007011048}
-  - component: {fileID: 1007011047}
-  - component: {fileID: 1007011046}
-  - component: {fileID: 1007011049}
-  m_Layer: 0
-  m_Name: Powerup_Block (1)
-  m_TagString: Block
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1007011044
+--- !u!4 &1007011044 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+  m_PrefabInstance: {fileID: 76941628909476296}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19997549, y: 7.380005, z: 3.6800003}
-  m_LocalScale: {x: 4.799686, y: 1.5704911, z: 1.6884}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 988375285}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1007011046
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1007011047
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 013cfa406d1f8c14aa03db3f18896188, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1007011048
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1007011049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007011043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  _breakBlock: {fileID: 988375286}
-  _hasPowerUp: 1
 --- !u!1 &1075375281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5915,7 +5794,7 @@ GameObject:
   - component: {fileID: 1075375283}
   - component: {fileID: 1075375282}
   m_Layer: 0
-  m_Name: block (6)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5934,7 +5813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -6041,7 +5920,7 @@ GameObject:
   - component: {fileID: 1114827990}
   - component: {fileID: 1114827989}
   m_Layer: 0
-  m_Name: block (42)
+  m_Name: DurableBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6059,8 +5938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _hitPoints: 2
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -6147,7 +6026,7 @@ Transform:
   m_GameObject: {fileID: 1114827988}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 16.672985}
+  m_LocalPosition: {x: -1.1999989, y: -20.309269, z: 17.16}
   m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6167,7 +6046,7 @@ GameObject:
   - component: {fileID: 1196152635}
   - component: {fileID: 1196152634}
   m_Layer: 0
-  m_Name: block (30)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6186,7 +6065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -6359,132 +6238,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1470287580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1470287581}
-  - component: {fileID: 1470287585}
-  - component: {fileID: 1470287584}
-  - component: {fileID: 1470287583}
-  - component: {fileID: 1470287582}
-  m_Layer: 0
-  m_Name: block (46)
-  m_TagString: Block
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1470287581
+--- !u!4 &1470287581 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+  m_PrefabInstance: {fileID: 2046804732462404832}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470287580}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0522861, y: -20.309269, z: 11.2}
-  m_LocalScale: {x: 4.9180665, y: 1.5704911, z: 1.6884}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1825150656}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1470287582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470287580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7a4ef2520bd703429c0a89009fc0816, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
-  _breakBlock: {fileID: 1825150658}
-  _hasPowerUp: 0
---- !u!65 &1470287583
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470287580}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1470287584
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470287580}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 8b426041ab1ae4444b4bef55ae5e2257, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1470287585
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470287580}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1477495751
 GameObject:
   m_ObjectHideFlags: 0
@@ -6643,7 +6401,7 @@ GameObject:
   - component: {fileID: 1530585581}
   - component: {fileID: 1530585580}
   m_Layer: 0
-  m_Name: block (28)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6662,7 +6420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -6832,6 +6590,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4766708608816786471}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _magnitudeX
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
+      propertyPath: _magnitudeZ
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: _orbSpawner
       value: 
       objectReference: {fileID: 4766708608816786471}
@@ -6950,7 +6716,7 @@ GameObject:
   - component: {fileID: 1557957113}
   - component: {fileID: 1557957116}
   m_Layer: 0
-  m_Name: Powerup_Block (2)
+  m_Name: PowerUpBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7058,7 +6824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -7076,7 +6842,7 @@ GameObject:
   - component: {fileID: 1559555485}
   - component: {fileID: 1559555484}
   m_Layer: 0
-  m_Name: block (33)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7110,7 +6876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -7202,7 +6968,7 @@ GameObject:
   - component: {fileID: 1562192993}
   - component: {fileID: 1562192992}
   m_Layer: 0
-  m_Name: block (24)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7221,7 +6987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -7338,7 +7104,7 @@ GameObject:
   - component: {fileID: 1661579433}
   - component: {fileID: 1661579432}
   m_Layer: 0
-  m_Name: block (9)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7357,7 +7123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -7464,7 +7230,7 @@ GameObject:
   - component: {fileID: 1759554166}
   - component: {fileID: 1759554169}
   m_Layer: 0
-  m_Name: Powerup_Block (4)
+  m_Name: 'PowerUpBlock '
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7572,7 +7338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -7587,7 +7353,7 @@ GameObject:
   - component: {fileID: 1825150656}
   - component: {fileID: 1825150658}
   m_Layer: 0
-  m_Name: NormalBlock_Setup
+  m_Name: NormalBlockSetup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7698,7 +7464,7 @@ GameObject:
   - component: {fileID: 1876917350}
   - component: {fileID: 1876917349}
   m_Layer: 0
-  m_Name: block (32)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7717,7 +7483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -7840,7 +7606,7 @@ GameObject:
   - component: {fileID: 1972831689}
   - component: {fileID: 1972831688}
   m_Layer: 0
-  m_Name: block (23)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7859,7 +7625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -8145,7 +7911,7 @@ GameObject:
   - component: {fileID: 2142932009}
   - component: {fileID: 2142932008}
   m_Layer: 0
-  m_Name: block (39)
+  m_Name: Block
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8164,7 +7930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  Debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
   _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 1825150658}
   _hasPowerUp: 0
@@ -8257,6 +8023,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1825150656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &76941628909476296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 988375285}
+    m_Modifications:
+    - target: {fileID: 705142991015047458, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: _breakBlock
+      value: 
+      objectReference: {fileID: 988375286}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19997549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.380005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.6800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806445232032195966, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779944715041996300, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: m_Name
+      value: 'DurablePowerUpBlock '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
 --- !u!1001 &1157186442523978993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8267,7 +8094,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1010385294810500212, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: m_Name
-      value: Powerup_Block
+      value: PowerUpBlock
       objectReference: {fileID: 0}
     - target: {fileID: 4638536285533177247, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: collect
@@ -8277,6 +8104,10 @@ PrefabInstance:
       propertyPath: hitPoints
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
+      propertyPath: _debris
+      value: 
+      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 
@@ -8331,6 +8162,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8082220586648272889, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
   m_PrefabInstance: {fileID: 7020511471675011324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2046804732462404832
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1825150656}
+    m_Modifications:
+    - target: {fileID: 6237380561496188893, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: _breakBlock
+      value: 
+      objectReference: {fileID: 1825150658}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0522861
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -20.309269
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7082694538664408085, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512768730344507534, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
+      propertyPath: m_Name
+      value: DurableBlock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 145973ee12604c94e92308e4ed1eea46, type: 3}
 --- !u!1001 &4197550349257934672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8345,6 +8237,10 @@ PrefabInstance:
       objectReference: {fileID: 1825150658}
     - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: debris
+      value: 
+      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+    - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
+      propertyPath: _debris
       value: 
       objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
     - target: {fileID: 1087950536083420053, guid: c205636e6da77b3469c197191577a1ab, type: 3}
@@ -8385,7 +8281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1985056753328069050, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: m_Name
-      value: block
+      value: Block
       objectReference: {fileID: 0}
     - target: {fileID: 3381390289433780871, guid: c205636e6da77b3469c197191577a1ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8682,6 +8578,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _maxPoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: layerBorder
       value: 
       objectReference: {fileID: 1974953879}
@@ -8689,6 +8589,10 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _layerBorder
+      value: 
+      objectReference: {fileID: 1974953879}
     - target: {fileID: 4576004959218322398, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: _scoreCountText
       value: 

@@ -19,7 +19,7 @@ public class BackgroundMusic : MonoBehaviour
     {
 
         _musicParamaters = _musicEmitter.Params;
-        if (GameManager.s_IsMusicPlaying == true)
+        if (GameManager.IsMusicPlaying == true)
         {
            
             adaptiveMusic();

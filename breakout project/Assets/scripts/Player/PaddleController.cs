@@ -211,8 +211,8 @@ public class PaddleController : MonoBehaviour
         _ballRb.constraints = RigidbodyConstraints.FreezePositionY;
 
         _cameraChange.CameraObject.transform.SetParent(null);
-        _cameraChange.CameraObject.transform.position = _cameraChange.Perspective_3rd.transform.position;
-        _cameraChange.CameraObject.transform.rotation = _cameraChange.Perspective_3rd.transform.rotation;
+        _cameraChange.CameraObject.transform.position = _cameraChange.PerspectiveThird.transform.position;
+        _cameraChange.CameraObject.transform.rotation = _cameraChange.PerspectiveThird.transform.rotation;
 
         _ballRb.linearVelocity = new Vector3(5, 0, _ballReleaseSpeed);
         AimActive = false;
@@ -261,12 +261,12 @@ public class PaddleController : MonoBehaviour
             SpreadTextTimer = Time.time + _spreadLifetime;
             _spreadText.SetActive(true);
             Rigidbody fakerRb = Instantiate(_temporaryBalls.FakerRb, new Vector3(gameObject.transform.position.x, _ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-            fakerRb.AddForce(_temporaryBalls.Magnitude_X, 0, _temporaryBalls.Magnitude_Z);
+            fakerRb.AddForce(_temporaryBalls.MagnitudeX, 0, _temporaryBalls.MagnitudeZ);
 
 
 
             Rigidbody fakerRb2 = Instantiate(_temporaryBalls.FakerRb, new Vector3(gameObject.transform.position.x, _ballPrefab.transform.position.y, gameObject.transform.position.z), gameObject.transform.rotation);
-            fakerRb2.AddForce(-_temporaryBalls.Magnitude_X, 0, _temporaryBalls.Magnitude_Z);
+            fakerRb2.AddForce(-_temporaryBalls.MagnitudeX, 0, _temporaryBalls.MagnitudeZ);
             // produces 2 temporary balls which have a limited number of times that they can hit a block
             return;
 

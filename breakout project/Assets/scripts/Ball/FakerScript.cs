@@ -7,8 +7,8 @@ public class FakerScript : MonoBehaviour
     // Fakers are the pink ball that appear when the Spread power up is activated
     public Rigidbody FakerRb;
 
-    [Range(-1250, 1250)] public float Magnitude_X;
-    [Range(-1250, 1250)] public float Magnitude_Z;
+    [Range(-1250, 1250)] public float MagnitudeX;
+    [Range(-1250, 1250)] public float MagnitudeZ;
     [Range(1, 5)] private int _tempHits;
 
 
@@ -20,7 +20,7 @@ public class FakerScript : MonoBehaviour
     {
         // applies forces to the x and z directions
 
-        FakerRb.AddForce(Magnitude_X, 0, Magnitude_Z);
+        FakerRb.AddForce(MagnitudeX, 0, MagnitudeZ);
 
 
 
@@ -43,7 +43,7 @@ public class FakerScript : MonoBehaviour
 
         else if (collide.gameObject.CompareTag("Contingency"))
         {
-            FakerRb.linearVelocity = new Vector3(Magnitude_X, 0, Magnitude_Z);
+            FakerRb.linearVelocity = new Vector3(MagnitudeX, 0, MagnitudeZ);
 
         }
 

@@ -8,8 +8,8 @@ public class BallScript : MonoBehaviour
 
     public Rigidbody rb;
 
-    [SerializeField][Range(-25, 25)] private float _magnitude_X;
-    [SerializeField][Range(10, 25)] private float _magnitude_Z;
+    [SerializeField][Range(-25, 25)] private float _magnitudeX;
+    [SerializeField][Range(10, 25)] private float _magnitudeZ;
 
 
     [SerializeField] private Transform _ballSpawner, _orbSpawner;
@@ -48,7 +48,7 @@ public class BallScript : MonoBehaviour
         // applies forces to the x and z directions
 
 
-        rb.linearVelocity = new Vector3(_magnitude_X, 0, _magnitude_Z);
+        rb.linearVelocity = new Vector3(_magnitudeX, 0, _magnitudeZ);
         _lowHp = false;
     }
 
@@ -71,7 +71,7 @@ public class BallScript : MonoBehaviour
 
 
 
-            rb.linearVelocity = new Vector3(-_magnitude_X, 0, _magnitude_Z);
+            rb.linearVelocity = new Vector3(-_magnitudeX, 0, _magnitudeZ);
 
 
             if (Lives.CharacterLives == 1)
@@ -83,7 +83,7 @@ public class BallScript : MonoBehaviour
 
                 Destroy(gameObject);
                 _backgroundMusic.StopMusic();
-                GameManager.s_Instance.End();
+                GameManager.Instance.End();
             }
 
 
@@ -96,7 +96,7 @@ public class BallScript : MonoBehaviour
         }
         else if (collide.gameObject.CompareTag("Contingency"))
         {
-            rb.linearVelocity = new Vector3(_magnitude_X, 0, _magnitude_Z);
+            rb.linearVelocity = new Vector3(_magnitudeX, 0, _magnitudeZ);
             gameObject.transform.position = _ballSpawner.transform.position;
         }
 

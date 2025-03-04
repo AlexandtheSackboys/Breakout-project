@@ -4,8 +4,8 @@ using FMODUnity;
 public class BlockWall : MonoBehaviour
 {
     [SerializeField] private float _hitPoints;
-    private ScoreSystem _scoreSystem; // reference game manager
-    public GameObject Debris;
+    private ScoreSystem _scoreSystem; 
+    [SerializeField] private GameObject _debris;
 
     [SerializeField] private PowerUp _pillSpawner;
 
@@ -42,7 +42,7 @@ public class BlockWall : MonoBehaviour
 
         }
         Destroy(gameObject); // game object is no longer in scene
-        Instantiate(Debris);
+        Instantiate(_debris);
 
 
     }
@@ -52,11 +52,13 @@ public class BlockWall : MonoBehaviour
     {
         if (_hasPowerUp)
         {
+            
             blockGone();
             _pillSpawner.Spawn();
             return;
+
         }
-        Debris.transform.position = gameObject.transform.position;
+        _debris.transform.position = gameObject.transform.position;
         blockGone();
     }
 
