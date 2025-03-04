@@ -423,7 +423,7 @@
 "Assets/scripts/Ball/BallScript.cs"
 "Assets/scripts/Ball/FakerScript.cs"
 "Assets/scripts/Blocks & power ups/blockWall.cs"
-"Assets/scripts/Blocks & power ups/Powerup.cs"
+"Assets/scripts/Blocks & power ups/PowerUp.cs"
 "Assets/scripts/GameManager.cs"
 "Assets/scripts/other/DestroyParticles.cs"
 "Assets/scripts/other/PerspectiveChange.cs"

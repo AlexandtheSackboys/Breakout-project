@@ -34,8 +34,7 @@ public class PaddleController : MonoBehaviour
 
 
     // power up activation 
-    [HideInInspector] public bool SpreadActivate = false, AimActive = false, GatherLife = false;
-    private bool _scaleActive = false;
+    [HideInInspector] public bool SpreadActivate = false, AimActive = false, GatherLife = false, ScaleActive = false;
 
     // other variables
     [SerializeField] private FakerScript _temporaryBalls;
@@ -106,7 +105,7 @@ public class PaddleController : MonoBehaviour
             }
 
             // Scale Timer
-            if (_scaleActive && Time.time >= _scaleTimer)
+            if (ScaleActive && Time.time >= _scaleTimer)
             {
                 ScaleUp();
             }
@@ -131,49 +130,7 @@ public class PaddleController : MonoBehaviour
     }
 
 
-    /* the function below chooses a random number between 0-11
-     and will select one of Four power ups to activa */
-    public void ActivatePowerUp()
-    {
-
-
-        if (SpreadActivate == false || AimActive == false || _scaleActive == false || GatherLife == false)
-        {
-
-            int powerUp =Random.Range(0,11);
-            Debug.Log("Power up number: " + powerUp);
-            if (powerUp >= 1 && powerUp < 4)
-            {
-
-                Spread();
-
-
-
-            }
-            else if (powerUp >= 4 && powerUp < 7)
-            {
-
-                AimTime();
-
-
-            }
-
-            else if (powerUp >= 7 && powerUp < 10)
-            {
-
-                ScaleUp();
-
-            }
-
-            else if (powerUp == 10)
-            {
-                GatherLife = true;
-                _ballScript.LifeIncrease();
-            }
-
-
-        }
-    }
+    
 
     public void AimTime()
     {
@@ -219,9 +176,9 @@ public class PaddleController : MonoBehaviour
     // Activate Scale Power-up
     public void ScaleUp()
     {
-        if (!_scaleActive)
+        if (!ScaleActive)
         {
-            _scaleActive = true;
+            ScaleActive = true;
             _scaleTimer = Time.time + _timeTilShrink; // will end power up when Time.time is equal to scaleTimer as Time.time always counts up
             Debug.Log("Time: " + Time.time);
             Debug.Log("Scale Timer: " + _scaleTimer);
@@ -241,7 +198,7 @@ public class PaddleController : MonoBehaviour
         _rightPaddleEnd.transform.localScale = new Vector3(0.115734726f, 1.46672726f, 1.54101229f);
 
         _paddleSpeed *= _slowDown;
-        _scaleActive = false;
+        ScaleActive = false;
         // causes padddle to return to its original state when Time.time is equal to scaleTimer
     }
 

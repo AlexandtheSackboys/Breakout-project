@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\backgroundMusic.cs" />
-    <Compile Include="Assets\scripts\Blocks &amp; power ups\Powerup.cs" />
+    <Compile Include="Assets\scripts\Blocks &amp; power ups\PowerUp.cs" />
     <Compile Include="Assets\scripts\Ball\BallScript.cs" />
     <Compile Include="Assets\scripts\UI Scripts\PauseMenu.cs" />
     <Compile Include="Assets\scripts\Scriptable objects\IntSO.cs" />
