@@ -3,9 +3,9 @@ using UnityEngine;
 public class TitleBlock : MonoBehaviour
 {
 
-    [SerializeField] private GameObject screenSpawned;
-    [SerializeField] private Transform ballSpawner;
-    [SerializeField] private GameObject titleBall;
+    [SerializeField] private GameObject _screenSpawned;
+    [SerializeField] private Transform _ballSpawner;
+    [SerializeField] private GameObject _titleBall;
     private PaddleController paddleController;
 
 
@@ -24,7 +24,7 @@ public class TitleBlock : MonoBehaviour
 
 
 
-            screenSpawned.SetActive(false); // Hide the pause menu UI panel
+            _screenSpawned.SetActive(false); // Hide the pause menu UI panel
 
             pauseMenu.PauseText.gameObject.SetActive(true); // Hide the controls TextMeshProUGUI element
             Time.timeScale = 1f; // Set the time scale to normal to resume the game
@@ -32,7 +32,7 @@ public class TitleBlock : MonoBehaviour
             return;
         }
         pauseMenu.PauseMusic.StopMusic();
-        screenSpawned.SetActive(true); // Show the pause menu UI panel
+        _screenSpawned.SetActive(true); // Show the pause menu UI panel
         pauseMenu.PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
         Time.timeScale = 0f; // Set the time scale to 0 to pause the game
         pauseMenu.isPaused = true; // Update the pause state
@@ -47,7 +47,7 @@ public class TitleBlock : MonoBehaviour
         {
             Debug.Log("Contros are spawned");
             spawnUI();
-            titleBall.transform.position = ballSpawner.transform.position;
+            _titleBall.transform.position = _ballSpawner.transform.position;
             paddleController.AimTime();
         }
     }

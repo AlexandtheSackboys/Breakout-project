@@ -3,7 +3,8 @@ using System.Collections;
 using FMODUnity;
 public class BlockWall : MonoBehaviour
 {
-    [SerializeField] private float _hitPoints;
+    [SerializeField] private float _hitPoints; // determines the number of hits it takes to destroy a block
+    
     private ScoreSystem _scoreSystem; 
     [SerializeField] private GameObject _debris;
 

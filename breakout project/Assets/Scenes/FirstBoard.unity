@@ -8742,6 +8742,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1642036376}
     - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _menuUI
+      value: 
+      objectReference: {fileID: 1642036376}
+    - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: pausePower_Ups
       value: 
       objectReference: {fileID: 7971283828256552070}

@@ -150,11 +150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 672696301743391456}
-  magnitude_X: 0
-  magnitude_Z: 10
-  temp_hits: 1
-  spawner: {fileID: 0}
-  item: {fileID: 0}
-  life_Orbs: {fileID: 0}
-  lives: 5
-  orbSpawner: {fileID: 0}
+  _magnitudeX: 0
+  _magnitudeZ: 10
+  _ballSpawner: {fileID: 0}
+  _orbSpawner: {fileID: 0}
+  _itemPill: {fileID: 0}
+  _diegeticLives: {fileID: 0}
+  Lives: {fileID: 0}

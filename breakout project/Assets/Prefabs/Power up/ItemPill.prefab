@@ -123,3 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258feb72e6244a148af08f443cdfb9b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _paddleController: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+  _ballScript: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}

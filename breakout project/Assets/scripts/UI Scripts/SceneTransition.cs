@@ -2,25 +2,25 @@ using UnityEngine;
 
 public class SceneTransition : MonoBehaviour
 {
-    [SerializeField]private bool continueGame = true;
+    [SerializeField]private bool _continueGame = true;
 
-    private BackgroundMusic endTitle;
+    private BackgroundMusic _endTitle;
 
     private void Start()
     {
 
-        endTitle = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
+        _endTitle = GameObject.Find("BackgroundMusic_emitter").GetComponent<BackgroundMusic>();
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (!continueGame)
+            if (!_continueGame)
             {
                 GameManager.Instance.Quit();
                 return;
             }
-            endTitle.StopMusic();
+            _endTitle.StopMusic();
             GameManager.Instance.Play();
 
         }

@@ -65,8 +65,6 @@ public class PaddleController : MonoBehaviour
         _paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         _paddleRigidbody = GetComponent<Rigidbody>();
         _paddleTilt = GetComponent<Animator>();
-
-
     }
 
     // Update is called once per frame   
@@ -74,13 +72,6 @@ public class PaddleController : MonoBehaviour
     {
         MovementHandler();
         HandleTimers();
-
-
-
-
-
-
-
     }
 
     // function below deals with animation and movement of paddle 
@@ -140,6 +131,8 @@ public class PaddleController : MonoBehaviour
     }
 
 
+    /* the function below chooses a random number between 0-11
+     and will select one of Four power ups to activa */
     public void ActivatePowerUp()
     {
 
@@ -175,7 +168,7 @@ public class PaddleController : MonoBehaviour
             else if (powerUp == 10)
             {
                 GatherLife = true;
-                _ballScript.lifeIncrease();
+                _ballScript.LifeIncrease();
             }
 
 

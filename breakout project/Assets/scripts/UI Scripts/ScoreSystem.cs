@@ -65,7 +65,7 @@ public class ScoreSystem : MonoBehaviour
 
     void firstBoard() 
     {
-        //makes sure when the player gets max points it moves on to the next scene
+        //makes sure when the player gets max points it moves on to the next board
         if (ScoreCount >= _maxPoints / 2)
         {
             _backgroundMusic.StopMusic();
@@ -76,7 +76,7 @@ public class ScoreSystem : MonoBehaviour
 
     void secondBoard() 
     {
-
+        //makes sure when the player gets max points it moves on to the Game over scene
         if (ScoreCount >= _maxPoints * 0.75f)
         {
             Destroy(_layerBorder);

@@ -64,7 +64,7 @@ public class BallScript : MonoBehaviour
             gameObject.transform.position = _ballSpawner.transform.position;
             Lives.CharacterLives--;
 
-            DynamicMusic();
+            dynamicMusic();
             Debug.Log(Lives);
 
             lifeOrbs();
@@ -118,17 +118,17 @@ public class BallScript : MonoBehaviour
         }
     }
 
-    public void lifeIncrease()
+    public void LifeIncrease()
     {
         Lives.CharacterLives++;
-        DynamicMusic();
+        dynamicMusic();
         lifeOrbs();
         _paddleController.GatherLife = false;
 
     }
 
     //this function below deals with when each song is played based on the number of lives the player has
-    public void DynamicMusic()
+    public void dynamicMusic()
     {
         if (Lives.CharacterLives < 3 && _lowHp == false)
         {

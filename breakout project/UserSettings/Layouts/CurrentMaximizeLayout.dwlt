@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 27193
+  controlID: 34863
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 27145
+  controlID: 34864
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 27136
+  controlID: 34865
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -248,7 +248,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2e00ffff0003ffff080bfffff611ffff5a1affff841affffe01affff062effff8269ffffbebcffff84beffff86beffffe6c1ffffacc3ffff48caffffaecaffff6ad1ffff9ed8ffff16dbffff7ae8fffffeecffffe6efffff20fbffff8cca0000e6ca000050cc000012cd0000f4ec0000feec000032ed0000a6ed0000d4ed00000aee000056ee000066ee0000c4f0000088f2000036f3000076060100
+      m_ExpandedIDs: e8b3feff3cb4feff50b4feff18b6feffb0b8feff9abafeff4abdfeffc0bdfeff0600ffff2e00ffff0003ffff080bfffff611ffff5a1affff841affffe01affff062effff8269ffffbebcffff84beffff86beffffe6c1ffffacc3ffff48caffffaecaffff6ad1ffff9ed8ffff16dbffff7ae8fffffeecffffe6efffff20fbffff8cca0000e6ca000050cc000012cd0000f4ec0000feec000032ed0000a6ed0000d4ed00000aee000056ee000066ee0000c4f0000088f2000036f3000076060100bc1c0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -834,9 +834,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.71137923, y: -0.061953496, z: 0.06325088, w: 0.6972093}
   m_Size:
-    m_Target: 265.42822
+    m_Target: 272.91077
     speed: 2
-    m_Value: 265.42822
+    m_Value: 272.91077
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -958,15 +958,15 @@ MonoBehaviour:
     y: 464.8
     width: 1171.2
     height: 252
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_ActualView: {fileID: 11}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     m_ContainerData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: Titl
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -1014,26 +1014,26 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/scripts/UI Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
-    m_OriginalText: Titl
+    m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/scripts/UI Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Student\Desktop\game builds\Breakout-project\breakout
     project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 14950000
-    m_LastClickedID: 38164
+    scrollPos: {x: 0, y: 354}
+    m_SelectedIDs: b4950000
+    m_LastClickedID: 38324
     m_ExpandedIDs: 000000001495000016950000189500001a9500001c9500001e9500002095000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1089,9 +1089,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: f69b0000
+    m_LastClickedInstanceID: 39926
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1195,7 +1195,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 52342
+  m_LastSelectedObjectID: 88110
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1264,7 +1264,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 88110
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b834e4ab713b11241af25dff6d9f7968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenSpawned: {fileID: 1347497788}
-  ballSpawner: {fileID: 1244133905145696005}
-  titleBall: {fileID: 1931779173}
+  _screenSpawned: {fileID: 1347497788}
+  _ballSpawner: {fileID: 1244133905145696005}
+  _titleBall: {fileID: 1931779173}
 --- !u!224 &97587774 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 835523778473173995, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f82c3fcdb674144c86bbb8538a11ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueGame: 0
+  _continueGame: 0
 --- !u!1 &579324918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8824106709744196282, guid: 685f034be154da04bbfa01e0db5d5728, type: 3}
@@ -670,9 +670,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b834e4ab713b11241af25dff6d9f7968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenSpawned: {fileID: 1173192795}
-  ballSpawner: {fileID: 1244133905145696005}
-  titleBall: {fileID: 1931779173}
+  _screenSpawned: {fileID: 1173192795}
+  _ballSpawner: {fileID: 1244133905145696005}
+  _titleBall: {fileID: 1931779173}
 --- !u!1001 &638964151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1639,7 +1639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f82c3fcdb674144c86bbb8538a11ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  continueGame: 1
+  _continueGame: 1
 --- !u!54 &955869389 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 672696301743391456, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
@@ -3698,6 +3698,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: MenuUI
+      value: 
+      objectReference: {fileID: 1530919548}
+    - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _menuUI
       value: 
       objectReference: {fileID: 1530919548}
     - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}

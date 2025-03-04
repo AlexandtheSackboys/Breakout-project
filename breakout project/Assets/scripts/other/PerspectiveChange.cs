@@ -7,6 +7,7 @@ public class PerspectiveChange : MonoBehaviour
 
     [SerializeField] private GameObject _perspectiveClassic;
     // Classic refers to the original camera perspective in classic Arkanoid/Breakout
+    
     private PaddleController _paddleController;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

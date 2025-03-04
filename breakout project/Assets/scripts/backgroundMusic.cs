@@ -31,7 +31,7 @@ public class BackgroundMusic : MonoBehaviour
     }
 
 
-    public void LowHealthMusic()
+    public void LowHealthMusic() // function will play when health is less than 3
     {
         _musicEmitter.Stop();
         _musicParamaters[0].Value = 1;
@@ -39,14 +39,14 @@ public class BackgroundMusic : MonoBehaviour
         return;
     }
 
-    public void NormalMusic()
+    public void NormalMusic() // function will play when health is greater than 2
     {
         _musicEmitter.Stop();
         _musicParamaters[0].Value = 0;
         _musicEmitter.Play();
         return;
     }
-    public void StopMusic()
+    public void StopMusic() // will make music stop across (which will happen when it is called in other scripts)
     {
         _musicEmitter.Stop();
     }

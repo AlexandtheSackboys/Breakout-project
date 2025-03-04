@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(Instance);
     }
 
-    public void Play() //  causes main game to play
+    public void Play() //  causes main game to play and sends player to first board
     {
         _backgroundMusic.StopMusic();
         ScoreSystem.ScoreCount = 0;
