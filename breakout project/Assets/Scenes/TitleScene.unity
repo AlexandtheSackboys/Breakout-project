@@ -635,6 +635,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543055073}
   m_CullTransparentMesh: 1
+--- !u!1 &545946486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1149101340605170812, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+  m_PrefabInstance: {fileID: 7020511471675011324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &562804286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1762397445081135169, guid: fb05da6dbd88a244386261a7c5559941, type: 3}
@@ -3167,10 +3172,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3182,11 +3191,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8745155}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8745155}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: TogglePause
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TitlePauseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3195,6 +3220,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 558086803128754442, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 827717665694448820, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3550,10 +3579,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3565,11 +3598,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8745155}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8745155}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: TogglePause
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TitlePauseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: PauseMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3578,6 +3627,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709072110682042160, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6757564914055348120, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
@@ -3704,6 +3757,10 @@ PrefabInstance:
       propertyPath: _menuUI
       value: 
       objectReference: {fileID: 1530919548}
+    - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
+      propertyPath: _stopInput
+      value: 
+      objectReference: {fileID: 545946486}
     - target: {fileID: 8797194518172875202, guid: 2f4fe63c4ea268c408aa4a9ffc3adf1c, type: 3}
       propertyPath: pauseMenuUI
       value: 
@@ -3946,7 +4003,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
   m_PrefabInstance: {fileID: 7020511471675011324}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 545946486}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f902045c71600d4b8c7e6801c54549b, type: 3}
@@ -3957,7 +4014,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2571920332642988990, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
   m_PrefabInstance: {fileID: 7020511471675011324}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 545946486}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}

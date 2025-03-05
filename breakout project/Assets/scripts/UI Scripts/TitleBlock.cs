@@ -14,7 +14,8 @@ public class TitleBlock : MonoBehaviour
     void Start()
     {
         _pauseMenu = GameObject.Find("Canvas").GetComponent<PauseMenu>();
-        _paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();  
+        _paddleController = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
+
     }
 
     private void spawnUI()
@@ -49,6 +50,7 @@ public class TitleBlock : MonoBehaviour
             spawnUI();
             _titleBall.transform.position = _ballSpawner.transform.position;
             _paddleController.AimTime();
+            _pauseMenu.MenuUI = _screenSpawned;
         }
     }
     
