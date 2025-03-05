@@ -28,36 +28,16 @@ public class PauseMenu : MonoBehaviour
 
         if (IsPaused)
         {
-            if (_ballScript.Lives.CharacterLives < 3)
-            {
-
-
-                PauseMusic.LowHealthMusic();
-            }
-            else if (_ballScript.Lives.CharacterLives > 2)
-            {
-
-
-                PauseMusic.NormalMusic();
-            }
-
-
-            _pauseGameplay.HandleTimers();
-
-            MenuUI.SetActive(false); // Hide the pause menu UI panel
-            MenuUI = _mainUI;
-            PauseText.gameObject.SetActive(true); // shows the controls TextMeshProUGUI element
-            Time.timeScale = 1f; // Set the time scale to normal to resume the game
-            IsPaused = false; // Update the pause state
+            pauseState();
             return;
         }
-            PauseMusic.StopMusic();
+        PauseMusic.StopMusic();
 
         MenuUI.SetActive(true); // Show the pause menu UI panel
 
         PauseText.gameObject.SetActive(false); // hides the controls TextMeshProUGUI element
-            Time.timeScale = 0f; // Set the time scale to 0 to pause the game
-            IsPaused = true; // Update the pause state
+        Time.timeScale = 0f; // Set the time scale to 0 to pause the game
+        IsPaused = true; // Update the pause state
     }
 
     public void CurrentUI(int indexUI)
@@ -78,8 +58,35 @@ public class PauseMenu : MonoBehaviour
         {
             MenuUI = _mainUI;
         }
-
     }
+
+        private void pauseState() 
+        {
+        if (_ballScript.Lives.CharacterLives < 3)
+        {
+
+
+            PauseMusic.LowHealthMusic();
+        }
+        else if (_ballScript.Lives.CharacterLives > 2)
+        {
+
+
+            PauseMusic.NormalMusic();
+        }
+
+
+        _pauseGameplay.HandleTimers();
+
+        MenuUI.SetActive(false); // Hide the pause menu UI panel
+        MenuUI = _mainUI;
+        PauseText.gameObject.SetActive(true); // shows the controls TextMeshProUGUI element
+        Time.timeScale = 1f; // Set the time scale to normal to resume the game
+        IsPaused = false; // Update the pause state
+    }
+    
+}
+    
 
         
 
@@ -87,4 +94,3 @@ public class PauseMenu : MonoBehaviour
 
 
 
-}
