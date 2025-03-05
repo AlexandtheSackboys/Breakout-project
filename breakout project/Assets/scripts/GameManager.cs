@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
     {
 
         _paddleLives.CharacterLives += 2;
-        _backgroundMusic.StopMusic();
+
         SceneIndex = 2;
         IsMusicPlaying = true;
         SceneManager.LoadScene(SceneIndex);

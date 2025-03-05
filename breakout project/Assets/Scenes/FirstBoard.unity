@@ -6566,7 +6566,7 @@ PrefabInstance:
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: _itemPill
       value: 
-      objectReference: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+      objectReference: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
     - target: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}
       propertyPath: itemTrack
       value: 
