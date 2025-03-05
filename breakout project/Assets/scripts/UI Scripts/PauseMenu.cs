@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject _controlsUI, _powersUI,_mainUI;
 
 
-    [HideInInspector] public bool isPaused = false; // Flag to track if the game is paused
+    [HideInInspector] public bool IsPaused = false; // Flag to track if the game is paused
     void Start()
     {
         _pauseGameplay = GameObject.Find("Player_Paddle").GetComponent<PaddleController>();
@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
     public void TogglePause()
     {
 
-        if (isPaused)
+        if (IsPaused)
         {
             if (_ballScript.Lives.CharacterLives < 3)
             {
@@ -48,7 +48,7 @@ public class PauseMenu : MonoBehaviour
             MenuUI = _mainUI;
             PauseText.gameObject.SetActive(true); // shows the controls TextMeshProUGUI element
             Time.timeScale = 1f; // Set the time scale to normal to resume the game
-            isPaused = false; // Update the pause state
+            IsPaused = false; // Update the pause state
             return;
         }
             PauseMusic.StopMusic();
@@ -57,7 +57,7 @@ public class PauseMenu : MonoBehaviour
 
         PauseText.gameObject.SetActive(false); // hides the controls TextMeshProUGUI element
             Time.timeScale = 0f; // Set the time scale to 0 to pause the game
-            isPaused = true; // Update the pause state
+            IsPaused = true; // Update the pause state
     }
 
     public void CurrentUI(int indexUI)
@@ -66,7 +66,7 @@ public class PauseMenu : MonoBehaviour
         if (indexUI == 0)
         {
             MenuUI = _controlsUI;
-            return;
+
         }
         // in editor enter 1 to access the controls
         if (indexUI == 1)

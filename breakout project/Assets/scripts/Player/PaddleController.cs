@@ -25,7 +25,7 @@ public class PaddleController : MonoBehaviour
     [SerializeField] private GameObject _perspectivePowerUp;
 
     private PerspectiveChange _cameraChange;
-    private BallScript _ballScript;
+
     
     [SerializeField]private GameObject _ballPrefab;
     [SerializeField]private Rigidbody _ballRb;
@@ -60,7 +60,7 @@ public class PaddleController : MonoBehaviour
     void Start()
     {
         _cameraChange = GameObject.Find("Main Camera").GetComponent<PerspectiveChange>();
-        _ballScript = GameObject.Find("Ball").GetComponent<BallScript>();
+
         _paused = GameObject.Find("Canvas").GetComponent<PauseMenu>();
         _paddleRigidbody = GetComponent<Rigidbody>();
         _paddleTilt = GetComponent<Animator>();
@@ -96,7 +96,7 @@ public class PaddleController : MonoBehaviour
 
     public void HandleTimers()
     {
-        if (!_paused.isPaused)
+        if (!_paused.IsPaused)
         {
             // Aim Timer
             if (AimActive && Time.time >= _aimTimer)

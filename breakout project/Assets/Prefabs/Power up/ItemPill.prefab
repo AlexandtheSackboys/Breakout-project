@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4776900230690082248}
   - component: {fileID: 7396298004447972997}
   - component: {fileID: 2123943769243496496}
-  - component: {fileID: 2387545355022059550}
+  - component: {fileID: 2570768567868399125}
   m_Layer: 0
   m_Name: ItemPill
   m_TagString: Item
@@ -111,7 +111,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2387545355022059550
+--- !u!114 &2570768567868399125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,8 +120,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8451925912718379704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258feb72e6244a148af08f443cdfb9b0, type: 3}
+  m_Script: {fileID: 11500000, guid: 05b223a3b7fcc7442bca75949b302ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _paddleController: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
-  _ballScript: {fileID: 1378934535386542200, guid: d74d9717081a5514f8ca5adb1e6cf8ac, type: 3}

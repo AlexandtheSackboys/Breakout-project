@@ -20,7 +20,7 @@ public class TitleBlock : MonoBehaviour
 
     private void spawnUI()
     {
-        if (_pauseMenu.isPaused)
+        if (_pauseMenu.IsPaused)
         {
 
 
@@ -29,14 +29,14 @@ public class TitleBlock : MonoBehaviour
 
             _pauseMenu.PauseText.gameObject.SetActive(true); // Hide the controls TextMeshProUGUI element
             Time.timeScale = 1f; // Set the time scale to normal to resume the game
-            _pauseMenu.isPaused = false; // Update the pause state
+            _pauseMenu.IsPaused = false; // Update the pause state
             return;
         }
         _pauseMenu.PauseMusic.StopMusic();
         _screenSpawned.SetActive(true); // Show the pause menu UI panel
         _pauseMenu.PauseText.gameObject.SetActive(false); // Show the controls TextMeshProUGUI element
         Time.timeScale = 0f; // Set the time scale to 0 to pause the game
-        _pauseMenu.isPaused = true; // Update the pause state
+        _pauseMenu.IsPaused = true; // Update the pause state
         return;
     }
 

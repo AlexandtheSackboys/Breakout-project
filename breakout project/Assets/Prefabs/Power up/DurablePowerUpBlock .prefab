@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7789898251650522558}
   - component: {fileID: 3683157386827033321}
   - component: {fileID: 4267853669228065208}
-  - component: {fileID: 705142991015047458}
+  - component: {fileID: 3219971881247105944}
   m_Layer: 0
   m_Name: 'DurablePowerUpBlock '
   m_TagString: Block
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 013cfa406d1f8c14aa03db3f18896188, type: 2}
+  - {fileID: 2100000, guid: f4c84ea643a8b9b4c8e94a384ffe1bc2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &705142991015047458
+--- !u!114 &3219971881247105944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 2
-  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
-  _pillSpawner: {fileID: 2387545355022059550, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _debris: {fileID: 0}
+  _pillSpawner: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 0}
   _hasPowerUp: 1

@@ -1,17 +1,17 @@
-using UnityEngine;
-using System.Collections;
 using FMODUnity;
+using UnityEngine;
+
 public class BlockWall : MonoBehaviour
 {
     [SerializeField] private float _hitPoints; // determines the number of hits it takes to destroy a block
-    
-    private ScoreSystem _scoreSystem; 
+
+    private ScoreSystem _scoreSystem;
     [SerializeField] private GameObject _debris;
 
     [SerializeField] private PowerUp _pillSpawner;
 
 
-    [SerializeField]private StudioEventEmitter _breakBlock;
+    [SerializeField] private StudioEventEmitter _breakBlock;
     [SerializeField] private bool _hasPowerUp = false;
 
     private void Start()
@@ -26,7 +26,8 @@ public class BlockWall : MonoBehaviour
             _hitPoints--;
             _breakBlock.Play();
 
-            if (_hitPoints == 0) {
+            if (_hitPoints == 0)
+            {
 
                 isPowerBlock();
 
@@ -48,12 +49,12 @@ public class BlockWall : MonoBehaviour
 
     }
 
-    private void isPowerBlock() 
-    
+    private void isPowerBlock()
+
     {
         if (_hasPowerUp)
         {
-            
+
             blockGone();
             _pillSpawner.Spawn();
             return;
