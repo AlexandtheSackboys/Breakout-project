@@ -230,7 +230,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 
@@ -1005,7 +1005,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 
@@ -2834,7 +2834,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 
@@ -4654,7 +4654,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 
@@ -4997,7 +4997,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _hitPoints
       value: 2
@@ -5489,7 +5489,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _hitPoints
       value: 2

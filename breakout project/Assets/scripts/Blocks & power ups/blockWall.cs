@@ -52,16 +52,19 @@ public class BlockWall : MonoBehaviour
     private void isPowerBlock()
 
     {
+        _debris.transform.position = gameObject.transform.position;
+        blockGone();
+
         if (_hasPowerUp)
         {
 
-            blockGone();
+          
             _pillSpawner.Spawn();
-            return;
+
 
         }
-        _debris.transform.position = gameObject.transform.position;
-        blockGone();
+
+
     }
 
 

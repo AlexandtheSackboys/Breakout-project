@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2963340383421735174}
   - component: {fileID: 4144564277136194140}
   - component: {fileID: 1838375973470363410}
+  - component: {fileID: 5246262316568684344}
   m_Layer: 0
   m_Name: Item box peices
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2628254746844220713}
   serializedVersion: 2
   m_LocalRotation: {x: -0.9876278, y: -0, z: -0, w: 0.15681615}
-  m_LocalPosition: {x: -7.7000127, y: 7.380005, z: 22.98}
+  m_LocalPosition: {x: 13.312287, y: 7.380005, z: 14.967014}
   m_LocalScale: {x: 0.5227, y: 0.5227, z: 0.5227}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4833,3 +4834,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &5246262316568684344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2628254746844220713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424f4bb21d37eae41858a7e0022f35da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeToDestroy: 1

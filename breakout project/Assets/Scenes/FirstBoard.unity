@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
   _pillSpawner: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -6834,7 +6834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
   _pillSpawner: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -7348,7 +7348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitPoints: 1
-  _debris: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+  _debris: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
   _pillSpawner: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
   _breakBlock: {fileID: 988375286}
   _hasPowerUp: 1
@@ -8045,6 +8045,14 @@ PrefabInstance:
       propertyPath: _breakBlock
       value: 
       objectReference: {fileID: 988375286}
+    - target: {fileID: 3219971881247105944, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: _debris
+      value: 
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
+    - target: {fileID: 3219971881247105944, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
+      propertyPath: _breakBlock
+      value: 
+      objectReference: {fileID: 988375286}
     - target: {fileID: 3683157386827033321, guid: 9090069a1908a2840ac4575b2cf3ab51, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -8121,7 +8129,7 @@ PrefabInstance:
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _debris
       value: 
-      objectReference: {fileID: 7702741905863080408, guid: 2b7219d9962945341b5b6320fc292971, type: 3}
+      objectReference: {fileID: 2628254746844220713, guid: 5e978efd1cf8991419f8f5276a5a288b, type: 3}
     - target: {fileID: 7284896462139108692, guid: e15e2abb9b9740c41badc3dc86c629aa, type: 3}
       propertyPath: _breakBlock
       value: 

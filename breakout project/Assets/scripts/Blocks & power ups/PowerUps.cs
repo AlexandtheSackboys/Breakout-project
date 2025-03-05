@@ -27,7 +27,7 @@ public class PowerUp : MonoBehaviour
     // the function beklow will spawn an item pill in a random location whre the paddle can moves
     public void Spawn()
     {
-        Instantiate(gameObject, new Vector3(Random.Range(-19.76f, 19.76f), 7.35f, -3.08f), Quaternion.identity);
+        Instantiate(gameObject, new Vector3(Random.Range(-16,16), 7.35f, -3.08f), Quaternion.identity);
 
     }
     /* the function below chooses a random number between 0-11
@@ -39,7 +39,7 @@ public class PowerUp : MonoBehaviour
         if (_paddleController.SpreadActivate == false || _paddleController.AimActive == false || _paddleController.ScaleActive == false || _paddleController.GatherLife == false)
         {
 
-            int powerUp = Random.Range(0, 11);
+            int powerUp = Random.Range(0,11);
             Debug.Log("Power up number: " + powerUp);
             if (powerUp >= 1 && powerUp < 4)
             {
