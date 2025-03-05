@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     public void End() // transisions to winning scene
     {
 
-        _backgroundMusic.StopMusic();
+        
         SceneIndex = 3;
         IsMusicPlaying = false;
         SceneManager.LoadScene(SceneIndex);
