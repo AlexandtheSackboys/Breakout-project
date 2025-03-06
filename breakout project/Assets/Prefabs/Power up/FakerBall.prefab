@@ -152,3 +152,4 @@ MonoBehaviour:
   FakerRb: {fileID: 4142728517695188205}
   MagnitudeX: 750
   MagnitudeZ: 850
+  _tempHits: 3

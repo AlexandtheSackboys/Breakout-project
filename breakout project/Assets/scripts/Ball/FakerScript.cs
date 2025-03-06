@@ -9,7 +9,7 @@ public class FakerScript : MonoBehaviour
 
     [Range(-1250, 1250)] public float MagnitudeX;
     [Range(-1250, 1250)] public float MagnitudeZ;
-    [Range(1, 5)] private int _tempHits;
+    [SerializeField][Range(1, 5)] private int _tempHits;
 
 
 

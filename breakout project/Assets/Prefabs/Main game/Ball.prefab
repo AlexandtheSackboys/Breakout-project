@@ -150,10 +150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 672696301743391456}
-  _magnitudeX: 0
-  _magnitudeZ: 10
+  _magnitudeX: 21
+  _magnitudeZ: 25
   _ballSpawner: {fileID: 0}
   _orbSpawner: {fileID: 0}
-  _itemPill: {fileID: 0}
-  _diegeticLives: {fileID: 0}
-  Lives: {fileID: 0}
+  _itemPill: {fileID: 2570768567868399125, guid: 8956e22004d2e37419de777209d1177c, type: 3}
+  _diegeticLives: {fileID: 3340935597039094595, guid: bc9c25da34d7d46439ccb6b2cb4c4608, type: 3}
+  Lives: {fileID: 11400000, guid: 093980387217a934e8c24e7b701eb291, type: 2}

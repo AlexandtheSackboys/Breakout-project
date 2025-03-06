@@ -1577,10 +1577,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe36e7c74f29fe48a9d16a4fb792371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MenuUI: {fileID: 0}
+  MenuUI: {fileID: 8270499951407449860}
   PauseText: {fileID: 8875962879868053990}
   PauseMusic: {fileID: 0}
-  isPaused: 0
+  _controlsUI: {fileID: 2298618910861462713}
+  _powersUI: {fileID: 2108501999671606913}
+  _mainUI: {fileID: 8270499951407449860}
+  IsPaused: 0
 --- !u!1 &3816926601351439461
 GameObject:
   m_ObjectHideFlags: 0
