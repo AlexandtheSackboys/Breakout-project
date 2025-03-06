@@ -8970,6 +8970,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 272075644}
     - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
+      propertyPath: _slowDown
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315186002946559987, guid: 7e1a29f54919c054482016e032f12ec7, type: 3}
       propertyPath: paddleHit
       value: 
       objectReference: {fileID: 7971283828256552080}
